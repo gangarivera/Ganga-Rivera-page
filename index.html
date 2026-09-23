@@ -1,713 +1,2394 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Ganga Rivera | Brijghat Garhmukteshwar</title>
+<title>Ganga Rivera | Premium Plots & Executive Villas | Brijghat</title>
 
-<meta name="description" content="Ganga Rivera - Brijghat, Garhmukteshwar, NH-9 Corridor. Explore 100, 120 and 200 Gaj residential and weekend plots.">
+<meta name="description"
+content="Ganga Rivera by Phenix Infracon at Brijghat, Garhmukteshwar. Premium residential plots and executive villas with modern amenities, green spaces and excellent connectivity.">
+
+<meta name="theme-color" content="#063d29">
 
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
+
+:root{
+  --green:#063d29;
+  --green2:#087443;
+  --lightgreen:#dff5e7;
+  --gold:#f3bd20;
+  --gold2:#ffdf55;
+  --dark:#101715;
+  --text:#1d2823;
+  --muted:#65716b;
+  --white:#ffffff;
+  --cream:#fffaf0;
+  --red:#c51e25;
+  --shadow:0 15px 45px rgba(0,0,0,.12);
+  --radius:22px;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,Helvetica,sans-serif;
-color:#183225;
-background:#f7faf7;
-line-height:1.6
+  font-family:Arial,Helvetica,sans-serif;
+  color:var(--text);
+  background:#fff;
+  line-height:1.6;
+  overflow-x:hidden;
 }
-a{text-decoration:none}
-.container{width:92%;max-width:1150px;margin:auto}
 
-/* HEADER */
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+button,
+input,
+select,
+textarea{
+  font:inherit;
+}
+
+.container{
+  width:min(1180px,92%);
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
 header{
-position:sticky;
-top:0;
-z-index:999;
-background:#fff;
-box-shadow:0 2px 15px #00000015
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:1000;
+  background:rgba(255,255,255,.96);
+  backdrop-filter:blur(12px);
+  box-shadow:0 3px 20px rgba(0,0,0,.08);
 }
+
 .nav{
-height:70px;
-display:flex;
-align-items:center;
-justify-content:space-between
+  min-height:72px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
 }
+
 .logo{
-font-size:24px;
-font-weight:900;
-color:#126b3a
-}
-.logo small{
-display:block;
-font-size:10px;
-letter-spacing:2px;
-color:#777
-}
-.nav a{
-color:#173525;
-font-weight:bold;
-font-size:14px
-}
-.whatsapp{
-background:#19a852;
-color:#fff!important;
-padding:10px 17px;
-border-radius:30px
+  font-size:25px;
+  font-weight:900;
+  line-height:.9;
+  color:#0754bd;
 }
 
-/* HERO */
+.logo span{
+  display:block;
+  color:#111;
+  font-size:10px;
+  letter-spacing:3px;
+  margin-top:5px;
+}
+
+.navlinks{
+  display:flex;
+  gap:25px;
+  align-items:center;
+  font-size:14px;
+  font-weight:700;
+}
+
+.navlinks a:hover{
+  color:var(--green2);
+}
+
+.nav-btn{
+  background:var(--green2);
+  color:white;
+  padding:12px 18px;
+  border-radius:30px;
+  font-weight:800;
+}
+
+/* ================= HERO ================= */
+
 .hero{
-min-height:650px;
-display:flex;
-align-items:center;
-background:
-linear-gradient(90deg,#06351de8,#06351d99,#06351d20),
-url("https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1800&q=85")
-center/cover;
-color:white
+  min-height:760px;
+  padding-top:72px;
+  position:relative;
+  display:flex;
+  align-items:center;
+  background:
+  linear-gradient(90deg,rgba(0,0,0,.78),rgba(0,0,0,.35),rgba(0,0,0,.15)),
+  url("https://gangarivera.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-14-at-17.03.53-e1778761781497-1024x572.jpeg")
+  center/cover no-repeat;
 }
-.hero-content{max-width:720px;padding:70px 0}
+
+.hero-content{
+  color:#fff;
+  max-width:700px;
+  padding:70px 0;
+}
+
 .badge{
-display:inline-block;
-background:#ffffffee;
-color:#126b3a;
-padding:8px 16px;
-border-radius:30px;
-font-weight:bold;
-margin-bottom:18px
+  display:inline-block;
+  background:rgba(243,189,32,.95);
+  color:#111;
+  padding:9px 18px;
+  border-radius:30px;
+  font-weight:900;
+  margin-bottom:20px;
 }
+
 .hero h1{
-font-size:clamp(40px,7vw,68px);
-line-height:1.08;
-margin-bottom:20px
+  font-size:clamp(42px,6vw,75px);
+  line-height:1;
+  margin-bottom:20px;
+  font-weight:900;
 }
-.hero h1 span{color:#ffd32a}
-.hero p{font-size:19px;max-width:650px;margin-bottom:20px}
-.location{font-weight:bold;margin-bottom:25px}
+
+.hero h1 span{
+  color:var(--gold2);
+}
+
+.hero p{
+  font-size:20px;
+  max-width:650px;
+  margin-bottom:25px;
+}
+
+.location{
+  font-weight:800;
+  font-size:17px;
+  margin-bottom:25px;
+}
+
+.hero-buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:14px;
+}
+
 .btn{
-display:inline-block;
-padding:14px 23px;
-border-radius:8px;
-font-weight:800;
-margin:5px
+  display:inline-flex;
+  justify-content:center;
+  align-items:center;
+  gap:8px;
+  padding:15px 23px;
+  border-radius:12px;
+  font-weight:900;
+  border:none;
+  cursor:pointer;
+  transition:.25s;
 }
-.btn-red{background:#e53935;color:white}
-.btn-green{background:#19a852;color:white}
 
-/* SECTIONS */
-section{padding:70px 0}
-.title{text-align:center;margin-bottom:40px}
-.title small{
-color:#168449;
-font-weight:bold;
-letter-spacing:2px
+.btn:hover{
+  transform:translateY(-3px);
 }
-.title h2{
-font-size:38px;
-margin:5px 0
-}
-.title p{color:#68766d;max-width:700px;margin:auto}
 
-/* PLOTS */
-.grid3{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:22px
+.btn-gold{
+  background:var(--gold);
+  color:#111;
 }
-.card{
-background:#fff;
-border-radius:18px;
-overflow:hidden;
-box-shadow:0 7px 25px #00000012;
-border:1px solid #e5eee7
-}
-.card-top{
-padding:25px;
-background:linear-gradient(135deg,#126b3a,#239653);
-color:white
-}
-.card:nth-child(2) .card-top{
-background:linear-gradient(135deg,#126b3a,#078a82)
-}
-.card:nth-child(3) .card-top{
-background:linear-gradient(135deg,#76500d,#c78a18)
-}
-.card-top h3{font-size:25px}
-.card-body{padding:25px}
-.size{
-font-size:34px;
-font-weight:900;
-color:#183b28
-}
-.card-body p{color:#68766d;margin-top:8px}
 
-/* HIGHLIGHTS */
-.green-section{background:#edf7ef}
-.grid4{
-display:grid;
-grid-template-columns:repeat(4,1fr);
-gap:18px
+.btn-green{
+  background:var(--green2);
+  color:white;
 }
-.feature{
-background:#fff;
-padding:25px 12px;
-text-align:center;
-border-radius:15px;
-box-shadow:0 5px 18px #0000000b
-}
-.feature .icon{font-size:34px}
-.feature h3{font-size:16px;margin-top:7px}
-.feature p{font-size:13px;color:#718078}
 
-/* ABOUT */
-.about{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:45px;
-align-items:center
+.btn-white{
+  background:#fff;
+  color:#111;
 }
-.about-img{
-height:430px;
-border-radius:22px;
-background:url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=85") center/cover
-}
-.about h2{font-size:40px;line-height:1.15;margin:10px 0 18px}
-.about p{color:#68766d;margin-bottom:18px}
-.check{margin:12px 0;font-weight:bold}
-.check span{color:#159447;margin-right:8px}
 
-/* LOCATION */
+.hero-mini{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.hero-mini div{
+  background:rgba(0,0,0,.55);
+  border:1px solid rgba(255,255,255,.25);
+  padding:10px 15px;
+  border-radius:12px;
+  backdrop-filter:blur(8px);
+}
+
+/* ================= TICKER ================= */
+
+.ticker{
+  background:var(--green);
+  color:white;
+  overflow:hidden;
+  white-space:nowrap;
+}
+
+.ticker-inner{
+  padding:13px;
+  text-align:center;
+  font-weight:800;
+}
+
+.ticker span{
+  color:var(--gold2);
+  margin:0 15px;
+}
+
+/* ================= SECTION ================= */
+
+section{
+  padding:85px 0;
+}
+
+.section-title{
+  text-align:center;
+  max-width:750px;
+  margin:0 auto 45px;
+}
+
+.section-title .small{
+  color:var(--green2);
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:2px;
+}
+
+.section-title h2{
+  font-size:clamp(32px,5vw,48px);
+  line-height:1.1;
+  margin:10px 0;
+}
+
+.section-title p{
+  color:var(--muted);
+}
+
+/* ================= CHOICE ================= */
+
+.choice{
+  background:linear-gradient(135deg,#f7fff9,#fffaf0);
+}
+
+.choice-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+}
+
+.choice-card{
+  padding:32px;
+  border-radius:var(--radius);
+  background:white;
+  box-shadow:var(--shadow);
+  text-align:center;
+  transition:.3s;
+  cursor:pointer;
+}
+
+.choice-card:hover{
+  transform:translateY(-8px);
+}
+
+.choice-icon{
+  font-size:45px;
+  margin-bottom:15px;
+}
+
+.choice-card h3{
+  margin-bottom:10px;
+}
+
+.choice-card p{
+  color:var(--muted);
+}
+
+/* ================= PLOTS ================= */
+
+.plots{
+  background:#fff;
+}
+
+.plot-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:24px;
+}
+
+.plot-card{
+  border:1px solid #e5e8e5;
+  border-radius:var(--radius);
+  padding:28px;
+  background:#fff;
+  box-shadow:0 10px 35px rgba(0,0,0,.07);
+  position:relative;
+  overflow:hidden;
+}
+
+.plot-card.featured{
+  border:2px solid var(--gold);
+  transform:translateY(-8px);
+}
+
+.plot-tag{
+  position:absolute;
+  top:16px;
+  right:16px;
+  background:var(--gold);
+  padding:6px 12px;
+  border-radius:30px;
+  font-size:12px;
+  font-weight:900;
+}
+
+.plot-size{
+  font-size:42px;
+  font-weight:900;
+  color:var(--green);
+}
+
+.plot-price{
+  font-size:25px;
+  font-weight:900;
+  margin:8px 0 18px;
+}
+
+.plot-card ul{
+  list-style:none;
+  margin:20px 0;
+}
+
+.plot-card li{
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+}
+
+.plot-card li::before{
+  content:"✓";
+  color:var(--green2);
+  font-weight:900;
+  margin-right:8px;
+}
+
+/* ================= VILLA ================= */
+
+.villa{
+  background:
+  linear-gradient(110deg,#063d29,#092b20);
+  color:white;
+}
+
+.villa-wrapper{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+.villa-image{
+  min-height:500px;
+  border-radius:28px;
+  background:
+  linear-gradient(rgba(0,0,0,.08),rgba(0,0,0,.25)),
+  url("https://gangarivera.com/wp-content/uploads/2026/04/1-1.jpg")
+  center/cover no-repeat;
+  box-shadow:0 25px 70px rgba(0,0,0,.35);
+}
+
+.villa-content .small{
+  color:var(--gold2);
+  font-weight:900;
+  letter-spacing:2px;
+}
+
+.villa-content h2{
+  font-size:clamp(36px,5vw,58px);
+  line-height:1.05;
+  margin:10px 0 20px;
+}
+
+.villa-price{
+  display:inline-block;
+  background:var(--gold);
+  color:#111;
+  padding:12px 20px;
+  border-radius:12px;
+  font-size:27px;
+  font-weight:900;
+  margin:20px 0;
+}
+
+.villa-features{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin:20px 0;
+}
+
+.villa-feature{
+  background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,255,255,.13);
+  padding:14px;
+  border-radius:12px;
+}
+
+.villa-note{
+  font-size:12px;
+  opacity:.75;
+  margin-top:15px;
+}
+
+/* ================= AMENITIES ================= */
+
+.amenities{
+  background:#f5faf6;
+}
+
+.amenity-grid{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:15px;
+}
+
+.amenity{
+  background:#fff;
+  padding:25px 12px;
+  border-radius:18px;
+  text-align:center;
+  box-shadow:0 8px 25px rgba(0,0,0,.06);
+  transition:.25s;
+}
+
+.amenity:hover{
+  transform:translateY(-5px);
+}
+
+.amenity-icon{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.amenity h4{
+  font-size:14px;
+}
+
+/* ================= CURIOSITY ================= */
+
+.curiosity{
+  min-height:430px;
+  display:flex;
+  align-items:center;
+  color:#fff;
+  background:
+  linear-gradient(rgba(0,25,15,.72),rgba(0,25,15,.72)),
+  url("https://gangarivera.com/wp-content/uploads/2026/04/2-1.jpg")
+  center/cover;
+}
+
+.curiosity-box{
+  max-width:850px;
+}
+
+.curiosity h2{
+  font-size:clamp(34px,6vw,62px);
+  line-height:1.05;
+  margin:15px 0;
+}
+
+.curiosity p{
+  font-size:20px;
+  max-width:700px;
+}
+
+/* ================= HIGHLIGHTS ================= */
+
+.highlight-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.highlight{
+  padding:25px;
+  border-radius:18px;
+  background:#fff;
+  box-shadow:var(--shadow);
+  border-top:4px solid var(--green2);
+}
+
+.highlight-icon{
+  font-size:34px;
+}
+
+.highlight h3{
+  margin:10px 0;
+}
+
+.highlight p{
+  color:var(--muted);
+  font-size:14px;
+}
+
+/* ================= LOCATION ================= */
+
 .location-section{
-background:#123c27;
-color:white
+  background:#fffaf0;
 }
+
 .location-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:45px;
-align-items:center
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:stretch;
 }
-.location-section h2{font-size:40px;margin:10px 0}
-.location-section p{color:#d4e3da}
-.location-cards{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:15px;
-margin-top:25px
-}
+
 .location-card{
-background:#ffffff12;
-padding:20px;
-border-radius:12px
-}
-.location-card strong{
-display:block;
-color:#ffd32a;
-font-size:20px
+  padding:35px;
+  border-radius:var(--radius);
+  background:#fff;
+  box-shadow:var(--shadow);
 }
 
-/* LOAN */
-.loan-box{
-max-width:850px;
-margin:auto;
-text-align:center;
-background:#fff;
-padding:45px 25px;
-border-radius:22px;
-box-shadow:0 8px 30px #00000010
+.location-card ul{
+  list-style:none;
+  margin-top:20px;
 }
-.loan-box h2{font-size:40px;color:#126b3a}
-.loan-box p{color:#68766d;margin:12px auto 20px}
 
-/* FORM */
-.form-section{background:#eef6f0}
-.form{
-max-width:750px;
-margin:auto;
-background:#fff;
-padding:32px;
-border-radius:20px;
-box-shadow:0 8px 30px #00000012
+.location-card li{
+  padding:12px 0;
+  border-bottom:1px solid #eee;
 }
-.form h2{text-align:center}
-.form>p{text-align:center;color:#718078;margin-bottom:20px}
+
+.location-card li::before{
+  content:"📍";
+  margin-right:10px;
+}
+
+.map-box{
+  border-radius:var(--radius);
+  min-height:390px;
+  background:
+  linear-gradient(rgba(6,61,41,.1),rgba(6,61,41,.1)),
+  url("https://gangarivera.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-14-at-17.03.53-e1778761781497-1024x572.jpeg")
+  center/cover;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.map-label{
+  background:white;
+  padding:20px 25px;
+  border-radius:15px;
+  text-align:center;
+  box-shadow:var(--shadow);
+}
+
+/* ================= GALLERY ================= */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.gallery img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+  border-radius:18px;
+  transition:.3s;
+}
+
+.gallery img:hover{
+  transform:scale(1.03);
+}
+
+/* ================= FORM ================= */
+
+.enquiry{
+  background:linear-gradient(135deg,#f5fff7,#fff9ed);
+}
+
+.form-box{
+  max-width:850px;
+  margin:auto;
+  background:white;
+  padding:40px;
+  border-radius:28px;
+  box-shadow:var(--shadow);
+}
+
 .form-grid{
-display:grid;
-grid-template-columns:1fr 1fr;
-gap:14px
-}
-input,select,textarea{
-width:100%;
-padding:14px;
-border:1px solid #dce6df;
-border-radius:8px;
-font-size:15px
-}
-textarea{height:100px;resize:vertical}
-.full{grid-column:1/-1}
-.submit{
-width:100%;
-border:0;
-background:#e53935;
-color:white;
-padding:15px;
-border-radius:8px;
-font-size:16px;
-font-weight:bold;
-cursor:pointer
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
 }
 
-/* FOOTER */
+.form-group{
+  display:flex;
+  flex-direction:column;
+  gap:7px;
+}
+
+.form-group.full{
+  grid-column:1/-1;
+}
+
+.form-group label{
+  font-weight:800;
+  font-size:14px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea{
+  padding:14px;
+  border:1px solid #dfe5df;
+  border-radius:10px;
+  outline:none;
+  background:#fff;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus{
+  border-color:var(--green2);
+}
+
+textarea{
+  min-height:110px;
+  resize:vertical;
+}
+
+/* ================= FOOTER ================= */
+
 footer{
-background:#082519;
-color:white;
-text-align:center;
-padding:45px 0 80px
-}
-footer h2{font-size:30px}
-footer p{color:#b8c8bf;margin:8px 0}
-.phone{
-font-size:23px;
-font-weight:bold;
-color:#ffd32a
+  background:#061c14;
+  color:white;
+  padding:50px 0 90px;
 }
 
-/* FLOAT */
-.float{
-position:fixed;
-right:18px;
-bottom:18px;
-z-index:1000;
-width:58px;
-height:58px;
-border-radius:50%;
-background:#19a852;
-color:white;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-box-shadow:0 5px 20px #0004
+.footer-grid{
+  display:grid;
+  grid-template-columns:2fr 1fr 1fr;
+  gap:35px;
 }
 
-/* MOBILE */
-@media(max-width:800px){
-.nav a:not(.whatsapp){display:none}
-.hero{min-height:650px}
-.hero h1{font-size:40px}
-.hero p{font-size:17px}
-.grid3{grid-template-columns:1fr}
-.grid4{grid-template-columns:1fr 1fr}
-.about,.location-grid{grid-template-columns:1fr}
-.about-img{height:300px}
-.about h2,.location-section h2{font-size:32px}
-.form-grid{grid-template-columns:1fr}
-.full{grid-column:auto}
+footer h3{
+  margin-bottom:15px;
+  color:var(--gold2);
 }
 
-@media(max-width:450px){
-.container{width:94%}
-section{padding:55px 0}
-.hero{min-height:680px}
-.hero h1{font-size:35px}
-.btn{display:block;text-align:center}
-.location-cards{grid-template-columns:1fr}
-.form{padding:22px}
-.title h2{font-size:30px}
+footer p,
+footer li{
+  color:#cbd7d0;
+  font-size:14px;
 }
+
+footer ul{
+  list-style:none;
+}
+
+footer li{
+  padding:5px 0;
+}
+
+.copyright{
+  border-top:1px solid rgba(255,255,255,.1);
+  margin-top:35px;
+  padding-top:20px;
+  font-size:12px;
+  color:#9daaa4;
+}
+
+/* ================= FLOATING BUTTONS ================= */
+
+.float-buttons{
+  position:fixed;
+  right:18px;
+  bottom:20px;
+  z-index:1100;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+.float-btn{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:white;
+  font-size:23px;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.whatsapp{
+  background:#16b956;
+}
+
+.call{
+  background:#1267d6;
+}
+
+.visit{
+  background:#e3ad00;
+}
+
+/* ================= POPUP ================= */
+
+.popup-overlay{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.7);
+  z-index:2000;
+  display:none;
+  align-items:center;
+  justify-content:center;
+  padding:20px;
+  backdrop-filter:blur(5px);
+}
+
+.popup-overlay.show{
+  display:flex;
+}
+
+.popup{
+  width:min(500px,100%);
+  background:white;
+  border-radius:25px;
+  padding:35px;
+  position:relative;
+  box-shadow:0 30px 90px rgba(0,0,0,.35);
+  animation:popup .35s ease;
+}
+
+@keyframes popup{
+  from{
+    opacity:0;
+    transform:scale(.9) translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:scale(1) translateY(0);
+  }
+}
+
+.close{
+  position:absolute;
+  right:15px;
+  top:12px;
+  width:35px;
+  height:35px;
+  border:0;
+  border-radius:50%;
+  background:#eee;
+  cursor:pointer;
+  font-size:20px;
+}
+
+.popup .badge{
+  margin-bottom:12px;
+}
+
+.popup h2{
+  font-size:30px;
+  line-height:1.1;
+  margin-bottom:10px;
+}
+
+.popup p{
+  color:var(--muted);
+  margin-bottom:20px;
+}
+
+.popup-options{
+  display:grid;
+  gap:10px;
+}
+
+.popup-option{
+  padding:15px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  cursor:pointer;
+  font-weight:800;
+  background:white;
+  transition:.2s;
+}
+
+.popup-option:hover{
+  border-color:var(--green2);
+  background:#f3fff6;
+}
+
+/* ================= MOBILE BAR ================= */
+
+.mobile-bar{
+  display:none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:900px){
+
+  .navlinks{
+    display:none;
+  }
+
+  .nav-btn{
+    padding:10px 13px;
+    font-size:12px;
+  }
+
+  .hero{
+    min-height:720px;
+  }
+
+  .hero h1{
+    font-size:45px;
+  }
+
+  .choice-grid,
+  .plot-grid,
+  .villa-wrapper,
+  .location-grid{
+    grid-template-columns:1fr;
+  }
+
+  .plot-card.featured{
+    transform:none;
+  }
+
+  .villa-image{
+    min-height:350px;
+  }
+
+  .amenity-grid{
+    grid-template-columns:repeat(3,1fr);
+  }
+
+  .highlight-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .footer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .mobile-bar{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    z-index:1200;
+    background:#fff;
+    box-shadow:0 -5px 20px rgba(0,0,0,.15);
+  }
+
+  .mobile-bar a{
+    text-align:center;
+    padding:14px;
+    font-weight:900;
+  }
+
+  .mobile-bar a:first-child{
+    background:#16b956;
+    color:#fff;
+  }
+
+  .mobile-bar a:last-child{
+    background:var(--gold);
+    color:#111;
+  }
+
+}
+
+@media(max-width:600px){
+
+  section{
+    padding:65px 0;
+  }
+
+  .hero{
+    min-height:720px;
+  }
+
+  .hero-content{
+    padding:50px 0 80px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .hero p{
+    font-size:17px;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+  }
+
+  .hero-buttons .btn{
+    width:100%;
+  }
+
+  .hero-mini{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+
+  .villa-features{
+    grid-template-columns:1fr;
+  }
+
+  .amenity-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .highlight-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .gallery img{
+    height:160px;
+  }
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .form-group.full{
+    grid-column:auto;
+  }
+
+  .form-box{
+    padding:25px 18px;
+  }
+
+  .float-buttons{
+    right:12px;
+    bottom:75px;
+  }
+
+  .float-btn{
+    width:48px;
+    height:48px;
+    font-size:20px;
+  }
+
+}
+
+/* ================= SPECIAL ================= */
+
+.pulse{
+  animation:pulse 1.8s infinite;
+}
+
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(22,185,86,.6);}
+  70%{box-shadow:0 0 0 18px rgba(22,185,86,0);}
+  100%{box-shadow:0 0 0 0 rgba(22,185,86,0);}
+}
+
 </style>
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
+
 <header>
-<div class="container nav">
+  <div class="container nav">
 
-<a href="#" class="logo">
-GANGA RIVERA
-<small>BRIJGHAT • GARHMUKTESHWAR</small>
-</a>
+    <a href="#home" class="logo">
+      GANGA<br>RIVERA
+      <span>BRIJ GHAT</span>
+    </a>
 
-<a class="whatsapp" href="https://wa.me/917834952729">
-WhatsApp
-</a>
+    <nav class="navlinks">
+      <a href="#home">Home</a>
+      <a href="#plots">Plots</a>
+      <a href="#villas">Villas</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#location">Location</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#enquiry">Contact</a>
+    </nav>
 
-</div>
+    <a class="nav-btn"
+       href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20Ganga%20Rivera%20details."
+       target="_blank">
+      WhatsApp Now
+    </a>
+
+  </div>
 </header>
 
 
-<!-- HERO -->
-<section class="hero">
-<div class="container hero-content">
+<!-- ================= HERO ================= -->
 
-<div class="badge">🌿 Nature • Peace • Better Lifestyle</div>
+<section class="hero" id="home">
 
-<h1>
-क्यों <span>Ganga Rivera</span><br>
-बन रहा है लोगों की पहली पसंद?
-</h1>
+  <div class="container">
 
-<p>
-गंगा के शांत वातावरण के करीब Brijghat,
-Garhmukteshwar में अपने भविष्य के लिए
-एक बेहतर property option explore करें।
-</p>
+    <div class="hero-content">
 
-<div class="location">
-📍 Brijghat, Garhmukteshwar — NH-9 Corridor
-</div>
+      <div class="badge">
+        🌿 LIVE THE HEALTHY LIFE
+      </div>
 
-<a class="btn btn-red" href="#enquiry">📅 BOOK SITE VISIT</a>
+      <h1>
+        Your Own Space<br>
+        <span>Near The Holy Ganga</span>
+      </h1>
 
-<a class="btn btn-green"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20details.">
-💬 GET DETAILS
-</a>
+      <p>
+        Premium Residential Plots & Executive Villas
+        at Ganga Rivera, Brijghat – Garhmukteshwar.
+        Nature, Comfort, Connectivity & Lifestyle — all together.
+      </p>
 
-</div>
+      <div class="location">
+        📍 Brijghat, Garhmukteshwar — NH-9 Corridor
+      </div>
+
+      <div class="hero-buttons">
+
+        <a href="#plots" class="btn btn-gold">
+          🏡 Explore Plots
+        </a>
+
+        <a href="#villas" class="btn btn-white">
+          🏠 Explore Villas
+        </a>
+
+        <a href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20Ganga%20Rivera%20project%20details."
+           target="_blank"
+           class="btn btn-green">
+          💬 Get Complete Details
+        </a>
+
+      </div>
+
+      <div class="hero-mini">
+
+        <div>100 / 120 / 200 Gaj Plots</div>
+        <div>900 Sq.Ft Executive Villa</div>
+        <div>Modern Amenities</div>
+        <div>Site Visit Available</div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- PLOTS -->
-<section id="plots">
-<div class="container">
+<!-- ================= TICKER ================= -->
 
-<div class="title">
-<small>PLOT OPTIONS</small>
-<h2>अपने लिए सही Plot चुनें</h2>
-<p>
-Ganga Rivera में 100, 120 और 200 गज के
-plot options उपलब्धता के अनुसार explore करें।
-</p>
-</div>
+<div class="ticker">
+  <div class="ticker-inner">
 
-<div class="grid3">
+    GANGA RIVERA
+    <span>•</span>
+    PLOTS
+    <span>•</span>
+    EXECUTIVE VILLAS
+    <span>•</span>
+    NATURE
+    <span>•</span>
+    COMFORT
+    <span>•</span>
+    LUXURY
+    <span>•</span>
+    BRJIGHAT
 
-<div class="card">
-<div class="card-top">
-<h3>100 Gaj</h3>
-<p>Smart & Practical Space</p>
-</div>
-<div class="card-body">
-<div class="size">100 गज</div>
-<p>घर, weekend use या future planning के लिए suitable option.</p>
-</div>
+  </div>
 </div>
 
-<div class="card">
-<div class="card-top">
-<h3>120 Gaj</h3>
-<p>More Space</p>
-</div>
-<div class="card-body">
-<div class="size">120 गज</div>
-<p>Family requirements और बेहतर space planning के लिए.</p>
-</div>
-</div>
 
-<div class="card">
-<div class="card-top">
-<h3>200 Gaj</h3>
-<p>Premium Space</p>
-</div>
-<div class="card-body">
-<div class="size">200 गज</div>
-<p>बड़े घर और premium space requirement के लिए.</p>
-</div>
-</div>
+<!-- ================= CHOICE ================= -->
 
-</div>
-</div>
+<section class="choice">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        Choose Your Space
+      </div>
+
+      <h2>
+        Aap Ganga Rivera mein kya explore karna chahte hain?
+      </h2>
+
+      <p>
+        Apni requirement ke according option select karein.
+      </p>
+
+    </div>
+
+
+    <div class="choice-grid">
+
+      <div class="choice-card"
+           onclick="scrollToSection('plots')">
+
+        <div class="choice-icon">🌳</div>
+
+        <h3>Residential Plot</h3>
+
+        <p>
+          100, 120 & 200 Gaj ke plot options.
+          Apne ghar ya future planning ke liye.
+        </p>
+
+      </div>
+
+
+      <div class="choice-card"
+           onclick="scrollToSection('villas')">
+
+        <div class="choice-icon">🏡</div>
+
+        <h3>Executive Villa</h3>
+
+        <p>
+          900 Sq.Ft Executive Villa,
+          2 BHK concept aur premium lifestyle.
+        </p>
+
+      </div>
+
+
+      <div class="choice-card"
+           onclick="openPopup()">
+
+        <div class="choice-icon">📅</div>
+
+        <h3>Site Visit</h3>
+
+        <p>
+          Project ko khud dekhiye.
+          Location, roads, amenities aur available options samajhiye.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- ABOUT -->
+<!-- ================= PLOTS ================= -->
+
+<section class="plots" id="plots">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        Residential Plots
+      </div>
+
+      <h2>
+        Your Land. Your Future.
+      </h2>
+
+      <p>
+        Ganga Rivera mein available plot options ko explore karein.
+      </p>
+
+    </div>
+
+
+    <div class="plot-grid">
+
+
+      <div class="plot-card featured">
+
+        <div class="plot-tag">
+          POPULAR
+        </div>
+
+        <div class="plot-size">
+          100 Gaj
+        </div>
+
+        <div class="plot-price">
+          ₹18 Lakh* Onwards
+        </div>
+
+        <ul>
+          <li>Residential Plot</li>
+          <li>Ganga Rivera Township</li>
+          <li>Modern Amenities</li>
+          <li>Site Visit Available</li>
+          <li>Price subject to availability</li>
+        </ul>
+
+        <button
+          class="btn btn-green"
+          style="width:100%;"
+          onclick="openLead('100 Gaj Plot')">
+          Check Availability →
+        </button>
+
+      </div>
+
+
+      <div class="plot-card">
+
+        <div class="plot-size">
+          120 Gaj
+        </div>
+
+        <div class="plot-price">
+          Price on Request
+        </div>
+
+        <ul>
+          <li>Residential Plot</li>
+          <li>Planned Township</li>
+          <li>Green Spaces</li>
+          <li>Wide Internal Roads</li>
+          <li>Site Visit Available</li>
+        </ul>
+
+        <button
+          class="btn btn-green"
+          style="width:100%;"
+          onclick="openLead('120 Gaj Plot')">
+          Get Price →
+        </button>
+
+      </div>
+
+
+      <div class="plot-card">
+
+        <div class="plot-size">
+          200 Gaj
+        </div>
+
+        <div class="plot-price">
+          Price on Request
+        </div>
+
+        <ul>
+          <li>Large Residential Plot</li>
+          <li>Gated Township</li>
+          <li>Premium Location</li>
+          <li>Modern Amenities</li>
+          <li>Site Visit Available</li>
+        </ul>
+
+        <button
+          class="btn btn-green"
+          style="width:100%;"
+          onclick="openLead('200 Gaj Plot')">
+          Get Price →
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <p style="text-align:center;margin-top:25px;font-size:12px;color:#777;">
+      *Prices are indicative and may change. Availability is subject to
+      current inventory and applicable terms.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- ================= VILLA ================= -->
+
+<section class="villa" id="villas">
+
+  <div class="container villa-wrapper">
+
+
+    <div class="villa-image"></div>
+
+
+    <div class="villa-content">
+
+      <div class="small">
+        PREMIUM VILLA OFFER
+      </div>
+
+      <h2>
+        900 Sq.Ft<br>
+        Executive Villa
+      </h2>
+
+      <p>
+        Nature ke paas ek premium lifestyle.
+        Ganga Rivera ke Executive Villa option ko explore karein —
+        modern design, green surroundings aur comfortable living ke saath.
+      </p>
+
+      <div class="villa-price">
+        ₹49.99 Lac*
+      </div>
+
+
+      <div class="villa-features">
+
+        <div class="villa-feature">
+          🏠 <b>900 Sq.Ft</b><br>
+          Executive Villa
+        </div>
+
+        <div class="villa-feature">
+          🛏️ <b>2 BHK</b><br>
+          Villa Concept
+        </div>
+
+        <div class="villa-feature">
+          🌳 <b>Large Green Spaces</b><br>
+          Nature Connected Living
+        </div>
+
+        <div class="villa-feature">
+          🛡️ <b>24×7 Security</b><br>
+          Gated Community
+        </div>
+
+        <div class="villa-feature">
+          🛣️ <b>Wide Roads</b><br>
+          Street Lights
+        </div>
+
+        <div class="villa-feature">
+          💰 <b>Rent Potential</b><br>
+          ₹25,000/month* till possession
+        </div>
+
+      </div>
+
+
+      <p style="font-size:17px;font-weight:800;">
+        🏦 Up to 80% Bank Loan Facility*
+      </p>
+
+
+      <div class="hero-buttons" style="margin-top:20px;">
+
+        <button
+          class="btn btn-gold"
+          onclick="openLead('900 Sq.Ft Executive Villa')">
+          🏡 Get Villa Details
+        </button>
+
+        <a
+          href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20the%20900%20Sq.Ft%20Executive%20Villa%20at%20Ganga%20Rivera."
+          target="_blank"
+          class="btn btn-white">
+          💬 WhatsApp
+        </a>
+
+      </div>
+
+
+      <div class="villa-note">
+        *Villa price, rental/possession offer, loan availability and
+        other commercial terms are subject to availability, applicant
+        eligibility, lender approval and applicable project terms.
+        Please verify current offer before booking.
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= AMENITIES ================= -->
+
+<section class="amenities" id="amenities">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <div class="small">
+        Lifestyle & Amenities
+      </div>
+
+      <h2>
+        Sirf Plot Nahi — Ek Lifestyle
+      </h2>
+
+      <p>
+        Ganga Rivera mein nature aur modern infrastructure ka combination.
+      </p>
+
+    </div>
+
+
+    <div class="amenity-grid">
+
+      <div class="amenity">
+        <div class="amenity-icon">🌊</div>
+        <h4>Holy Ganga Nearby</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🛣️</div>
+        <h4>NH-9 Connectivity</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🏘️</div>
+        <h4>Gated Township</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🏊</div>
+        <h4>Clubhouse & Pool</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🏋️</div>
+        <h4>Gymnasium</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🌳</div>
+        <h4>Parks & Green Spaces</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🛡️</div>
+        <h4>24×7 Security</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">👨‍👩‍👧</div>
+        <h4>Kids Zone</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">🧘</div>
+        <h4>Meditation Centre</h4>
+      </div>
+
+      <div class="amenity">
+        <div class="amenity-icon">💡</div>
+        <h4>Wide Roads & Lights</h4>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= CURIOSITY ================= -->
+
+<section class="curiosity">
+
+  <div class="container">
+
+    <div class="curiosity-box">
+
+      <div class="badge">
+        THINK BEYOND TODAY
+      </div>
+
+      <h2>
+        Kya Ganga Rivera sirf ek Plot hai?
+      </h2>
+
+      <p>
+        Ya phir aapke aane wale kal ki ek jagah?
+      </p>
+
+      <p style="margin-top:15px;">
+        Location dekhiye. Connectivity samajhiye.
+        Amenities explore kijiye. Aur project ko khud visit karke
+        apna decision lijiye.
+      </p>
+
+      <button
+        class="btn btn-gold"
+        style="margin-top:25px;"
+        onclick="openPopup()">
+        Explore Ganga Rivera →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ================= HIGHLIGHTS ================= -->
+
 <section>
-<div class="container about">
 
-<div class="about-img"></div>
+  <div class="container">
 
-<div>
-<small style="color:#168449;font-weight:bold">ABOUT GANGA RIVERA</small>
+    <div class="section-title">
 
-<h2>
-जहाँ Property के साथ मिले Better Lifestyle
-</h2>
+      <div class="small">
+        Project Highlights
+      </div>
 
-<p>
-Ganga Rivera, Brijghat, Garhmukteshwar में
-residential और weekend property options को
-peaceful surroundings और connectivity के साथ
-explore करने का अवसर देता है।
-</p>
+      <h2>
+        Why Explore Ganga Rivera?
+      </h2>
 
-<div class="check"><span>✓</span> Peaceful & Green Surroundings</div>
-<div class="check"><span>✓</span> Planned Development</div>
-<div class="check"><span>✓</span> Gated Community Environment</div>
-<div class="check"><span>✓</span> Family & Weekend Living</div>
-<div class="check"><span>✓</span> NH-9 Connectivity</div>
+      <p>
+        A project designed around location, lifestyle and everyday convenience.
+      </p>
 
-</div>
-</div>
+    </div>
+
+
+    <div class="highlight-grid">
+
+      <div class="highlight">
+        <div class="highlight-icon">🏘️</div>
+        <h3>Gated Community</h3>
+        <p>
+          Planned environment with security-focused community living.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <div class="highlight-icon">🛣️</div>
+        <h3>Wide Internal Roads</h3>
+        <p>
+          Project planning includes wide internal roads and street lighting.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <div class="highlight-icon">🌿</div>
+        <h3>Clean & Green</h3>
+        <p>
+          Green spaces designed for a peaceful lifestyle.
+        </p>
+      </div>
+
+      <div class="highlight">
+        <div class="highlight-icon">📍</div>
+        <h3>Strategic Location</h3>
+        <p>
+          Brijghat and Garhmukteshwar location with NH-9 connectivity.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- AMENITIES -->
-<section class="green-section" id="amenities">
-<div class="container">
+<!-- ================= LOCATION ================= -->
 
-<div class="title">
-<small>PROJECT HIGHLIGHTS</small>
-<h2>Premium Amenities</h2>
-<p>
-Project में उपलब्ध/प्रस्तावित सुविधाओं की जानकारी
-developer से confirm करके देखें।
-</p>
-</div>
-
-<div class="grid4">
-
-<div class="feature">
-<div class="icon">🏘️</div>
-<h3>Gated Community</h3>
-<p>Community environment</p>
-</div>
-
-<div class="feature">
-<div class="icon">🏡</div>
-<h3>Club House</h3>
-<p>Lifestyle space</p>
-</div>
-
-<div class="feature">
-<div class="icon">🏊</div>
-<h3>Swimming Pool</h3>
-<p>Recreation</p>
-</div>
-
-<div class="feature">
-<div class="icon">🏋️</div>
-<h3>Gymnasium</h3>
-<p>Fitness</p>
-</div>
-
-<div class="feature">
-<div class="icon">🌳</div>
-<h3>Parks</h3>
-<p>Green spaces</p>
-</div>
-
-<div class="feature">
-<div class="icon">🛝</div>
-<h3>Kids Play Area</h3>
-<p>Family friendly</p>
-</div>
-
-<div class="feature">
-<div class="icon">🛕</div>
-<h3>Temple</h3>
-<p>Meditation space</p>
-</div>
-
-<div class="feature">
-<div class="icon">🛣️</div>
-<h3>Internal Roads</h3>
-<p>Planned connectivity</p>
-</div>
-
-</div>
-</div>
-</section>
-
-
-<!-- LOCATION -->
 <section class="location-section" id="location">
-<div class="container location-grid">
 
-<div>
-<small style="color:#ffd32a;font-weight:bold">
-LOCATION ADVANTAGE
-</small>
+  <div class="container">
 
-<h2>Location matters in Real Estate.</h2>
+    <div class="section-title">
 
-<p>
-Ganga Rivera Brijghat, Garhmukteshwar में
-NH-9 Corridor के करीब है। Property evaluate
-करते समय location, connectivity और surrounding
-development को personally check करें।
-</p>
+      <div class="small">
+        Location Advantage
+      </div>
 
-<div class="location-cards">
+      <h2>
+        Location Matters.
+      </h2>
 
-<div class="location-card">
-<strong>📍 Brijghat</strong>
-<span>Garhmukteshwar</span>
-</div>
+      <p>
+        Ganga Rivera — Brijghat, Garhmukteshwar, NH-9 Corridor.
+      </p>
 
-<div class="location-card">
-<strong>🛣️ NH-9</strong>
-<span>Highway connectivity</span>
-</div>
+    </div>
 
-<div class="location-card">
-<strong>🌿 Nature</strong>
-<span>Peaceful surroundings</span>
-</div>
 
-<div class="location-card">
-<strong>📈 Future</strong>
-<span>Growth potential explore करें</span>
-</div>
+    <div class="location-grid">
 
-</div>
-</div>
 
-<div style="font-size:110px;text-align:center">
-🌳 🏡 🌊
-</div>
+      <div class="location-card">
 
-</div>
+        <h2>
+          📍 Project Location
+        </h2>
+
+        <p style="margin-top:10px;color:#65716b;">
+          Brijghat, Garhmukteshwar — NH-9 Corridor
+        </p>
+
+        <ul>
+
+          <li>
+            Near Brijghat & Ganga Ji
+          </li>
+
+          <li>
+            Approx. 7 mins from Gajrola industrial area*
+          </li>
+
+          <li>
+            Approx. 10 mins from Garhmukteshwar Railway Station*
+          </li>
+
+          <li>
+            Approx. 5 mins from Oxford International School*
+          </li>
+
+          <li>
+            Connected with NH-9 corridor
+          </li>
+
+          <li>
+            Ganga Expressway connectivity mentioned for the region
+          </li>
+
+        </ul>
+
+        <p style="font-size:11px;color:#888;margin-top:15px;">
+          *Travel times are approximate and may vary with traffic,
+          route and starting point.
+        </p>
+
+      </div>
+
+
+      <div class="map-box">
+
+        <div class="map-label">
+
+          <div style="font-size:40px;">📍</div>
+
+          <h3>
+            Ganga Rivera
+          </h3>
+
+          <p>
+            Brijghat<br>
+            Garhmukteshwar
+          </p>
+
+          <a
+            href="https://www.google.com/maps/search/?api=1&query=Ganga+Rivera+Brijghat+Garhmukteshwar"
+            target="_blank"
+            class="btn btn-green"
+            style="margin-top:15px;">
+            Open Google Maps
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- LOAN -->
-<section>
-<div class="container">
+<!-- ================= GALLERY ================= -->
 
-<div class="loan-box">
+<section id="gallery">
 
-<small style="color:#168449;font-weight:bold">
-FINANCING
-</small>
+  <div class="container">
 
-<h2>Bank Loan Facility</h2>
+    <div class="section-title">
 
-<p>
-Eligible buyers के लिए applicable lender terms,
-eligibility और approval के subject to loan facility
-available हो सकती है।
-</p>
+      <div class="small">
+        Project Gallery
+      </div>
 
-<a class="btn btn-red" href="#enquiry">
-Check Details
-</a>
+      <h2>
+        Feel The Ganga Rivera Lifestyle
+      </h2>
 
-</div>
-</div>
+      <p>
+        Project, nature, lifestyle aur surrounding experience ko explore karein.
+      </p>
+
+    </div>
+
+
+    <div class="gallery">
+
+      <img
+        src="https://gangarivera.com/wp-content/uploads/2026/05/WhatsApp-Image-2026-05-14-at-17.03.53-e1778761781497-1024x572.jpeg"
+        alt="Ganga Rivera">
+
+      <img
+        src="https://gangarivera.com/wp-content/uploads/2026/04/1-1.jpg"
+        alt="Ganga Rivera Villa">
+
+      <img
+        src="https://gangarivera.com/wp-content/uploads/2026/04/2-1.jpg"
+        alt="Ganga Rivera Project">
+
+      <img
+        src="https://gangarivera.com/wp-content/uploads/2024/11/grand-gold-foil-1024x1024.jpg"
+        alt="Ganga Rivera">
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- FORM -->
-<section class="form-section" id="enquiry">
+<!-- ================= ENQUIRY ================= -->
 
-<div class="container">
+<section class="enquiry" id="enquiry">
 
-<div class="title">
-<small>GET IN TOUCH</small>
-<h2>Book Your Site Visit</h2>
-<p>
-अपनी requirement share करें और project की
-available options की जानकारी प्राप्त करें।
-</p>
-</div>
+  <div class="container">
 
-<div class="form">
+    <div class="section-title">
 
-<h2>Property Enquiry</h2>
-<p>Details भरें — enquiry WhatsApp पर भेजी जाएगी।</p>
+      <div class="small">
+        Get Project Details
+      </div>
 
-<form onsubmit="sendWhatsApp(event)">
+      <h2>
+        Aap kis option ko explore karna chahte hain?
+      </h2>
 
-<div class="form-grid">
+      <p>
+        Details fill karein. Aapki requirement ke according
+        information WhatsApp par share ki jayegi.
+      </p>
 
-<input id="name" type="text" placeholder="Your Name" required>
+    </div>
 
-<input id="phone" type="tel" placeholder="WhatsApp Number" required>
 
-<select id="size" required>
-<option value="">Preferred Plot Size</option>
-<option>100 Gaj</option>
-<option>120 Gaj</option>
-<option>200 Gaj</option>
-</select>
+    <div class="form-box">
 
-<select id="purpose">
-<option value="">Purpose</option>
-<option>Self Use</option>
-<option>Investment</option>
-<option>Weekend Home</option>
-</select>
+      <form onsubmit="sendWhatsApp(event)">
 
-<select id="visit" class="full">
-<option value="">Site Visit Preference</option>
-<option>This Week</option>
-<option>Weekend</option>
-<option>Need Details First</option>
-</select>
+        <div class="form-grid">
 
-<textarea id="message" class="full"
-placeholder="Any specific requirement?"></textarea>
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required>
+          </div>
 
-<button class="submit full" type="submit">
-📲 SEND ENQUIRY ON WHATSAPP
-</button>
 
-</div>
-</form>
+          <div class="form-group">
+            <label>WhatsApp Number *</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="10 digit WhatsApp number"
+              pattern="[0-9]{10}"
+              required>
+          </div>
 
-</div>
-</div>
+
+          <div class="form-group">
+            <label>Interested In *</label>
+
+            <select id="interest" required>
+
+              <option value="">
+                Select Option
+              </option>
+
+              <option>
+                100 Gaj Plot
+              </option>
+
+              <option>
+                120 Gaj Plot
+              </option>
+
+              <option>
+                200 Gaj Plot
+              </option>
+
+              <option>
+                900 Sq.Ft Executive Villa
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+            <label>Purpose</label>
+
+            <select id="purpose">
+
+              <option>
+                Self Use
+              </option>
+
+              <option>
+                Investment
+              </option>
+
+              <option>
+                Weekend Home
+              </option>
+
+              <option>
+                Rental / Income
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Site Visit</label>
+
+            <select id="visit">
+
+              <option>
+                Yes, I want a Site Visit
+              </option>
+
+              <option>
+                Not Now
+              </option>
+
+              <option>
+                Need More Details First
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group">
+
+            <label>Budget</label>
+
+            <select id="budget">
+
+              <option>
+                Select Budget
+              </option>
+
+              <option>
+                Below ₹20 Lakh
+              </option>
+
+              <option>
+                ₹20–30 Lakh
+              </option>
+
+              <option>
+                ₹30–50 Lakh
+              </option>
+
+              <option>
+                ₹50 Lakh+
+              </option>
+
+            </select>
+
+          </div>
+
+
+          <div class="form-group full">
+
+            <label>Your Requirement</label>
+
+            <textarea
+              id="message"
+              placeholder="Tell us what you are looking for..."></textarea>
+
+          </div>
+
+
+          <div class="form-group full">
+
+            <button
+              type="submit"
+              class="btn btn-green"
+              style="width:100%;">
+              💬 Get Details on WhatsApp
+            </button>
+
+          </div>
+
+        </div>
+
+      </form>
+
+    </div>
+
+  </div>
+
 </section>
 
 
-<!-- FOOTER -->
+<!-- ================= FOOTER ================= -->
+
 <footer>
-<div class="container">
 
-<h2>GANGA RIVERA</h2>
+  <div class="container">
 
-<p>Brijghat, Garhmukteshwar — NH-9 Corridor</p>
+    <div class="footer-grid">
 
-<div class="phone">📞 78349 52729</div>
+      <div>
 
-<p>More Land. More Value. More Possibilities.</p>
+        <div class="logo" style="color:white;">
+          GANGA<br>RIVERA
+          <span style="color:#ccc;">
+            BRIJ GHAT
+          </span>
+        </div>
 
-</div>
+        <p style="margin-top:20px;">
+          Premium Residential Plots & Executive Villas
+          at Brijghat, Garhmukteshwar.
+        </p>
+
+        <p style="margin-top:15px;">
+          By Phenix Infracon
+        </p>
+
+      </div>
+
+
+      <div>
+
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li><a href="#plots">Residential Plots</a></li>
+          <li><a href="#villas">Executive Villas</a></li>
+          <li><a href="#amenities">Amenities</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+
+      </div>
+
+
+      <div>
+
+        <h3>Contact</h3>
+
+        <ul>
+
+          <li>
+            📍 Brijghat, Garhmukteshwar
+          </li>
+
+          <li>
+            📞 78349 52729
+          </li>
+
+          <li>
+            💬 WhatsApp Available
+          </li>
+
+          <li>
+            📅 Site Visit Available
+          </li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+
+    <div class="copyright">
+
+      © 2026 Ganga Rivera. All Rights Reserved.
+      <br><br>
+
+      Disclaimer: Project information, pricing, availability,
+      loan facilities, rental projections, possession-related offers
+      and other commercial terms are subject to change and applicable
+      eligibility/project terms. Images are for representation.
+      Please verify all details with the authorized sales representative
+      before making any booking or payment.
+
+    </div>
+
+  </div>
+
 </footer>
 
 
-<a class="float" href="https://wa.me/917834952729">💬</a>
+<!-- ================= FLOATING BUTTONS ================= -->
+
+<div class="float-buttons">
+
+  <a
+    class="float-btn whatsapp pulse"
+    href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera."
+    target="_blank"
+    title="WhatsApp">
+    💬
+  </a>
+
+  <a
+    class="float-btn call"
+    href="tel:+917834952729"
+    title="Call">
+    ☎
+  </a>
+
+  <button
+    class="float-btn visit"
+    onclick="openPopup()"
+    title="Site Visit">
+    📅
+  </button>
+
+</div>
+
+
+<!-- ================= MOBILE BAR ================= -->
+
+<div class="mobile-bar">
+
+  <a
+    href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20Ganga%20Rivera%20details."
+    target="_blank">
+    💬 WhatsApp
+  </a>
+
+  <a href="#enquiry">
+    📅 Book Site Visit
+  </a>
+
+</div>
+
+
+<!-- ================= POPUP ================= -->
+
+<div
+  class="popup-overlay"
+  id="popupOverlay"
+  onclick="closePopupOutside(event)">
+
+  <div class="popup">
+
+    <button
+      class="close"
+      onclick="closePopup()">
+      ×
+    </button>
+
+
+    <div class="badge">
+      BEFORE YOU DECIDE 👀
+    </div>
+
+    <h2>
+      Ganga Rivera mein aap kya explore kar rahe hain?
+    </h2>
+
+    <p>
+      Aapki requirement ke according
+      plot/villa details aur site visit information share karte hain.
+    </p>
+
+
+    <div class="popup-options">
+
+      <div
+        class="popup-option"
+        onclick="selectPopup('100 Gaj Plot')">
+        🌳 100 Gaj Plot
+      </div>
+
+      <div
+        class="popup-option"
+        onclick="selectPopup('120 Gaj Plot')">
+        🌳 120 Gaj Plot
+      </div>
+
+      <div
+        class="popup-option"
+        onclick="selectPopup('200 Gaj Plot')">
+        🌳 200 Gaj Plot
+      </div>
+
+      <div
+        class="popup-option"
+        onclick="selectPopup('900 Sq.Ft Executive Villa')">
+        🏡 900 Sq.Ft Executive Villa
+      </div>
+
+      <div
+        class="popup-option"
+        onclick="selectPopup('Site Visit')">
+        📅 I Want To Visit The Site
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
 
 
 <script>
-function sendWhatsApp(e){
 
-e.preventDefault();
+/* ================= GENERAL ================= */
 
-let name=document.getElementById("name").value;
-let phone=document.getElementById("phone").value;
-let size=document.getElementById("size").value;
-let purpose=document.getElementById("purpose").value;
-let visit=document.getElementById("visit").value;
-let message=document.getElementById("message").value;
+function scrollToSection(id){
 
-let text=
-"Hi, I am interested in Ganga Rivera.%0A%0A"+
-"Name: "+encodeURIComponent(name)+"%0A"+
-"WhatsApp: "+encodeURIComponent(phone)+"%0A"+
-"Plot Size: "+encodeURIComponent(size)+"%0A"+
-"Purpose: "+encodeURIComponent(purpose)+"%0A"+
-"Site Visit: "+encodeURIComponent(visit)+"%0A"+
-"Requirement: "+encodeURIComponent(message);
+  document.getElementById(id).scrollIntoView({
+    behavior:"smooth"
+  });
 
-window.open(
-"https://wa.me/917834952729?text="+text,
-"_blank"
-);
 }
+
+
+/* ================= POPUP ================= */
+
+function openPopup(){
+
+  document
+    .getElementById("popupOverlay")
+    .classList.add("show");
+
+}
+
+
+function closePopup(){
+
+  document
+    .getElementById("popupOverlay")
+    .classList.remove("show");
+
+}
+
+
+function closePopupOutside(event){
+
+  if(event.target.id === "popupOverlay"){
+    closePopup();
+  }
+
+}
+
+
+/* ================= POPUP OPTION ================= */
+
+function selectPopup(option){
+
+  closePopup();
+
+  setTimeout(function(){
+
+    document
+      .getElementById("enquiry")
+      .scrollIntoView({
+        behavior:"smooth"
+      });
+
+    document
+      .getElementById("interest")
+      .value = option;
+
+  },300);
+
+}
+
+
+/* ================= LEAD ================= */
+
+function openLead(option){
+
+  document
+    .getElementById("interest")
+    .value = option;
+
+  document
+    .getElementById("enquiry")
+    .scrollIntoView({
+      behavior:"smooth"
+    });
+
+}
+
+
+/* ================= WHATSAPP FORM ================= */
+
+function sendWhatsApp(event){
+
+  event.preventDefault();
+
+  const name =
+    document.getElementById("name").value.trim();
+
+  const phone =
+    document.getElementById("phone").value.trim();
+
+  const interest =
+    document.getElementById("interest").value;
+
+  const purpose =
+    document.getElementById("purpose").value;
+
+  const visit =
+    document.getElementById("visit").value;
+
+  const budget =
+    document.getElementById("budget").value;
+
+  const message =
+    document.getElementById("message").value.trim();
+
+
+  const text =
+`Hi, I am interested in Ganga Rivera.
+
+Name: ${name}
+WhatsApp: ${phone}
+Interested In: ${interest}
+Purpose: ${purpose}
+Site Visit: ${visit}
+Budget: ${budget}
+Requirement: ${message}`;
+
+
+  const url =
+    "https://wa.me/917834952729?text=" +
+    encodeURIComponent(text);
+
+
+  window.open(url,"_blank");
+
+}
+
+
+/* ================= AUTO POPUP ================= */
+
+let popupShown = false;
+
+setTimeout(function(){
+
+  if(!popupShown){
+
+    openPopup();
+
+    popupShown = true;
+
+  }
+
+},4500);
+
+
+/* ================= DESKTOP EXIT INTENT ================= */
+
+document.addEventListener(
+  "mouseleave",
+  function(event){
+
+    if(
+      event.clientY <= 5 &&
+      !popupShown
+    ){
+
+      openPopup();
+
+      popupShown = true;
+
+    }
+
+  }
+);
+
+
+/* ================= MOBILE SCROLL POPUP ================= */
+
+let mobileTriggered = false;
+
+window.addEventListener(
+  "scroll",
+  function(){
+
+    if(window.innerWidth <= 700){
+
+      const scrollPercent =
+        window.scrollY /
+        (document.documentElement.scrollHeight -
+         window.innerHeight);
+
+      if(
+        scrollPercent > .45 &&
+        !mobileTriggered &&
+        !popupShown
+      ){
+
+        openPopup();
+
+        mobileTriggered = true;
+
+      }
+
+    }
+
+  }
+);
+
 </script>
 
 </body>
