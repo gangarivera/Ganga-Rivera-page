@@ -3,583 +3,928 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<meta name="description" content="Ganga Rivera, Brijghat Garhmukteshwar - Premium residential and weekend plots in 100, 120 and 200 Gaj options.">
+<meta name="theme-color" content="#032f27">
 <title>Ganga Rivera | Brijghat Garhmukteshwar</title>
 
-<meta name="description" content="Ganga Rivera Premium Residential & Weekend Plots at Brijghat, Garhmukteshwar – NH-9 Corridor. 100, 120 & 200 Gaj Plot Options.">
-
 <style>
-
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+:root{
+--bg:#031f1a;
+--bg2:#06372e;
+--card:#0a4538;
+--card2:#0d5142;
+--gold:#ffc928;
+--green:#16c784;
+--green2:#0b9f68;
+--text:#f4fff9;
+--muted:#b8d2ca;
+--line:rgba(255,255,255,.11);
+--shadow:0 20px 60px rgba(0,0,0,.35)
 }
 
-html{
-    scroll-behavior:smooth;
-}
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
 
 body{
-    font-family:Arial,Helvetica,sans-serif;
-    background:#031f1a;
-    color:#fff;
-    line-height:1.6;
+margin:0;
+font-family:Arial,Helvetica,sans-serif;
+background:radial-gradient(circle at 80% 0,#0c5142 0,#031f1a 40%,#021813 100%);
+color:var(--text);
+line-height:1.65
 }
 
-a{
-    text-decoration:none;
-    color:inherit;
-}
+a{text-decoration:none;color:inherit}
+
+button,input,select,textarea{font:inherit}
+
+img{max-width:100%;display:block}
 
 .container{
-    width:92%;
-    max-width:1200px;
-    margin:auto;
+width:min(1180px,92%);
+margin:auto
 }
 
-/* ================= HEADER ================= */
-
-header{
-    position:sticky;
-    top:0;
-    z-index:1000;
-    background:rgba(2,31,26,.97);
-    border-bottom:1px solid rgba(244,197,66,.25);
-    backdrop-filter:blur(12px);
+.topbar{
+position:sticky;
+top:0;
+z-index:1000;
+background:rgba(2,25,21,.93);
+backdrop-filter:blur(12px);
+border-bottom:1px solid var(--line)
 }
 
 .nav{
-    min-height:72px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    gap:15px;
+min-height:76px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:18px
 }
 
-.logo-box{
-    display:flex;
-    align-items:center;
-    gap:12px;
+.brand{
+display:flex;
+align-items:center;
+gap:12px
 }
 
-.logo-box img{
-    width:72px;
-    height:52px;
-    object-fit:contain;
-    background:#fff;
-    border-radius:7px;
+.brand img{
+width:66px;
+height:48px;
+object-fit:contain;
+border-radius:8px;
+background:#fff
 }
 
-.logo-text strong{
-    display:block;
-    font-size:18px;
+.brand strong{
+display:block;
+font-size:20px
 }
 
-.logo-text span{
-    color:#f4c542;
-    font-size:11px;
-    font-weight:bold;
-    letter-spacing:1px;
+.brand span{
+display:block;
+color:var(--gold);
+font-size:12px;
+font-weight:700;
+letter-spacing:1px
 }
 
-.menu{
-    display:flex;
-    gap:20px;
-    font-size:14px;
+.navlinks{
+display:flex;
+gap:20px;
+font-size:13px;
+color:#d7ebe5
 }
 
-.menu a:hover{
-    color:#f4c542;
+.navlinks a:hover{
+color:var(--gold)
 }
 
-/* ================= HERO IMAGE ================= */
-
-.hero-image{
-    width:100%;
-    background:#000;
+.navbtn{
+background:var(--green);
+padding:11px 17px;
+border-radius:25px;
+font-weight:800;
+color:#001b15;
+border:0
 }
 
-.hero-image img{
-    display:block;
-    width:100%;
-    height:auto;
-    max-height:650px;
-    object-fit:cover;
+/* HERO */
+
+.hero{
+min-height:680px;
+position:relative;
+display:flex;
+align-items:flex-end;
+overflow:hidden;
+background:#021c17
 }
 
-/* ================= HERO CONTENT ================= */
+.hero:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+linear-gradient(90deg,rgba(1,25,20,.88) 0%,rgba(1,25,20,.48) 42%,rgba(1,25,20,.10) 75%),
+linear-gradient(0deg,rgba(1,24,19,.72),transparent 48%);
+z-index:1
+}
+
+.hero img{
+position:absolute;
+inset:0;
+width:100%;
+height:100%;
+object-fit:cover;
+object-position:center;
+filter:saturate(1.05) contrast(1.03)
+}
 
 .hero-content{
-    background:
-    radial-gradient(circle at 80% 20%,rgba(11,120,86,.35),transparent 35%),
-    linear-gradient(135deg,#073c31,#021f1a);
-    padding:55px 0;
-    border-bottom:1px solid rgba(244,197,66,.2);
+position:relative;
+z-index:2;
+padding:70px 0 65px;
+max-width:720px
 }
 
-.badge{
-    display:inline-block;
-    padding:9px 17px;
-    border:1px solid #f4c542;
-    border-radius:30px;
-    color:#ffe27b;
-    background:#07533f;
-    font-weight:bold;
-    font-size:14px;
+.eyebrow{
+display:inline-block;
+padding:9px 16px;
+border:1px solid rgba(255,201,40,.65);
+border-radius:30px;
+background:rgba(4,70,56,.75);
+color:#ffe36a;
+font-weight:800;
+letter-spacing:.4px
 }
 
-.hero-content h1{
-    font-size:clamp(42px,7vw,78px);
-    line-height:.95;
-    margin:20px 0;
+.hero h1{
+font-size:clamp(42px,7vw,78px);
+line-height:.98;
+margin:18px 0 12px
 }
 
-.hero-content h1 span{
-    color:#f4c542;
+.hero h1 span{
+color:var(--gold)
 }
 
-.hero-sub{
-    font-size:20px;
-    color:#d8ebe5;
-    max-width:750px;
+.hero p{
+font-size:20px;
+color:#e5f6f0;
+max-width:680px
 }
 
-.hero-points{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin:25px 0;
+.chips{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin:22px 0
 }
 
-.point{
-    background:rgba(255,255,255,.08);
-    border:1px solid rgba(255,255,255,.15);
-    padding:10px 16px;
-    border-radius:30px;
+.chip{
+padding:9px 14px;
+border:1px solid rgba(255,255,255,.17);
+border-radius:30px;
+background:rgba(0,0,0,.3);
+font-size:14px
 }
 
-.buttons{
-    display:flex;
-    flex-wrap:wrap;
-    gap:12px;
-    margin-top:25px;
+.actions{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+margin-top:24px
 }
 
 .btn{
-    padding:14px 22px;
-    border-radius:10px;
-    font-weight:bold;
-    border:0;
-    cursor:pointer;
-    font-size:15px;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:15px 24px;
+border-radius:12px;
+font-weight:900;
+border:1px solid transparent;
+cursor:pointer
 }
 
-.green{
-    background:#08c77c;
-    color:#fff;
+.btn.green{
+background:linear-gradient(135deg,#18d58b,#069c68);
+color:#00241b
 }
 
-.gold{
-    background:#f4c542;
-    color:#16372e;
+.btn.gold{
+background:var(--gold);
+color:#162100
 }
 
-/* ================= PRICE ================= */
-
-.price-box{
-    margin-top:30px;
-    width:230px;
-    background:linear-gradient(145deg,#087451,#064738);
-    border:2px solid #f4c542;
-    border-radius:20px;
-    padding:22px;
-    text-align:center;
+.btn.dark{
+background:rgba(0,0,0,.35);
+border-color:rgba(255,255,255,.2)
 }
 
-.price-box small{
-    display:block;
+.pricebox{
+position:absolute;
+z-index:3;
+right:5%;
+bottom:55px;
+background:linear-gradient(160deg,#087452,#034b3b);
+border:2px solid var(--gold);
+border-radius:26px;
+padding:26px 28px;
+text-align:center;
+box-shadow:var(--shadow);
+min-width:190px
 }
 
-.price-box strong{
-    display:block;
-    font-size:42px;
-    line-height:1;
-    color:#ffe16b;
-    margin:8px 0;
+.pricebox small{
+display:block;
+color:#d8f3e9;
+font-weight:700
 }
 
-/* ================= SECTION ================= */
-
-section{
-    padding:75px 0;
+.pricebox strong{
+display:block;
+color:var(--gold);
+font-size:44px;
+line-height:1.05
 }
 
-.section-title{
-    text-align:center;
-    margin-bottom:42px;
+.pricebox span{
+font-size:13px;
+color:#d2e8e0
 }
 
-.section-title small{
-    color:#f4c542;
-    font-weight:bold;
-    letter-spacing:2px;
+/* GENERAL */
+
+.section{
+padding:82px 0
 }
 
-.section-title h2{
-    font-size:40px;
-    margin:7px 0;
+.section.dark{
+background:linear-gradient(180deg,#032820,#052f27)
 }
 
-.section-title p{
-    max-width:800px;
-    margin:auto;
-    color:#b9d1ca;
+.section.alt{
+background:#021b17
 }
 
-/* ================= CARDS ================= */
+.kicker{
+text-align:center;
+color:var(--gold);
+font-weight:900;
+letter-spacing:3px;
+font-size:13px
+}
 
-.grid{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:20px;
+.section h2{
+text-align:center;
+font-size:clamp(30px,5vw,48px);
+margin:8px 0 12px
+}
+
+.lead{
+text-align:center;
+max-width:850px;
+margin:0 auto 42px;
+color:var(--muted);
+font-size:17px
+}
+
+/* INTRO */
+
+.intro{
+margin-top:-30px;
+position:relative;
+z-index:5
+}
+
+.introgrid{
+display:grid;
+grid-template-columns:1.2fr .8fr;
+gap:22px
+}
+
+.feature-card{
+background:linear-gradient(145deg,rgba(12,81,66,.98),rgba(5,46,38,.98));
+border:1px solid var(--line);
+border-radius:25px;
+padding:30px;
+box-shadow:var(--shadow)
+}
+
+.feature-card h3{
+font-size:27px;
+margin:0 0 10px
+}
+
+.feature-card p{
+color:var(--muted)
+}
+
+.statrow{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-top:22px
+}
+
+.stat{
+background:rgba(255,255,255,.055);
+padding:17px;
+border-radius:16px;
+border:1px solid var(--line);
+text-align:center
+}
+
+.stat b{
+font-size:25px;
+color:var(--gold);
+display:block
+}
+
+.logo-row{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:24px;
+flex-wrap:wrap
+}
+
+.logo-row img{
+background:#fff;
+border-radius:16px;
+padding:12px;
+width:170px;
+height:110px;
+object-fit:contain
+}
+
+/* CARDS */
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:18px
 }
 
 .card{
-    background:linear-gradient(145deg,#073d32,#062b24);
-    border:1px solid rgba(244,197,66,.17);
-    border-radius:20px;
-    padding:25px;
-    box-shadow:0 10px 30px rgba(0,0,0,.15);
+background:linear-gradient(145deg,#0a4538,#062d25);
+border:1px solid var(--line);
+border-radius:20px;
+padding:24px;
+transition:.2s;
+box-shadow:0 12px 35px rgba(0,0,0,.15)
+}
+
+.card:hover{
+transform:translateY(-3px);
+border-color:rgba(255,201,40,.45)
+}
+
+.num{
+color:var(--gold);
+font-size:12px;
+font-weight:900;
+letter-spacing:2px
 }
 
 .card h3{
-    color:#ffe078;
-    margin-bottom:10px;
+margin:7px 0;
+font-size:22px
 }
 
-.card p{
-    color:#c5d8d3;
+.card p,
+.card li{
+color:var(--muted)
 }
 
-.number{
-    color:#60dfb1;
-    font-size:13px;
-    font-weight:bold;
+.card ul{
+padding-left:19px;
+margin-bottom:0
 }
 
-/* ================= PLOTS ================= */
-
-.plot-card{
-    border-top:3px solid #f4c542;
+.badge{
+display:inline-block;
+padding:5px 9px;
+border-radius:20px;
+background:rgba(22,199,132,.12);
+color:#72e4b8;
+border:1px solid rgba(22,199,132,.25);
+font-size:11px;
+font-weight:800
 }
 
-.plot-card h3{
-    font-size:30px;
+/* PLOTS */
+
+.plots{
+grid-template-columns:repeat(3,1fr)
 }
 
-.plot-tag{
-    display:inline-block;
-    margin-top:15px;
-    padding:5px 12px;
-    background:#087451;
-    border-radius:20px;
-    font-size:12px;
+.plot{
+position:relative;
+overflow:hidden
 }
 
-/* ================= FACTS ================= */
-
-.facts-section{
-    background:linear-gradient(120deg,#07523f,#087b59);
+.plot:after{
+content:"";
+position:absolute;
+width:130px;
+height:130px;
+border-radius:50%;
+background:rgba(22,199,132,.08);
+right:-40px;
+top:-40px
 }
 
-.facts{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    gap:15px;
+.plot strong{
+font-size:34px;
+color:#fff
 }
 
-.fact{
-    text-align:center;
-    padding:22px;
-    background:rgba(255,255,255,.08);
-    border-radius:18px;
+.plot .price{
+font-size:24px;
+color:var(--gold);
+font-weight:900;
+margin-top:8px
 }
 
-.fact strong{
-    display:block;
-    color:#ffe06a;
-    font-size:28px;
+/* WHY */
+
+.why{
+grid-template-columns:repeat(2,1fr)
 }
 
-/* ================= WHY ================= */
-
-.dark-section{
-    background:#052d26;
+.why .card{
+min-height:180px
 }
 
-/* ================= NEARBY ================= */
-
-.nearby-grid{
-    display:grid;
-    grid-template-columns:repeat(2,1fr);
-    gap:20px;
+.icon{
+font-size:31px
 }
 
-.nearby-card{
-    background:#073a30;
-    border-left:4px solid #f4c542;
-    padding:22px;
-    border-radius:18px;
+/* NEARBY */
+
+.proximity{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:15px
 }
 
-.nearby-card h3{
-    color:#ffe078;
-    margin-bottom:10px;
+.place{
+background:linear-gradient(145deg,#0b4c3d,#052b23);
+border:1px solid var(--line);
+padding:19px;
+border-radius:18px
 }
 
-.nearby-card ul{
-    padding-left:20px;
-    color:#c7d9d4;
+.place h3{
+margin:0 0 5px;
+color:#fff;
+font-size:18px
 }
 
-.nearby-card li{
-    margin:5px 0;
+.place p{
+margin:0;
+color:var(--muted);
+font-size:14px
 }
 
-/* ================= GALLERY ================= */
+.distance{
+color:var(--gold);
+font-weight:900;
+font-size:13px
+}
+
+/* TABLE */
+
+.tablewrap{
+overflow:auto;
+border:1px solid var(--line);
+border-radius:18px
+}
+
+.info-table{
+width:100%;
+border-collapse:collapse;
+min-width:620px
+}
+
+.info-table th,
+.info-table td{
+padding:15px;
+border-bottom:1px solid var(--line);
+text-align:left
+}
+
+.info-table th{
+background:#0a4538;
+color:var(--gold)
+}
+
+.info-table td{
+color:#cbe0da
+}
+
+/* NEWS */
+
+.news{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:22px
+}
+
+.news img{
+width:100%;
+height:310px;
+object-fit:cover;
+border-radius:20px;
+border:1px solid var(--line)
+}
+
+.newsbox{
+background:#07382f;
+padding:28px;
+border-radius:20px;
+border:1px solid var(--line)
+}
+
+/* GALLERY */
 
 .gallery{
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:15px;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:18px
+}
+
+.gallery figure{
+margin:0;
+background:#06362d;
+border-radius:20px;
+overflow:hidden;
+border:1px solid var(--line)
 }
 
 .gallery img{
-    width:100%;
-    height:270px;
-    object-fit:cover;
-    border-radius:17px;
-    border:1px solid rgba(255,255,255,.12);
+width:100%;
+height:330px;
+object-fit:cover
 }
 
-/* ================= DOLPHIN ================= */
-
-.dolphin img{
-    width:100%;
-    max-height:430px;
-    object-fit:cover;
-    border-radius:18px;
+.gallery figcaption{
+padding:15px;
+color:#cce3dc;
+font-size:14px
 }
 
-/* ================= CTA ================= */
+/* CTA */
 
 .cta{
-    text-align:center;
-    background:
-    radial-gradient(circle at center,#0b7656,#03231e 65%);
+background:linear-gradient(135deg,#0c604c,#06372e);
+border:1px solid rgba(255,201,40,.35);
+border-radius:30px;
+padding:45px;
+text-align:center;
+box-shadow:var(--shadow)
 }
 
 .cta h2{
-    font-size:42px;
-    margin-bottom:10px;
+margin-top:0
 }
 
-.disclaimer{
-    color:#9dbab2;
-    font-size:12px;
-    margin-top:18px;
+.cta p{
+color:#cbe1da
 }
 
-/* ================= FOOTER ================= */
+.cta .actions{
+justify-content:center
+}
+
+/* FORM */
+
+.formbox{
+background:linear-gradient(145deg,#0a4a3b,#052a22);
+border:1px solid var(--line);
+border-radius:24px;
+padding:30px;
+box-shadow:var(--shadow)
+}
+
+.formgrid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:15px
+}
+
+.field label{
+display:block;
+font-size:12px;
+font-weight:800;
+color:#d5eee7;
+margin:0 0 6px
+}
+
+.field input,
+.field select,
+.field textarea{
+width:100%;
+border:1px solid rgba(255,255,255,.14);
+background:#031f1a;
+color:#fff;
+padding:13px 14px;
+border-radius:11px;
+outline:none
+}
+
+.field textarea{
+min-height:100px;
+resize:vertical
+}
+
+.full{
+grid-column:1/-1
+}
+
+.form-note{
+font-size:12px;
+color:#93b6ac;
+margin-top:10px
+}
+
+/* FOOTER */
 
 footer{
-    background:#011712;
-    padding:30px 0;
-    text-align:center;
-    color:#9fbab3;
-    font-size:13px;
+padding:42px 0;
+background:#011511;
+border-top:1px solid var(--line);
+color:#8fb1a8
 }
 
-/* ================= FLOAT BUTTON ================= */
-
-.float-buttons{
-    position:fixed;
-    right:18px;
-    bottom:18px;
-    z-index:2000;
-    display:flex;
-    flex-direction:column;
-    gap:10px;
+.footergrid{
+display:grid;
+grid-template-columns:1.3fr 1fr 1fr;
+gap:30px
 }
 
-.float-buttons a{
-    width:56px;
-    height:56px;
-    border-radius:50%;
-    display:grid;
-    place-items:center;
-    font-size:25px;
-    box-shadow:0 8px 25px #0007;
+.footergrid h3{
+color:#fff
+}
+
+.footergrid p{
+font-size:14px
+}
+
+.copyright{
+margin-top:25px;
+padding-top:18px;
+border-top:1px solid var(--line);
+font-size:12px
+}
+
+/* FLOATING */
+
+.float{
+position:fixed;
+z-index:1200;
+bottom:20px;
+width:58px;
+height:58px;
+border-radius:50%;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.4)
 }
 
 .call{
-    background:#168bd0;
+left:18px;
+background:#138bd0
 }
 
-.whatsapp{
-    background:#19d46b;
+.wa{
+right:18px;
+background:#18d56f
 }
 
-/* ================= POPUP ================= */
+/* MODAL */
 
-.popup{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.82);
-    z-index:5000;
-    align-items:center;
-    justify-content:center;
-    padding:20px;
+.modal{
+position:fixed;
+inset:0;
+z-index:2000;
+background:rgba(0,0,0,.78);
+display:none;
+align-items:center;
+justify-content:center;
+padding:16px
 }
 
-.popup-box{
-    position:relative;
-    width:100%;
-    max-width:500px;
-    background:#06362c;
-    border:2px solid #f4c542;
-    border-radius:22px;
-    padding:28px;
+.modal.show{
+display:flex
+}
+
+.modalbox{
+width:min(540px,100%);
+max-height:92vh;
+overflow:auto;
+background:linear-gradient(145deg,#0a4b3c,#03261f);
+border:1px solid rgba(255,201,40,.45);
+border-radius:25px;
+padding:28px;
+position:relative;
+box-shadow:0 30px 80px #000
 }
 
 .close{
-    position:absolute;
-    right:17px;
-    top:8px;
-    font-size:32px;
-    cursor:pointer;
+position:absolute;
+right:14px;
+top:10px;
+background:none;
+border:0;
+color:#fff;
+font-size:30px;
+cursor:pointer
 }
 
-.popup-box h2{
-    color:#ffe078;
-    margin-bottom:8px;
+.modalbox h2{
+margin-top:5px
 }
 
-.popup-box p{
-    color:#bdd1cb;
+.modalbox p{
+color:var(--muted)
 }
 
-.popup-box input,
-.popup-box select{
-    width:100%;
-    padding:13px;
-    margin-top:10px;
-    border-radius:9px;
-    border:1px solid #ffffff25;
-    background:#092820;
-    color:#fff;
+.notice{
+font-size:12px;
+color:#9dbbb3;
+background:rgba(255,255,255,.04);
+border:1px solid var(--line);
+padding:13px;
+border-radius:12px;
+margin-top:18px
 }
 
-.popup-box button{
-    width:100%;
-    margin-top:14px;
-    padding:14px;
-    border:0;
-    border-radius:9px;
-    background:#08c77c;
-    color:#fff;
-    font-weight:bold;
-    cursor:pointer;
+.verify{
+color:#ffd95b
 }
 
-/* ================= MOBILE ================= */
+/* RESPONSIVE */
 
-@media(max-width:800px){
+@media(max-width:850px){
 
-    .menu{
-        display:none;
-    }
-
-    .logo-box img{
-        width:60px;
-        height:45px;
-    }
-
-    .logo-text strong{
-        font-size:16px;
-    }
-
-    .hero-image img{
-        min-height:300px;
-        object-fit:cover;
-    }
-
-    .hero-content{
-        padding:42px 0;
-    }
-
-    .hero-content h1{
-        font-size:52px;
-    }
-
-    .hero-sub{
-        font-size:17px;
-    }
-
-    .grid{
-        grid-template-columns:1fr;
-    }
-
-    .facts{
-        grid-template-columns:repeat(2,1fr);
-    }
-
-    .nearby-grid{
-        grid-template-columns:1fr;
-    }
-
-    .gallery{
-        grid-template-columns:1fr;
-    }
-
-    .gallery img{
-        height:auto;
-        max-height:360px;
-    }
-
-    .section-title h2{
-        font-size:33px;
-    }
-
-    .cta h2{
-        font-size:34px;
-    }
+.navlinks{
+display:none
 }
 
+.hero{
+min-height:680px
+}
+
+.hero-content{
+padding:80px 0 145px
+}
+
+.hero h1{
+font-size:52px
+}
+
+.hero p{
+font-size:17px
+}
+
+.pricebox{
+right:18px;
+bottom:24px;
+min-width:150px;
+padding:18px
+}
+
+.pricebox strong{
+font-size:34px
+}
+
+.introgrid,
+.news,
+.footergrid{
+grid-template-columns:1fr
+}
+
+.cards,
+.plots,
+.proximity{
+grid-template-columns:1fr 1fr
+}
+
+.gallery{
+grid-template-columns:1fr
+}
+
+.gallery img{
+height:270px
+}
+
+.why{
+grid-template-columns:1fr
+}
+}
+
+@media(max-width:560px){
+
+.container{
+width:94%
+}
+
+.section{
+padding:62px 0
+}
+
+.hero{
+min-height:760px
+}
+
+.hero img{
+object-position:58% center
+}
+
+.hero:before{
+background:
+linear-gradient(90deg,rgba(1,25,20,.84),rgba(1,25,20,.32)),
+linear-gradient(0deg,rgba(1,24,19,.9),transparent 65%)
+}
+
+.hero-content{
+padding:80px 0 175px
+}
+
+.hero h1{
+font-size:47px
+}
+
+.hero p{
+font-size:16px
+}
+
+.pricebox{
+bottom:22px;
+right:12px
+}
+
+.actions .btn{
+width:100%
+}
+
+.statrow,
+.formgrid,
+.cards,
+.plots,
+.proximity{
+grid-template-columns:1fr
+}
+
+.logo-row img{
+width:145px;
+height:90px
+}
+
+.news img{
+height:230px
+}
+
+.cta{
+padding:30px 20px
+}
+
+.brand img{
+width:55px;
+height:43px
+}
+
+.brand strong{
+font-size:16px
+}
+
+.brand span{
+font-size:10px
+}
+}
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header>
+<header class="topbar">
 <div class="container nav">
 
-<a href="#top" class="logo-box">
-
+<a class="brand" href="#top">
 <img src="assets/ganga-logo.jpg" alt="Ganga Rivera Logo">
 
-<div class="logo-text">
+<div>
 <strong>GANGA RIVERA</strong>
 <span>BRIJ GHAT • GARMUKTESHWAR</span>
 </div>
-
 </a>
 
-<nav class="menu">
+<nav class="navlinks">
 <a href="#plots">Plots</a>
 <a href="#why">Why Invest</a>
 <a href="#nearby">Nearby</a>
@@ -587,79 +932,148 @@ footer{
 <a href="#contact">Contact</a>
 </nav>
 
+<button class="navbtn" onclick="openModal()">
+BOOK SITE VISIT
+</button>
+
 </div>
 </header>
 
 
 <main id="top">
 
-<!-- ================= HERO IMAGE ================= -->
+<!-- HERO -->
 
-<section class="hero-image">
+<section class="hero">
 
-<img
-src="assets/IMG-20260914-WA0009.png"
-alt="Ganga Rivera Premium Residential Plots"
->
+<img src="assets/IMG-20260914-WA0009.png"
+alt="Ganga Rivera entrance gate">
 
-</section>
+<div class="container hero-content">
 
-
-<!-- ================= HERO CONTENT ================= -->
-
-<section class="hero-content">
-
-<div class="container">
-
-<div class="badge">
+<div class="eyebrow">
 🌿 PREMIUM RESIDENTIAL & WEEKEND PLOTS
 </div>
 
 <h1>
-Welcome to
-<br>
+Welcome to<br>
 <span>GANGA RIVERA</span>
 </h1>
 
-<p class="hero-sub">
-<strong>Brijghat, Garhmukteshwar — NH-9 Corridor</strong>
+<p>
+<b>Brijghat, Garhmukteshwar — NH-9 Corridor</b>
 <br>
 Nature • Peace • Connectivity • Better Lifestyle
 </p>
 
-<div class="hero-points">
+<div class="chips">
 
-<div class="point">📍 Brijghat</div>
-<div class="point">🛣️ NH-9 Corridor</div>
-<div class="point">🌊 Ganga Region</div>
-<div class="point">🏡 Residential & Weekend Plots</div>
+<span class="chip">📍 Brijghat</span>
+
+<span class="chip">🛣️ NH-9 Corridor</span>
+
+<span class="chip">🌊 Ganga Region</span>
+
+<span class="chip">🏡 Residential & Weekend Plots</span>
 
 </div>
 
-<div class="buttons">
+<div class="actions">
 
 <a class="btn green" href="#plots">
 VIEW PLOT OPTIONS
 </a>
 
-<a
-class="btn gold"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details."
->
-💬 WHATSAPP DETAILS
-</a>
+<button class="btn gold" onclick="openModal()">
+GET PROJECT DETAILS
+</button>
 
 </div>
 
-<div class="price-box">
+</div>
+
+<div class="pricebox">
 
 <small>STARTING FROM</small>
 
 <strong>
-₹18<br>LAKHS*
+₹18
+<br>
+LACS*
 </strong>
 
-<small>100 Gaj • Available</small>
+<span>
+100 Gaj • limited availability
+</span>
+
+</div>
+
+</section>
+
+
+<!-- INTRO -->
+
+<section class="section intro">
+
+<div class="container introgrid">
+
+<div class="feature-card">
+
+<div class="kicker" style="text-align:left">
+GANGA RIVERA • BRIJ GHAT
+</div>
+
+<h3>
+Nature, Connectivity & A Better Way of Living
+</h3>
+
+<p>
+Ganga Rivera is positioned in the Brijghat–Garhmukteshwar region for buyers looking for a residential plot, weekend home opportunity or a long-term property option.
+</p>
+
+<div class="statrow">
+
+<div class="stat">
+<b>100</b>
+Gaj
+</div>
+
+<div class="stat">
+<b>120</b>
+Gaj
+</div>
+
+<div class="stat">
+<b>200</b>
+Gaj
+</div>
+
+</div>
+
+</div>
+
+
+<div class="feature-card">
+
+<div class="logo-row">
+
+<img src="assets/ganga-logo.jpg"
+alt="Ganga Rivera">
+
+<img src="assets/phenix-logo.jpg"
+alt="Phenix Infracon">
+
+</div>
+
+<p style="text-align:center;margin-bottom:0">
+
+<b>By Phenix Infracon Pvt. Ltd.</b>
+
+<br>
+
+Ganga Rivera • Brijghat, Garhmukteshwar
+
+</p>
 
 </div>
 
@@ -668,75 +1082,212 @@ href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%2
 </section>
 
 
-<!-- ================= PLOTS ================= -->
+<!-- PLOTS -->
 
-<section id="plots">
+<section class="section dark" id="plots">
 
 <div class="container">
 
-<div class="section-title">
-
-<small>CHOOSE YOUR SPACE</small>
-
-<h2>Plot Options</h2>
-
-<p>
-Ganga Rivera में 100, 120 और 200 गज के plot options उपलब्ध हैं।
-अपनी requirement के अनुसार suitable option explore करें।
-</p>
-
+<div class="kicker">
+CHOOSE YOUR SPACE
 </div>
 
+<h2>
+Plot Options
+</h2>
 
-<div class="grid">
+<p class="lead">
+Ganga Rivera में 100, 120 और 200 गज के plot options उपलब्ध हैं। अपनी requirement के अनुसार suitable option explore करें.
+</p>
 
-<div class="card plot-card">
 
-<span class="number">OPTION 01</span>
+<div class="cards plots">
 
-<h3>100 Gaj</h3>
+
+<div class="card plot">
+
+<span class="num">
+OPTION 01
+</span>
+
+<h3>
+<strong>100 Gaj</strong>
+</h3>
 
 <p>
 Compact residential / weekend requirement के लिए suitable plot option.
 </p>
 
-<span class="plot-tag">
+<div class="price">
 Starting from ₹18 Lakhs*
-</span>
+</div>
 
 </div>
 
 
-<div class="card plot-card">
+<div class="card plot">
 
-<span class="number">OPTION 02</span>
+<span class="num">
+OPTION 02
+</span>
 
-<h3>120 Gaj</h3>
+<h3>
+<strong>120 Gaj</strong>
+</h3>
 
 <p>
-Family use, future home या investment requirement के लिए balanced size.
+Home planning और flexible space requirement के लिए practical option.
 </p>
 
-<span class="plot-tag">
-Current Availability पूछें
-</span>
+<div class="price">
+Price on enquiry
+</div>
 
 </div>
 
 
-<div class="card plot-card">
+<div class="card plot">
 
-<span class="number">OPTION 03</span>
+<span class="num">
+OPTION 03
+</span>
 
-<h3>200 Gaj</h3>
+<h3>
+<strong>200 Gaj</strong>
+</h3>
 
 <p>
-Large space requirement, spacious home या weekend lifestyle के लिए option.
+Larger home, family use या spacious weekend requirement के लिए option.
 </p>
 
-<span class="plot-tag">
-Current Availability पूछें
-</span>
+<div class="price">
+Price on enquiry
+</div>
+
+</div>
+
+</div>
+
+
+<div class="notice">
+
+*₹18 Lakhs starting price and availability are subject to current inventory, location and applicable project terms. Please confirm the latest price before booking.
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY -->
+
+<section class="section" id="why">
+
+<div class="container">
+
+<div class="kicker">
+WHY GANGA RIVERA?
+</div>
+
+<h2>
+Why Consider This Location?
+</h2>
+
+<p class="lead">
+Brijghat–Garhmukteshwar region combines religious tourism, river-side lifestyle, education, healthcare, local commerce and industrial activity.
+</p>
+
+
+<div class="cards why">
+
+
+<div class="card">
+
+<div class="icon">🌊</div>
+
+<h3>
+Ganga & Spiritual Tourism
+</h3>
+
+<p>
+Brijghat, Garh Ganga, Ganga Ghats and historic religious destinations are located in the surrounding area.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🛣️</div>
+
+<h3>
+NH-9 Connectivity
+</h3>
+
+<p>
+Strategic location in the Garhmukteshwar–Brijghat–Gajraula belt with access to the NH-9 corridor. Project information indicates approximately 150 m proximity to NH-9; verify exact road distance.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🎓</div>
+
+<h3>
+Education Nearby
+</h3>
+
+<p>
+Multiple schools, colleges and higher-education institutions are available across the surrounding region.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏥</div>
+
+<h3>
+Healthcare Access
+</h3>
+
+<p>
+Hospitals, trauma care, primary healthcare and medical institutions are available across the Brijghat–Garhmukteshwar–Gajraula belt.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏭</div>
+
+<h3>
+Industrial & Employment Ecosystem
+</h3>
+
+<p>
+Gajraula has established industrial areas and manufacturing activity, adding an employment and economic-activity dimension to the surrounding region.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📈</div>
+
+<h3>
+Future Infrastructure Potential
+</h3>
+
+<p>
+Road infrastructure works and long-term regional planning are part of the broader development story of the Garhmukteshwar–Brijghat region.
+</p>
 
 </div>
 
@@ -747,333 +1298,535 @@ Current Availability पूछें
 </section>
 
 
-<!-- ================= FACTS ================= -->
+<!-- NEARBY -->
 
-<section class="facts-section">
+<section class="section dark" id="nearby">
 
 <div class="container">
 
-<div class="facts">
-
-<div class="fact">
-<strong>~150 m*</strong>
-NH-9 Proximity
+<div class="kicker">
+LOCATION ADVANTAGE
 </div>
 
-<div class="fact">
-<strong>100 / 120 / 200</strong>
-Gaj Options
-</div>
+<h2>
+Education, Healthcare & Daily Needs
+</h2>
 
-<div class="fact">
-<strong>Brijghat</strong>
-Ganga Region
-</div>
-
-<div class="fact">
-<strong>Site Visit</strong>
-By Appointment
-</div>
-
-</div>
-
-<p class="disclaimer">
-*NH-9 distance is a project-provided approximate figure and should be verified by site measurement.
+<p class="lead">
+Nearby names and approximate distances are provided as location-reference information. Exact distance can vary by route and should be checked before making a purchase decision.
 </p>
+
+
+<h3 style="color:var(--gold);margin-top:35px">
+🎓 Colleges & Higher Education
+</h3>
+
+<div class="proximity">
+
+
+<div class="place">
+
+<h3>
+Bhartiya Ayurvedic Medical College
+</h3>
+
+<p class="distance">
+Approx. 2.0 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Bharatiya Pharmacy College
+</h3>
+
+<p class="distance">
+Approx. 2.0 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Sanjeevani Ayurvedic Medical College
+</h3>
+
+<p class="distance">
+Approx. 2.2 km • J.P. Nagar, Gajraula
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+IMS Group of Institutions
+</h3>
+
+<p class="distance">
+Approx. 2.8 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Anekant College of Higher Education
+</h3>
+
+<p class="distance">
+Approx. 3.9 km • Gajraula
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+D R College of Education
+</h3>
+
+<p class="distance">
+Garhmukteshwar / Dotai area
+</p>
+
+</div>
+
+</div>
+
+
+<h3 style="color:var(--gold);margin-top:40px">
+🏫 Schools
+</h3>
+
+<div class="proximity">
+
+
+<div class="place">
+
+<h3>
+D.R. International School
+</h3>
+
+<p class="distance">
+Approx. 4.6 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+S.B.D Public School, Rakhera
+</h3>
+
+<p class="distance">
+Approx. 4.4 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+SK Ambedkar High School, Sultanther
+</h3>
+
+<p class="distance">
+Approx. 5.0 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Primary School, Rakhera
+</h3>
+
+<p class="distance">
+Approx. 4.0 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Dev Memorial Public School
+</h3>
+
+<p class="distance">
+Shahpur Road, Garhmukteshwar
+</p>
+
+</div>
+
+</div>
+
+
+<h3 style="color:var(--gold);margin-top:40px">
+🏥 Hospitals & Healthcare
+</h3>
+
+<div class="proximity">
+
+
+<div class="place">
+
+<h3>
+Bhartiya Hospital and Trauma Centre
+</h3>
+
+<p class="distance">
+Approx. 2.0 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Shree Balaji Hospital, Brijghat
+</h3>
+
+<p class="distance">
+Approx. 2.6 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+S.M. Hospital
+</h3>
+
+<p class="distance">
+Approx. 4.7 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Bharat Hospital
+</h3>
+
+<p class="distance">
+Approx. 4.7 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Primary Healthcare Center
+</h3>
+
+<p class="distance">
+Approx. 3.2 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+कन्हैयालाल राजकीय आयुर्वेदिक चिकित्सालय, ब्रजघाट
+</h3>
+
+<p class="distance">
+Approx. 2.3 km
+</p>
+
+</div>
+
+
+<div class="place">
+
+<h3>
+Government Hospital / CHC
+</h3>
+
+<p class="distance">
+Garhmukteshwar town
+</p>
+
+</div>
+
+</div>
 
 </div>
 
 </section>
 
 
-<!-- ================= WHY INVEST ================= -->
+<!-- CONNECTIVITY -->
 
-<section id="why" class="dark-section">
+<section class="section" id="connectivity">
 
 <div class="container">
 
-<div class="section-title">
-
-<small>LOCATION ADVANTAGE</small>
-
-<h2>Why Ganga Rivera?</h2>
-
-<p>
-Residential use, weekend lifestyle और regional connectivity को ध्यान में रखकर location advantages.
-</p>
-
+<div class="kicker">
+CONNECTED REGION
 </div>
 
+<h2>
+Road, Rail, Ganga & Local Destinations
+</h2>
 
-<div class="grid">
 
-<div class="card">
-<span class="number">01</span>
-<h3>Ganga & Spiritual Tourism</h3>
-<p>
-Brijghat, Garh Ganga, Ganga Ghats और historic religious destinations surrounding area में मौजूद हैं.
-</p>
-</div>
+<div class="cards">
 
 
 <div class="card">
-<span class="number">02</span>
-<h3>NH-9 Connectivity</h3>
+
+<span class="badge">
+ROAD
+</span>
+
+<h3>
+NH-9 Corridor
+</h3>
+
 <p>
-Garhmukteshwar–Brijghat–Gajraula belt में strategic location और NH-9 access.
+NH-9 is a key connectivity corridor through the Garhmukteshwar–Brijghat–Gajraula belt. Project information indicates around 150 m proximity; verify exact route distance.
 </p>
+
 </div>
 
 
 <div class="card">
-<span class="number">03</span>
-<h3>Education Nearby</h3>
+
+<span class="badge">
+RAIL
+</span>
+
+<h3>
+Railway Connectivity
+</h3>
+
 <p>
-Multiple schools, colleges और educational institutions surrounding region में available हैं.
+Garhmuktesar Bridge railway station is referenced at approximately 2.2 km, while Kankather railway station is approximately 4.1 km.
 </p>
+
 </div>
 
 
 <div class="card">
-<span class="number">04</span>
-<h3>Healthcare Access</h3>
+
+<span class="badge">
+GANGA
+</span>
+
+<h3>
+Ganga & Brijghat
+</h3>
+
 <p>
-Hospitals, trauma care और healthcare centres Brijghat–Garhmukteshwar–Gajraula belt में available हैं.
+Garh Ganga, Garh Ganga Ghat, Ganga Ghat Brijghat and Garhmukteshwar are among the nearby religious and river-side destinations.
 </p>
+
 </div>
 
 
 <div class="card">
-<span class="number">05</span>
-<h3>Industrial & Employment Ecosystem</h3>
+
+<span class="badge">
+SPIRITUAL
+</span>
+
+<h3>
+Religious Destinations
+</h3>
+
 <p>
-Gajraula में established industrial areas और manufacturing activity मौजूद है.
+Vedant Mandir and other historic religious places around Garhmukteshwar add to the spiritual and weekend-lifestyle character of the region.
 </p>
+
+</div>
+
 </div>
 
 
-<div class="card">
-<span class="number">06</span>
-<h3>Future Infrastructure Potential</h3>
-<p>
-Regional road infrastructure works और long-term planning development potential को support करते हैं.
-</p>
-</div>
+<div class="tablewrap" style="margin-top:25px">
+
+<table class="info-table">
+
+<thead>
+
+<tr>
+<th>
+Place / Connectivity
+</th>
+
+<th>
+Reference
+</th>
+</tr>
+
+</thead>
+
+<tbody>
+
+<tr>
+<td>Garh Ganga</td>
+<td>Approx. 2.1 km</td>
+</tr>
+
+<tr>
+<td>Garh Ganga Ghat</td>
+<td>Approx. 2.2 km</td>
+</tr>
+
+<tr>
+<td>Ganga Ghat, Brijghat</td>
+<td>Approx. 1.7 km</td>
+</tr>
+
+<tr>
+<td>Garhmukteshwar</td>
+<td>Approx. 2.1 km</td>
+</tr>
+
+<tr>
+<td>Vedant Mandir</td>
+<td>Approx. 2.4 km</td>
+</tr>
+
+<tr>
+<td>Brijghat</td>
+<td>Approx. 2.1 km reference</td>
+</tr>
+
+<tr>
+<td>Garhmuktesar Bridge Railway Station</td>
+<td>Approx. 2.2 km</td>
+</tr>
+
+<tr>
+<td>Kankather Railway Station</td>
+<td>Approx. 4.1 km</td>
+</tr>
+
+</tbody>
+
+</table>
 
 </div>
 
 </div>
 
 </section>
-
-
-<!-- ================= NEARBY ================= -->
-
-<section id="nearby">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>AROUND THE PROJECT</small>
-
-<h2>Schools, Colleges, Hospitals & Places</h2>
-
-<p>
-Surrounding location में identified facilities और destinations.
-Distances approximate हैं और site verification recommended है.
-</p>
-
-</div>
-
-
-<div class="nearby-grid">
-
-
-<!-- COLLEGES -->
-
-<div class="nearby-card">
-
-<h3>🎓 Colleges & Higher Education</h3>
-
-<ul>
-
-<li>Bhartiya Ayurvedic Medical College — ~2.0 km</li>
-
-<li>Bharatiya Pharmacy College — ~2.0 km</li>
-
-<li>Sanjeevani Ayurvedic Medical College, J.P. Nagar, Gajraula — ~2.2 km</li>
-
-<li>IMS Group of Institutions — ~2.8 km</li>
-
-<li>Anekant College of Higher Education, Gajraula — ~3.9 km</li>
-
-<li>D R College of Education — Garhmukteshwar / Dotai area</li>
-
-</ul>
-
-</div>
-
-
-<!-- SCHOOLS -->
-
-<div class="nearby-card">
-
-<h3>🏫 Schools</h3>
-
-<ul>
-
-<li>D.R. International School — ~4.6 km</li>
-
-<li>S.B.D Public School, Rakhera — ~4.4 km</li>
-
-<li>SK Ambedkar High School, Sultanther — ~5.0 km</li>
-
-<li>Primary School, Rakhera — ~4.0 km</li>
-
-<li>Dev Memorial Public School, Garhmukteshwar</li>
-
-</ul>
-
-</div>
-
-
-<!-- HOSPITALS -->
-
-<div class="nearby-card">
-
-<h3>🏥 Hospitals & Healthcare</h3>
-
-<ul>
-
-<li>Bhartiya Hospital and Trauma Centre — ~2.0 km</li>
-
-<li>Shree Balaji Hospital, Brijghat — ~2.6 km</li>
-
-<li>S.M Hospital — ~4.7 km</li>
-
-<li>Bharat Hospital — ~4.7 km</li>
-
-<li>Primary Healthcare Center — ~3.2 km</li>
-
-<li>कन्हैयालाल राजकीय आयुर्वेदिक चिकित्सालय, Brijghat — ~2.3 km</li>
-
-<li>Government Hospital / CHC, Garhmukteshwar</li>
-
-</ul>
-
-</div>
-
-
-<!-- MARKET -->
-
-<div class="nearby-card">
-
-<h3>🛍️ Markets & Daily Needs</h3>
-
-<ul>
-
-<li>Brijghat Main Market</li>
-
-<li>SHREE JI Sabji Bhandar — ~2.6 km</li>
-
-<li>Om Traders — ~3.0 km</li>
-
-<li>Balraj Singh Kasana Market — ~3.8 km</li>
-
-<li>KAUSHIK MARKET — ~5.7 km</li>
-
-</ul>
-
-</div>
-
-
-<!-- RELIGIOUS -->
-
-<div class="nearby-card">
-
-<h3>🛕 Ganga & Religious Destinations</h3>
-
-<ul>
-
-<li>Garh Ganga — ~2.1 km</li>
-
-<li>Garh Ganga Ghat — ~2.2 km</li>
-
-<li>Ganga Ghat, Brijghat — ~1.7 km</li>
-
-<li>Garhmukteshwar — ~2.1 km</li>
-
-<li>Vedant Mandir — ~2.4 km</li>
-
-<li>Brijghat – Major Ganga Pilgrimage Location</li>
-
-</ul>
-
-</div>
 
 
 <!-- TOURISM -->
 
-<div class="nearby-card">
+<section class="section dark">
 
-<h3>🌿 Tourism & Weekend Lifestyle</h3>
+<div class="container">
 
-<ul>
+<div class="kicker">
+TOURISM & WEEKEND LIFESTYLE
+</div>
 
-<li>Tigri Ganga Dham & Annual Ganga Mela</li>
+<h2>
+Tigri Dham, Ganga Mela & Nature
+</h2>
 
-<li>Sampada Village – Eco Retreats — ~3.8 km</li>
 
-<li>Garh Drizzling Land — ~5.2 km</li>
+<div class="cards">
 
-<li>Desire Water Park — ~5.4 km</li>
 
-<li>Ganga Dolphin & Eco-Tourism Region</li>
+<div class="card">
 
-</ul>
+<span class="badge">
+RELIGIOUS TOURISM
+</span>
+
+<h3>
+🛕 Tigri Dham & Annual Ganga Mela
+</h3>
+
+<p>
+Tigri Ganga Dham is a major annual religious and cultural destination in the surrounding region, especially around Kartik Purnima.
+</p>
+
+<p class="distance">
+Tigri Ganga Ghat • Approx. 6 km reference
+</p>
 
 </div>
 
 
-<!-- INDUSTRIAL -->
+<div class="card">
 
-<div class="nearby-card">
+<span class="badge">
+NATURE
+</span>
 
-<h3>🏭 Industrial & Employment Belt</h3>
+<h3>
+🐬 Gangetic Dolphin Region
+</h3>
 
-<ul>
-
-<li>Gajraula Industrial Area-I</li>
-
-<li>Gajraula Industrial Area-II</li>
-
-<li>Gajraula Manufacturing Belt</li>
-
-<li>Major industrial activity in surrounding region</li>
-
-</ul>
+<p>
+The Brijghat–Garhmukteshwar region is associated with Gangetic dolphin habitat and river-based eco-tourism. The wider Ganga conservation stretch is linked with Ramsar-site significance.
+</p>
 
 </div>
 
 
-<!-- RAILWAY -->
+<div class="card">
 
-<div class="nearby-card">
+<span class="badge">
+WEEKEND
+</span>
 
-<h3>🚆 Road & Railway Connectivity</h3>
+<h3>
+🌳 Eco & Recreation
+</h3>
 
-<ul>
+<p>
+Sampada Village – Eco Retreats, Garh Drizzling Land and Desire Water Park are among the surrounding leisure/recreation references.
+</p>
 
-<li>NH-9 — Project-provided ~150 m*</li>
+</div>
 
-<li>Garhmuktesar Bridge Railway Station — ~2.2 km</li>
 
-<li>Kankather Railway Station — ~4.1 km</li>
+<div class="card">
 
-<li>Brijghat — ~2.1 km</li>
+<span class="badge">
+RIVER LIFE
+</span>
 
-</ul>
+<h3>
+🌊 Ganga Riverside Experience
+</h3>
+
+<p>
+Ganga ghats, Brijghat and Garh Ganga create a distinctive river-side environment for spiritual visits and weekend experiences.
+</p>
 
 </div>
 
@@ -1084,29 +1837,139 @@ Distances approximate हैं और site verification recommended है.
 </section>
 
 
-<!-- ================= GANGA TOURISM ================= -->
+<!-- INDUSTRY -->
 
-<section class="dark-section">
+<section class="section" id="industry">
 
 <div class="container">
 
-<div class="section-title">
+<div class="kicker">
+ECONOMIC ACTIVITY
+</div>
 
-<small>NATURE & REGIONAL TOURISM</small>
+<h2>
+Industrial & Commercial Ecosystem
+</h2>
 
-<h2>Ganga Dolphin & Eco-Tourism</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🏭 Gajraula Industrial Area-I
+</h3>
 
 <p>
-Brijghat–Garhmukteshwar region is associated with the Gangetic dolphin habitat
-and river-based tourism.
+Established industrial area in the surrounding Gajraula belt.
 </p>
 
 </div>
 
 
-<div class="dolphin">
+<div class="card">
 
-<img src="assets/dolphin.jpg" alt="Gangetic Dolphin Ganga Region">
+<h3>
+🏭 Gajraula Industrial Area-II
+</h3>
+
+<p>
+Another established industrial area contributing to regional economic activity.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🏢 Manufacturing Activity
+</h3>
+
+<p>
+Gajraula has manufacturing activity, including facilities of established industrial companies.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🛍️ Brijghat Main Market
+</h3>
+
+<p>
+Local market access for everyday needs and regional commerce.
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🛒 SHREE JI Sabji Bhandar
+</h3>
+
+<p class="distance">
+Approx. 2.6 km reference
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🏪 Om Traders
+</h3>
+
+<p class="distance">
+Approx. 3.0 km reference
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🏬 Balraj Singh Kasana Market
+</h3>
+
+<p class="distance">
+Approx. 3.8 km reference
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🏬 KAUSHIK MARKET
+</h3>
+
+<p class="distance">
+Approx. 5.7 km reference
+</p>
+
+</div>
+
+
+<div class="card">
+
+<h3>
+🛍️ Local Market & Daily-Need Shopping
+</h3>
+
+<p>
+Local commercial activity is available across the Brijghat–Garhmukteshwar region. A large branded mall is not being claimed here.
+</p>
+
+</div>
 
 </div>
 
@@ -1115,32 +1978,72 @@ and river-based tourism.
 </section>
 
 
-<!-- ================= GALLERY ================= -->
+<!-- INFRASTRUCTURE -->
 
-<section id="gallery">
+<section class="section dark">
 
 <div class="container">
 
-<div class="section-title">
+<div class="kicker">
+REGIONAL DEVELOPMENT
+</div>
 
-<small>PROJECT GALLERY</small>
+<h2>
+Infrastructure & Long-Term Planning
+</h2>
 
-<h2>Actual Site Images</h2>
+
+<div class="cards">
+
+
+<div class="card">
+
+<h3>
+🛣️ NH-709A Development
+</h3>
 
 <p>
-Ganga Rivera project और surrounding region की images.
+Road infrastructure works related to widening/strengthening around the Garhmukteshwar–Meerut corridor are part of the regional connectivity story.
 </p>
 
 </div>
 
 
-<div class="gallery">
+<div class="card">
 
-<img src="assets/site1.jpg" alt="Ganga Rivera Site">
+<h3>
+📋 Garhmukteshwar–Brijghat Master Plan 2031
+</h3>
 
-<img src="assets/site2.jpg" alt="Ganga Rivera Site Building">
+<p>
+The region has been under discussion/planning for structured long-term development through the Master Plan 2031. This should be treated as a planning/development reference, not as a guarantee of future appreciation.
+</p>
 
-<img src="assets/IMG-20260829-WA0012.jpg" alt="Ganga Rivera Project">
+</div>
+
+
+<div class="card">
+
+<h3>
+📍 Strategic Regional Position
+</h3>
+
+<p>
+Positioned between the Garhmukteshwar, Brijghat and Gajraula belt, with access to road, rail, river-side tourism, education, healthcare and industrial activity.
+</p>
+
+</div>
+
+</div>
+
+
+<div class="notice">
+
+<span class="verify">
+Important:
+</span>
+
+This website intentionally does not claim “Metro coming in 2031” or “approved Moradabad–Ghaziabad RRTS”. Future infrastructure, alignments, approvals, station locations and timelines should be verified from the competent government authority.
 
 </div>
 
@@ -1149,117 +2052,320 @@ Ganga Rivera project और surrounding region की images.
 </section>
 
 
-<!-- ================= PROJECT DETAILS ================= -->
+<!-- DOLPHIN -->
 
-<section class="dark-section">
-
-<div class="container">
-
-<div class="section-title">
-
-<small>PROJECT DETAILS</small>
-
-<h2>Ganga Rivera</h2>
-
-</div>
-
-
-<div class="grid">
-
-<div class="card">
-<h3>📍 Location</h3>
-<p>
-Brijghat, Garhmukteshwar, NH-9 Corridor
-</p>
-</div>
-
-
-<div class="card">
-<h3>🏡 Plot Sizes</h3>
-<p>
-100, 120 & 200 Gaj
-</p>
-</div>
-
-
-<div class="card">
-<h3>💰 Starting Price</h3>
-<p>
-₹18 Lakhs* for 100 Gaj, subject to current availability and applicable terms.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🏦 Bank Loan</h3>
-<p>
-Loan facility may be available up to applicable limits, subject to applicant eligibility, lender approval and applicable terms.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🌳 Lifestyle</h3>
-<p>
-Nature, peace, Ganga-region surroundings and weekend living potential.
-</p>
-</div>
-
-
-<div class="card">
-<h3>🛣️ Infrastructure</h3>
-<p>
-Road connectivity and regional infrastructure development around the Garhmukteshwar–Brijghat belt.
-</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- ================= CONTACT ================= -->
-
-<section id="contact" class="cta">
+<section class="section" id="news">
 
 <div class="container">
 
-<h2>Book Your Site Visit</h2>
+<div class="kicker">
+NATURE & REGIONAL INFORMATION
+</div>
+
+<h2>
+Ganga Dolphin Conservation
+</h2>
+
+
+<div class="news">
+
+<img src="assets/dolphin.jpg"
+alt="Gangetic dolphin information">
+
+
+<div class="newsbox">
+
+<h3>
+Gangetic Dolphin & Eco-Tourism Potential
+</h3>
 
 <p>
-100, 120 या 200 Gaj में आपका suitable option जानने के लिए enquiry करें.
+Garhmukteshwar–Brijghat is associated with the Ganga river ecosystem and Gangetic dolphin conservation. The region's river-side identity supports a nature and eco-tourism narrative alongside its religious significance.
 </p>
 
+<p>
+Use this as a regional-information feature rather than a promise of any particular eco-park approval or future project.
+</p>
 
-<div class="buttons" style="justify-content:center">
-
-<a class="btn green" href="tel:+917834952729">
-📞 CALL NOW
-</a>
-
-
-<a
-class="btn gold"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details."
->
-💬 WHATSAPP
-</a>
-
-
-<button class="btn" style="background:#fff;color:#06352c"
-onclick="openPopup()">
-BOOK SITE VISIT
+<button class="btn green" onclick="openModal()">
+GET PROJECT DETAILS
 </button>
 
 </div>
 
+</div>
 
-<p class="disclaimer">
-*Project details, pricing, distances, availability and facilities should be verified before booking.
-Loan is subject to eligibility and lender approval.
+</div>
+
+</section>
+
+
+<!-- GALLERY -->
+
+<section class="section dark" id="gallery">
+
+<div class="container">
+
+<div class="kicker">
+REAL PROJECT IMAGES
+</div>
+
+<h2>
+Ganga Rivera Site Gallery
+</h2>
+
+<p class="lead">
+Actual site photographs uploaded for the project.
 </p>
+
+
+<div class="gallery">
+
+<figure>
+
+<img src="assets/site1.jpg"
+alt="Ganga Rivera plot area">
+
+<figcaption>
+Actual project site / plot area.
+</figcaption>
+
+</figure>
+
+
+<figure>
+
+<img src="assets/site2.jpg"
+alt="Ganga Rivera entrance and site">
+
+<figcaption>
+Project entrance, boundary and site view.
+</figcaption>
+
+</figure>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- MAIN LEAD FORM -->
+
+<section class="section" id="contact">
+
+<div class="container">
+
+<div class="kicker">
+GET PERSONALIZED DETAILS
+</div>
+
+<h2>
+Book a Site Visit
+</h2>
+
+<p class="lead">
+Apni requirement share karein. Team aapko plot size, availability aur site-visit details ke according guide karegi.
+</p>
+
+
+<div class="formbox">
+
+<form id="leadForm">
+
+<div class="formgrid">
+
+
+<div class="field">
+
+<label>
+Name *
+</label>
+
+<input
+id="name"
+required
+placeholder="Your Name">
+
+</div>
+
+
+<div class="field">
+
+<label>
+WhatsApp / Mobile *
+</label>
+
+<input
+id="phone"
+required
+type="tel"
+placeholder="10-digit mobile number">
+
+</div>
+
+
+<div class="field">
+
+<label>
+Preferred Plot Size
+</label>
+
+<select id="size">
+
+<option>100 Gaj</option>
+<option>120 Gaj</option>
+<option>200 Gaj</option>
+<option>Not Sure</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Purpose
+</label>
+
+<select id="purpose">
+
+<option>Self Use</option>
+<option>Investment</option>
+<option>Weekend Home</option>
+<option>Family Requirement</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Budget
+</label>
+
+<select id="budget">
+
+<option>₹18–25 Lakhs</option>
+<option>₹25–40 Lakhs</option>
+<option>₹40 Lakhs+</option>
+<option>Need Guidance</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+Site Visit
+</label>
+
+<select id="visit">
+
+<option>Weekend</option>
+<option>Weekday</option>
+<option>Need Call First</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label>
+Message
+</label>
+
+<textarea
+id="message"
+placeholder="Tell us your requirement..."></textarea>
+
+</div>
+
+</div>
+
+
+<button
+class="btn green"
+style="margin-top:18px;width:100%"
+type="submit">
+
+SEND DETAILS ON WHATSAPP
+
+</button>
+
+<div class="form-note">
+By submitting, your enquiry will open WhatsApp with the details you entered.
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FINAL CTA -->
+
+<section class="section dark">
+
+<div class="container">
+
+<div class="cta">
+
+<div class="kicker">
+GANGA RIVERA • BRIJ GHAT
+</div>
+
+<h2>
+More Land. More Value. More Possibilities.
+</h2>
+
+<p>
+100 • 120 • 200 Gaj Plot Options | Brijghat, Garhmukteshwar | NH-9 Corridor
+</p>
+
+
+<div class="actions">
+
+<button
+class="btn gold"
+onclick="openModal()">
+
+📅 BOOK SITE VISIT
+
+</button>
+
+
+<a
+class="btn green"
+href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details.">
+
+💬 WHATSAPP
+
+</a>
+
+
+<a
+class="btn dark"
+href="tel:+917834952729">
+
+📞 CALL NOW
+
+</a>
+
+</div>
+
+</div>
 
 </div>
 
@@ -1268,112 +2374,262 @@ Loan is subject to eligibility and lender approval.
 </main>
 
 
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
-© Ganga Rivera • Phenix Infracon Pvt. Ltd.
-<br>
-Brijghat, Garhmukteshwar, NH-9 Corridor
-
-</footer>
+<div class="container footergrid">
 
 
-<!-- ================= FLOATING BUTTONS ================= -->
+<div>
 
-<div class="float-buttons">
+<h3>
+GANGA RIVERA
+</h3>
 
-<a class="call" href="tel:+917834952729">
-☎
-</a>
+<p>
+Premium residential & weekend plot options at Brijghat, Garhmukteshwar — NH-9 Corridor.
+</p>
 
-<a class="whatsapp" href="https://wa.me/917834952729">
-◉
-</a>
+<p>
+<b>
+By Phenix Infracon Pvt. Ltd.
+</b>
+</p>
 
 </div>
 
 
-<!-- ================= POPUP ================= -->
+<div>
 
-<div class="popup" id="visitPopup">
-
-<div class="popup-box">
-
-<span class="close" onclick="closePopup()">×</span>
-
-<h2>Book Your Site Visit</h2>
+<h3>
+Quick Links
+</h3>
 
 <p>
-अपनी basic details भरें। हमारी team आपसे WhatsApp पर contact करेगी.
+<a href="#plots">
+Plot Options
+</a>
+</p>
+
+<p>
+<a href="#why">
+Why Consider
+</a>
+</p>
+
+<p>
+<a href="#nearby">
+Nearby Places
+</a>
+</p>
+
+<p>
+<a href="#gallery">
+Gallery
+</a>
+</p>
+
+</div>
+
+
+<div>
+
+<h3>
+Contact
+</h3>
+
+<p>
+📞 78349 52729
+</p>
+
+<p>
+💬 WhatsApp Available
+</p>
+
+<p>
+📍 Brijghat, Garhmukteshwar, NH-9 Corridor
+</p>
+
+</div>
+
+</div>
+
+
+<div class="container copyright">
+
+© 2026 Ganga Rivera. All information is for enquiry/marketing reference and should be independently verified before purchase. Prices, availability, distances, financing and project approvals are subject to applicable terms and current records.
+
+</div>
+
+</footer>
+
+
+<!-- FLOATING BUTTONS -->
+
+<a
+class="float call"
+href="tel:+917834952729"
+aria-label="Call">
+
+📞
+
+</a>
+
+
+<a
+class="float wa"
+href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details."
+aria-label="WhatsApp">
+
+💬
+
+</a>
+
+
+<!-- POPUP FORM -->
+
+<div
+class="modal"
+id="leadModal"
+onclick="if(event.target===this)closeModal()">
+
+
+<div class="modalbox">
+
+<button
+class="close"
+onclick="closeModal()">
+
+×
+
+</button>
+
+
+<div
+class="kicker"
+style="text-align:left">
+
+GANGA RIVERA
+
+</div>
+
+
+<h2>
+Book Your Site Visit
+</h2>
+
+
+<p>
+Apni details fill karein. WhatsApp par enquiry directly share ho jayegi.
 </p>
 
 
-<form onsubmit="sendVisit(event)">
+<form id="popupForm">
+
+<div class="formgrid">
+
+
+<div class="field">
+
+<label>
+Name *
+</label>
 
 <input
-type="text"
-id="visitorName"
-placeholder="Your Name"
+id="pname"
 required
->
+placeholder="Your Name">
 
+</div>
+
+
+<div class="field">
+
+<label>
+Mobile / WhatsApp *
+</label>
 
 <input
+id="pphone"
+required
 type="tel"
-id="visitorPhone"
-placeholder="WhatsApp Number"
-required
->
+placeholder="10-digit number">
+
+</div>
 
 
-<select id="plotSize">
+<div class="field">
 
-<option value="Not Selected">
-Preferred Plot Size
-</option>
+<label>
+Plot Size
+</label>
 
-<option value="100 Gaj">
-100 Gaj
-</option>
+<select id="psize">
 
-<option value="120 Gaj">
-120 Gaj
-</option>
-
-<option value="200 Gaj">
-200 Gaj
-</option>
+<option>100 Gaj</option>
+<option>120 Gaj</option>
+<option>200 Gaj</option>
+<option>Not Sure</option>
 
 </select>
 
+</div>
 
-<select id="purpose">
 
-<option>
+<div class="field">
+
+<label>
 Purpose
-</option>
+</label>
 
-<option>
-Self Use
-</option>
+<select id="ppurpose">
 
-<option>
-Investment
-</option>
-
-<option>
-Weekend Home
-</option>
+<option>Self Use</option>
+<option>Investment</option>
+<option>Weekend Home</option>
 
 </select>
 
+</div>
 
-<button type="submit">
-SEND DETAILS ON WHATSAPP
+
+<div class="field full">
+
+<label>
+Preferred Visit
+</label>
+
+<select id="pvisit">
+
+<option>Weekend</option>
+<option>Weekday</option>
+<option>Need Call First</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<button
+class="btn green"
+type="submit"
+style="width:100%;margin-top:16px">
+
+SEND ON WHATSAPP
+
 </button>
 
 </form>
+
+
+<div class="notice">
+
+Loan/finance availability, if applicable, is subject to applicant eligibility, lender approval and applicable terms. No financing approval is guaranteed.
+
+</div>
 
 </div>
 
@@ -1382,51 +2638,110 @@ SEND DETAILS ON WHATSAPP
 
 <script>
 
-function openPopup(){
+const WA='917834952729';
 
-document.getElementById("visitPopup").style.display="flex";
+
+function openModal(){
+
+document
+.getElementById('leadModal')
+.classList
+.add('show');
+
+document.body.style.overflow='hidden';
 
 }
 
 
-function closePopup(){
+function closeModal(){
 
-document.getElementById("visitPopup").style.display="none";
+document
+.getElementById('leadModal')
+.classList
+.remove('show');
+
+document.body.style.overflow='';
 
 }
 
 
-function sendVisit(event){
+function sendLead(prefix){
 
-event.preventDefault();
-
-let name =
-document.getElementById("visitorName").value;
-
-let phone =
-document.getElementById("visitorPhone").value;
-
-let size =
-document.getElementById("plotSize").value;
-
-let purpose =
-document.getElementById("purpose").value;
+const g=id=>
+document.getElementById(prefix+id)?.value||'';
 
 
-let message =
-"Hi, I want to book a site visit for Ganga Rivera.%0A%0A"+
-"Name: "+encodeURIComponent(name)+
-"%0APhone: "+encodeURIComponent(phone)+
-"%0APlot Size: "+encodeURIComponent(size)+
-"%0APurpose: "+encodeURIComponent(purpose);
+const name=g('name');
+
+const phone=g('phone');
+
+const size=g('size');
+
+const purpose=g('purpose');
+
+
+if(!name||!phone)return;
+
+
+let text=
+`Hi, I am interested in Ganga Rivera.%0A%0AName: ${encodeURIComponent(name)}%0AMobile: ${encodeURIComponent(phone)}%0APlot Size: ${encodeURIComponent(size)}%0APurpose: ${encodeURIComponent(purpose)}`;
+
+
+if(prefix===''){
+
+text+=
+`%0ABudget: ${encodeURIComponent(g('budget'))}%0ASite Visit: ${encodeURIComponent(g('visit'))}%0AMessage: ${encodeURIComponent(g('message'))}`;
+
+}
+
+else{
+
+text+=
+`%0ASite Visit: ${encodeURIComponent(g('visit'))}`;
+
+}
 
 
 window.open(
-"https://wa.me/917834952729?text="+message,
-"_blank"
+`https://wa.me/${WA}?text=${text}`,
+'_blank'
 );
 
 }
+
+
+document
+.getElementById('leadForm')
+.addEventListener('submit',e=>{
+
+e.preventDefault();
+
+sendLead('');
+
+});
+
+
+document
+.getElementById('popupForm')
+.addEventListener('submit',e=>{
+
+e.preventDefault();
+
+sendLead('p');
+
+closeModal();
+
+});
+
+
+document.addEventListener(
+'keydown',
+e=>{
+
+if(e.key==='Escape')
+closeModal();
+
+});
 
 </script>
 
