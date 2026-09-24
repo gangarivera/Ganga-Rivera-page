@@ -1,3164 +1,1273 @@
-<!doctype html>
-<html lang="hi">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Ganga Rivera | Brijghat, Garhmukteshwar</title>
-
-<meta name="description" content="Ganga Rivera by Phenix Infracon Pvt. Ltd. — Residential & Weekend Farmhouse Plots at Brijghat, Garhmukteshwar, NH-9 Corridor. 100, 120 & 200 Gaj.">
-
-<meta name="theme-color" content="#071522">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ganga Rivera | Premium Plots at Brijghat, Garhmukteshwar</title>
+<meta name="description" content="Ganga Rivera – Premium Residential & Weekend Plots at Brijghat, Garhmukteshwar. 100, 120 & 200 Sq. Yards. Starting ₹18 Lakhs*.">
+<meta name="theme-color" content="#062b25">
 
 <style>
-
-/* =========================================================
-   GLOBAL
-========================================================= */
-
 :root{
-  --bg:#071522;
-  --bg2:#0b2030;
-  --card:#102b3d;
-  --card2:#0d1e2d;
-  --gold:#f4ba45;
-  --green:#18c985;
-  --blue:#37a7ff;
-  --text:#f7fbff;
-  --muted:#a9bac9;
-  --line:rgba(255,255,255,.11);
-  --r:22px;
-  --shadow:0 18px 50px rgba(0,0,0,.28);
+  --green:#062b25;
+  --green2:#0b4036;
+  --navy:#102b40;
+  --gold:#f6c453;
+  --gold2:#ffd875;
+  --mint:#eaf7f1;
+  --cream:#fff8e8;
+  --blue:#edf6fc;
+  --white:#fff;
+  --text:#17232b;
+  --muted:#66747c;
+  --shadow:0 18px 50px rgba(4,35,29,.12);
+  --radius:24px;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
 body{
-  font-family:Inter,Arial,sans-serif;
-  background:var(--bg);
+  font-family:Inter,Arial,Helvetica,sans-serif;
   color:var(--text);
-  line-height:1.6;
+  background:#f5f7f6;
+  line-height:1.55;
 }
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font-family:inherit;cursor:pointer}
 
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-img{
-  max-width:100%;
-  display:block;
-}
-
-button,
-input,
-select{
-  font-family:inherit;
-}
-
-.wrap{
-  width:min(1160px,92%);
+.container{
+  width:min(1120px,92%);
   margin:auto;
 }
 
-.sec{
-  padding:76px 0;
-  position:relative;
-}
-
-.eyebrow{
-  display:inline-block;
-  padding:7px 12px;
-  border:1px solid rgba(244,186,69,.28);
-  border-radius:999px;
-  color:#ffd66f;
-  background:rgba(244,186,69,.08);
-  font-size:11px;
-  font-weight:800;
-  letter-spacing:.8px;
-  text-transform:uppercase;
-  margin-bottom:14px;
-}
-
-.title{
-  font:700 clamp(31px,5vw,50px)/1.12 "Playfair Display",serif;
-  margin-bottom:14px;
-}
-
-.lead{
-  color:var(--muted);
-  max-width:760px;
-  font-size:15px;
-}
-
-.btn{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  padding:13px 18px;
-  border-radius:13px;
-  font-weight:800;
-  border:1px solid transparent;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.gold{
-  background:linear-gradient(135deg,#f4ba45,#ffdb76);
-  color:#17130a;
-}
-
-.green{
-  background:#18c985;
-  color:#04150d;
-}
-
-.darkbtn{
-  background:rgba(255,255,255,.06);
-  border-color:var(--line);
-  color:#fff;
-}
-
-
-/* =========================================================
-   HEADER
-========================================================= */
-
+/* HEADER */
 header{
-  position:fixed;
+  position:sticky;
   top:0;
-  left:0;
-  right:0;
-  z-index:50;
-  background:rgba(4,13,22,.84);
-  backdrop-filter:blur(14px);
-  border-bottom:1px solid var(--line);
+  z-index:1000;
+  background:rgba(5,28,25,.96);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
-
 .nav{
-  height:72px;
+  min-height:72px;
   display:flex;
   align-items:center;
   justify-content:space-between;
+  gap:20px;
 }
-
 .brand{
   display:flex;
   align-items:center;
-  gap:10px;
+  gap:12px;
+  color:white;
+  font-weight:900;
+  letter-spacing:.4px;
 }
-
 .brand img{
-  width:44px;
-  height:44px;
+  width:48px;
+  height:48px;
   object-fit:contain;
-  background:#fff;
   border-radius:10px;
+  background:white;
 }
-
-.brand b{
-  display:block;
-  font-size:16px;
-}
-
-.brand small{
-  display:block;
-  color:#91a5b8;
-  font-size:9px;
-}
-
-.links{
+.navlinks{
   display:flex;
-  gap:19px;
-  font-size:12px;
+  gap:24px;
+  color:#d9e7e3;
+  font-size:14px;
   font-weight:700;
-  color:#dce6ef;
 }
-
-.links a:hover{
-  color:#ffd66f;
-}
-
-.menu{
-  display:none;
-  border:1px solid var(--line);
-  background:#102235;
-  color:#fff;
-  border-radius:10px;
-  padding:9px 11px;
-  font-size:19px;
-}
-
-
-/* =========================================================
-   HERO
-========================================================= */
-
-.hero{
-  padding:110px 0 65px;
-
-  background:
-    radial-gradient(
-      circle at 15% 20%,
-      rgba(55,167,255,.16),
-      transparent 30%
-    ),
-
-    radial-gradient(
-      circle at 85% 75%,
-      rgba(24,201,133,.11),
-      transparent 30%
-    ),
-
-    #071522;
-}
-
-.heroGrid{
-  display:grid;
-  grid-template-columns:1fr 1.03fr;
-  gap:42px;
-  align-items:center;
-}
-
-.hero h1{
-  font:700 clamp(39px,6vw,66px)/1.03 "Playfair Display",serif;
-  margin:10px 0 17px;
-}
-
-.hero h1 span{
-  color:var(--gold);
-}
-
-.hero p{
-  font-size:17px;
-  color:#c5d3df;
-  max-width:610px;
-}
-
-.loc{
-  color:#83d2ff;
-  font-weight:800;
+.navlinks a:hover{color:var(--gold)}
+.navbtn{
+  background:var(--gold);
+  color:#111;
+  padding:11px 18px;
+  border-radius:12px;
+  font-weight:900;
   font-size:13px;
-  margin-bottom:8px;
 }
 
-.actions{
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-  margin:23px 0;
+/* HERO */
+.hero{
+  background:var(--green);
+  color:white;
+  padding:28px 0 70px;
 }
-
-.chips{
-  display:flex;
-  flex-wrap:wrap;
-  gap:8px;
-}
-
-.chip{
-  padding:7px 10px;
-  background:rgba(255,255,255,.045);
-  border:1px solid var(--line);
-  border-radius:9px;
-  color:#dce8f1;
-  font-size:11px;
-  font-weight:700;
-}
-
-.heroVisual{
-  border-radius:25px;
+.hero-image{
+  border-radius:26px;
   overflow:hidden;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-  background:#091522;
+  box-shadow:0 22px 60px rgba(0,0,0,.25);
+  border:1px solid rgba(255,255,255,.12);
 }
-
-.heroVisual img{
+.hero-image img{
   width:100%;
-  height:auto;
-  object-fit:contain;
-}
-
-
-/* =========================================================
-   COMMON IMAGE
-========================================================= */
-
-.sectionImg{
-  border-radius:20px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  box-shadow:var(--shadow);
-  background:#091522;
-}
-
-.sectionImg img{
-  width:100%;
-  height:310px;
+  max-height:540px;
   object-fit:cover;
 }
-
-
-/* =========================================================
-   TWO COLUMN
-========================================================= */
-
-.two{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:38px;
-  align-items:center;
-}
-
-.blueSec{
-  background:linear-gradient(135deg,#0b2132,#071522);
-}
-
-.greenSec{
-  background:linear-gradient(135deg,#071a19,#0c2a26);
-}
-
-.goldSec{
-  background:linear-gradient(135deg,#211a0c,#101b25);
-}
-
-.plainSec{
-  background:#081a28;
-}
-
-
-/* =========================================================
-   TABLE
-========================================================= */
-
-.tableWrap{
-  overflow:auto;
-  border-radius:16px;
-}
-
-.infoTable{
-  width:100%;
-  border-collapse:separate;
-  border-spacing:0;
-  margin-top:25px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  border-radius:16px;
-  background:rgba(255,255,255,.025);
-}
-
-.infoTable th,
-.infoTable td{
-  text-align:left;
-  padding:12px 13px;
-  border-bottom:1px solid var(--line);
-  font-size:12px;
-}
-
-.infoTable th{
-  width:34%;
-  color:#ffd66f;
-  background:rgba(244,186,69,.06);
-}
-
-.infoTable tr:last-child th,
-.infoTable tr:last-child td{
-  border-bottom:0;
-}
-
-.plotTable th{
-  background:rgba(55,167,255,.08);
-  color:#9ed9ff;
-}
-
-.plotTable th,
-.plotTable td{
+.hero-content{
   text-align:center;
+  padding:42px 10px 0;
 }
-
-.plotTable th:first-child,
-.plotTable td:first-child{
-  text-align:left;
+.badge{
+  display:inline-block;
+  color:#171717;
+  background:var(--gold);
+  padding:8px 16px;
+  border-radius:100px;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1px;
+  margin-bottom:18px;
 }
-
-
-/* =========================================================
-   CARDS
-========================================================= */
-
-.cards{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:15px;
+.hero h1{
+  font-size:clamp(32px,5vw,62px);
+  line-height:1.04;
+  letter-spacing:-1.5px;
+  max-width:900px;
+  margin:auto;
+}
+.hero h1 span{color:var(--gold)}
+.hero p{
+  color:#c9d9d5;
+  max-width:760px;
+  margin:18px auto 0;
+  font-size:18px;
+}
+.price{
+  margin:25px auto 0;
+  display:inline-flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:10px;
+}
+.price strong{
+  background:#fff;
+  color:var(--green);
+  padding:12px 18px;
+  border-radius:12px;
+  font-size:20px;
+}
+.price small{
+  background:rgba(255,255,255,.1);
+  padding:12px 15px;
+  border-radius:12px;
+  color:#e3efec;
+}
+.ctas{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:12px;
   margin-top:28px;
 }
-
-.card{
-  background:linear-gradient(145deg,#112d40,#0c1e2c);
-  border:1px solid var(--line);
-  border-radius:18px;
-  padding:20px;
+.btn{
+  padding:15px 23px;
+  border-radius:13px;
+  font-weight:900;
+  border:1px solid transparent;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+.btn-gold{background:var(--gold);color:#111}
+.btn-wa{background:#19cf8a;color:#062b25}
+.btn-outline{
+  border-color:rgba(255,255,255,.25);
+  color:white;
 }
 
-.icon{
-  font-size:26px;
+/* SECTIONS */
+section{padding:72px 0}
+.section-head{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 35px;
+}
+.kicker{
+  color:#987000;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
   margin-bottom:9px;
 }
-
-.card h3{
-  font-size:16px;
-  margin-bottom:5px;
+.section-head h2{
+  font-size:clamp(28px,4vw,42px);
+  line-height:1.1;
+  color:var(--green);
 }
-
-.card p{
-  font-size:12px;
+.section-head p{
+  margin-top:12px;
   color:var(--muted);
 }
 
-
-/* =========================================================
-   CUSTOM LIGHTWEIGHT VISUALS
-========================================================= */
-
-.visual{
-  height:260px;
-  border-radius:20px;
-  border:1px solid var(--line);
-  overflow:hidden;
-  background:#0a1d2b;
+/* TWO COLUMN INFORMATION */
+.info-section{
+  background:var(--mint);
+}
+.info-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:18px;
+}
+.info-card{
+  padding:27px;
+  border-radius:var(--radius);
   box-shadow:var(--shadow);
 }
+.info-card:nth-child(odd){
+  background:#fff;
+  border:1px solid #dcebe5;
+}
+.info-card:nth-child(even){
+  background:var(--navy);
+  color:white;
+}
+.info-card h3{
+  font-size:20px;
+  margin-bottom:16px;
+}
+.info-card:nth-child(even) h3{color:var(--gold)}
+.info-list{
+  display:grid;
+  gap:11px;
+}
+.info-row{
+  display:flex;
+  gap:12px;
+  align-items:flex-start;
+  padding-bottom:10px;
+  border-bottom:1px solid rgba(100,120,120,.13);
+}
+.info-card:nth-child(even) .info-row{
+  border-bottom-color:rgba(255,255,255,.1);
+}
+.icon{
+  width:28px;
+  flex:0 0 28px;
+  font-size:19px;
+}
+.info-row strong{
+  display:block;
+  font-size:14px;
+}
+.info-row span{
+  display:block;
+  color:var(--muted);
+  font-size:13px;
+}
+.info-card:nth-child(even) .info-row span{
+  color:#c7d8d5;
+}
 
-.visual svg{
+/* PLOTS */
+.plots{
+  background:#fff;
+}
+.plot-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.plot{
+  border-radius:22px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+  border:1px solid #e5e9e8;
+  background:#fff;
+}
+.plot-top{
+  padding:22px;
+  background:var(--navy);
+  color:white;
+}
+.plot-top strong{
+  font-size:30px;
+  color:var(--gold);
+}
+.plot-top span{
+  display:block;
+  color:#c8d5d9;
+  font-size:13px;
+}
+.plot-body{padding:20px}
+.plot-body p{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:15px;
+}
+.plot-btn{
+  display:block;
+  text-align:center;
+  background:var(--gold);
+  color:#111;
+  padding:12px;
+  border-radius:10px;
+  font-weight:900;
+}
+
+/* AMENITIES */
+.amenities{
+  background:var(--cream);
+}
+.amenity-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+.amenity{
+  background:white;
+  padding:21px 16px;
+  border-radius:18px;
+  border:1px solid #eee5cc;
+  box-shadow:0 8px 25px rgba(60,50,20,.06);
+}
+.amenity b{
+  display:block;
+  color:var(--green);
+  margin-bottom:5px;
+}
+.amenity span{
+  color:var(--muted);
+  font-size:13px;
+}
+
+/* LOCATION */
+.location{
+  background:var(--blue);
+}
+.location-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:20px;
+}
+.location-card{
+  background:white;
+  border-radius:22px;
+  padding:26px;
+  box-shadow:var(--shadow);
+}
+.location-card h3{
+  color:var(--green);
+  margin-bottom:18px;
+}
+.location-item{
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  padding:11px 0;
+  border-bottom:1px solid #edf0f0;
+  font-size:14px;
+}
+.location-item span:last-child{
+  font-weight:900;
+  color:#8a6700;
+  white-space:nowrap;
+}
+
+/* VIDEO */
+.video-section{
+  background:#f4f6f5;
+}
+.video{
+  max-width:900px;
+  margin:auto;
+  aspect-ratio:16/9;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:var(--shadow);
+}
+.video iframe{
   width:100%;
   height:100%;
-}
-
-
-/* =========================================================
-   MINI CARDS
-========================================================= */
-
-.miniGrid{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:14px;
-  margin-top:25px;
-}
-
-.mini{
-  padding:16px;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,.035);
-  border-radius:15px;
-}
-
-.mini b{
-  display:block;
-  color:#fff;
-  margin-bottom:3px;
-  font-size:13px;
-}
-
-.mini span{
-  font-size:11px;
-  color:var(--muted);
-}
-
-
-/* =========================================================
-   QUOTE
-========================================================= */
-
-.quote{
-  padding:20px;
-  border-left:3px solid var(--gold);
-  background:rgba(244,186,69,.06);
-  border-radius:0 14px 14px 0;
-  color:#d8e3ec;
-  margin-top:20px;
-  font-size:13px;
-}
-
-
-/* =========================================================
-   VIDEO
-========================================================= */
-
-.video{
-  margin-top:27px;
-  border-radius:20px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  background:#000;
-}
-
-.video iframe{
-  display:block;
-  width:100%;
-  height:520px;
   border:0;
 }
 
-
-/* =========================================================
-   GALLERY
-========================================================= */
-
+/* GALLERY */
 .gallery{
-  display:flex;
-  gap:12px;
-  overflow-x:auto;
-  scrollbar-width:none;
-  margin-top:27px;
-  padding-bottom:6px;
+  background:#fff;
 }
-
-.gallery::-webkit-scrollbar{
-  display:none;
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:14px;
 }
-
-.gItem{
-  flex:0 0 260px;
-  height:190px;
-  border-radius:16px;
-  overflow:hidden;
-  border:1px solid var(--line);
-  cursor:pointer;
-}
-
-.gItem img{
+.gallery-grid img{
   width:100%;
-  height:100%;
+  height:230px;
   object-fit:cover;
-}
-
-
-/* =========================================================
-   FAQ
-========================================================= */
-
-.faq{
-  max-width:900px;
-  margin:25px auto 0;
-  display:grid;
-  gap:10px;
-}
-
-.faq details{
-  background:#0d2333;
-  border:1px solid var(--line);
-  border-radius:14px;
-  padding:15px;
-}
-
-.faq summary{
-  font-weight:800;
-  font-size:13px;
+  border-radius:18px;
   cursor:pointer;
+  transition:.25s;
 }
+.gallery-grid img:hover{transform:scale(1.02)}
 
-.faq p{
-  color:var(--muted);
-  font-size:12px;
-  margin-top:9px;
-}
-
-
-/* =========================================================
-   CTA
-========================================================= */
-
-.cta{
-  background:linear-gradient(135deg,#102b3c,#071522);
+/* CTA */
+.final-cta{
+  background:var(--green);
+  color:white;
   text-align:center;
 }
-
-.ctaBox{
-  padding:45px 25px;
-  border-radius:24px;
-  border:1px solid var(--line);
-
-  background:
-    radial-gradient(
-      circle at 50% 0,
-      rgba(244,186,69,.12),
-      transparent 45%
-    ),
-    #0b1d2b;
+.final-cta h2{
+  font-size:clamp(30px,4vw,46px);
+  line-height:1.1;
 }
-
-.ctaBox .lead{
-  margin:0 auto 20px;
+.final-cta p{
+  color:#c7d9d5;
+  max-width:680px;
+  margin:14px auto 0;
 }
+.final-cta .ctas{margin-top:25px}
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
+/* FOOTER */
 footer{
-  background:#040c14;
-  padding:40px 0 22px;
-  border-top:1px solid var(--line);
-}
-
-.foot{
-  display:grid;
-  grid-template-columns:1.2fr 1fr 1fr;
-  gap:30px;
-}
-
-.foot h3{
-  font-size:14px;
-  margin-bottom:10px;
-}
-
-.foot p,
-.foot li{
-  color:#8195a7;
-  font-size:11px;
-}
-
-.foot ul{
-  list-style:none;
-  display:grid;
-  gap:6px;
-}
-
-.copy{
+  background:#031c19;
+  color:#b7cbc7;
+  padding:30px 0 95px;
   text-align:center;
-  border-top:1px solid var(--line);
-  margin-top:25px;
-  padding-top:17px;
-  color:#607487;
-  font-size:10px;
+  font-size:13px;
+}
+footer strong{color:white}
+.disclaimer{
+  max-width:850px;
+  margin:13px auto 0;
+  font-size:11px;
+  color:#849b96;
 }
 
-
-/* =========================================================
-   FLOATING BUTTONS
-========================================================= */
-
+/* FLOATING */
 .float{
   position:fixed;
-  right:14px;
-  bottom:15px;
-  z-index:45;
-  display:grid;
-  gap:8px;
+  right:18px;
+  bottom:92px;
+  z-index:900;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
 }
-
 .float a{
-  width:50px;
-  height:50px;
+  width:54px;
+  height:54px;
   border-radius:50%;
-  display:grid;
-  place-items:center;
-  color:#fff;
-  font-size:21px;
-  box-shadow:0 10px 25px rgba(0,0,0,.3);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:23px;
+  box-shadow:0 10px 25px rgba(0,0,0,.22);
 }
+.call{background:#2388ff;color:white}
+.whatsapp{background:#19cf8a;color:#063328}
 
-.call{
-  background:#208cff;
+/* MOBILE CTA */
+.mobile-cta{
+  display:none;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  z-index:999;
+  background:#061e1b;
+  padding:9px;
+  gap:9px;
 }
-
-.wa{
-  background:#18c985;
+.mobile-cta a{
+  flex:1;
+  text-align:center;
+  padding:13px 8px;
+  border-radius:10px;
+  font-size:13px;
+  font-weight:900;
 }
+.m-gold{background:var(--gold);color:#111}
+.m-wa{background:#19cf8a;color:#062b25}
 
-
-/* =========================================================
-   MODAL
-========================================================= */
-
-.modal{
+/* POPUP */
+.overlay{
   display:none;
   position:fixed;
   inset:0;
-  background:rgba(0,0,0,.78);
-  backdrop-filter:blur(7px);
-  z-index:100;
+  z-index:2000;
+  background:rgba(0,0,0,.7);
+  padding:18px;
   align-items:center;
   justify-content:center;
-  padding:15px;
 }
-
-.modal.on{
-  display:flex;
-}
-
-.box{
+.popup{
   width:min(500px,100%);
-  max-height:92vh;
-  overflow:auto;
-  background:#0b1d2c;
-  border:1px solid var(--line);
-  border-radius:22px;
-  padding:24px;
-  position:relative;
+  background:white;
+  border-radius:24px;
+  overflow:hidden;
+  box-shadow:0 30px 100px rgba(0,0,0,.4);
 }
-
+.popup-head{
+  background:var(--green);
+  color:white;
+  padding:24px;
+}
+.popup-head h3{font-size:24px}
+.popup-head p{
+  color:#bfd2ce;
+  font-size:13px;
+  margin-top:5px;
+}
+.popup-body{padding:22px}
+.form{
+  display:grid;
+  gap:11px;
+}
+.form input,.form select{
+  width:100%;
+  padding:14px;
+  border:1px solid #dce3e1;
+  border-radius:11px;
+  outline:none;
+  font-size:14px;
+}
+.form input:focus,.form select:focus{
+  border-color:#159e7c;
+}
+.form button{
+  border:0;
+  background:var(--gold);
+  padding:15px;
+  border-radius:11px;
+  font-weight:900;
+  font-size:15px;
+}
 .close{
   position:absolute;
-  right:10px;
-  top:10px;
+  top:15px;
+  right:15px;
+  background:white;
   border:0;
-  background:rgba(255,255,255,.08);
-  color:#fff;
+  width:35px;
+  height:35px;
   border-radius:50%;
-  width:34px;
-  height:34px;
   font-size:20px;
 }
 
-.box h2{
-  font:700 29px "Playfair Display",serif;
-}
-
-.box>p{
-  color:var(--muted);
-  font-size:12px;
-  margin:4px 0 17px;
-}
-
-.field{
-  margin-bottom:11px;
-}
-
-.field label{
-  display:block;
-  font-size:11px;
-  font-weight:800;
-  margin-bottom:5px;
-}
-
-.field input,
-.field select{
-  width:100%;
-  padding:11px 12px;
-  background:#06131f;
-  color:#fff;
-  border:1px solid var(--line);
-  border-radius:10px;
-  outline:none;
-}
-
-.full{
-  width:100%;
-}
-
-
-/* =========================================================
-   MOBILE
-========================================================= */
-
+/* RESPONSIVE */
 @media(max-width:850px){
-
-  .links{
-    display:none;
-  }
-
-  .menu{
-    display:block;
-  }
-
-  .heroGrid,
-  .two{
-    grid-template-columns:1fr;
-  }
-
-  .heroVisual{
-    order:-1;
-  }
-
-  .cards{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .foot{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .video iframe{
-    height:390px;
-  }
-
+  .navlinks{display:none}
+  .navbtn{display:none}
+  .info-grid,
+  .location-grid{grid-template-columns:1fr}
+  .plot-grid{grid-template-columns:1fr 1fr}
+  .amenity-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
 }
-
-@media(max-width:560px){
-
-  .sec{
-    padding:58px 0;
-  }
-
-  .hero{
-    padding-top:98px;
-  }
-
-  .hero h1{
-    font-size:40px;
-  }
-
-  .actions{
-    display:grid;
-  }
-
-  .actions .btn{
-    width:100%;
-  }
-
-  .cards,
-  .miniGrid,
-  .foot{
-    grid-template-columns:1fr;
-  }
-
-  .sectionImg img{
-    height:245px;
-  }
-
-  .visual{
-    height:220px;
-  }
-
-  .video iframe{
-    height:260px;
-  }
-
-  .gItem{
-    flex-basis:240px;
-    height:175px;
-  }
-
+@media(max-width:600px){
+  section{padding:55px 0}
+  .hero{padding:15px 0 50px}
+  .hero-image{border-radius:18px}
+  .hero-image img{max-height:300px}
+  .hero-content{padding-top:32px}
+  .hero p{font-size:15px}
+  .price strong{font-size:17px}
+  .price small{font-size:12px}
+  .info-card{padding:21px}
+  .plot-grid{grid-template-columns:1fr}
+  .amenity-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid{grid-template-columns:1fr 1fr}
+  .gallery-grid img{height:150px}
+  .float{right:12px;bottom:82px}
+  .mobile-cta{display:flex}
+  footer{padding-bottom:80px}
 }
-
 </style>
 </head>
 
 <body>
 
-
-<!-- =========================================================
-     HEADER
-========================================================= -->
-
+<!-- HEADER -->
 <header>
+  <div class="container nav">
+    <a href="#top" class="brand">
+      <img src="assets/gangalogo.jpg"
+           onerror="this.style.display='none'"
+           alt="Ganga Rivera Logo">
+      <span>GANGA RIVERA</span>
+    </a>
 
-<div class="wrap nav">
+    <nav class="navlinks">
+      <a href="#overview">Overview</a>
+      <a href="#plots">Plots</a>
+      <a href="#amenities">Amenities</a>
+      <a href="#location">Location</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
 
-<a class="brand" href="#home">
-
-<img
-src="assets/gangalogo.jpg"
-alt="Ganga Rivera"
-onerror="this.src='assets/ganga-logo.jpg'">
-
-<span>
-<b>GANGA RIVERA</b>
-<small>PHENIX INFRACON PVT. LTD.</small>
-</span>
-
-</a>
-
-
-<nav class="links">
-
-<a href="#details">Details</a>
-
-<a href="#amenities">Amenities</a>
-
-<a href="#plots">Plots</a>
-
-<a href="#location">Location</a>
-
-<a href="#gallery">Gallery</a>
-
-<a href="#contact">Contact</a>
-
-</nav>
-
-
-<button
-class="menu"
-onclick="openLead()">
-☰
-</button>
-
-</div>
-
+    <a class="navbtn" href="javascript:void(0)" onclick="openLead()">
+      GET DETAILS
+    </a>
+  </div>
 </header>
 
 
-<main id="home">
-
-
-<!-- =========================================================
-     HERO
-========================================================= -->
+<!-- HERO -->
+<main id="top">
 
 <section class="hero">
+  <div class="container">
 
-<div class="wrap heroGrid">
+    <div class="hero-image">
+      <img src="assets/IMG-20260914-WA0009.png"
+           alt="Ganga Rivera Brijghat Garhmukteshwar">
+    </div>
 
+    <div class="hero-content">
+      <div class="badge">BRIJGHAT • GARHMUKTESHWAR • NH-9 CORRIDOR</div>
 
-<div>
+      <h1>
+        Your Own Plot Near the Ganga.<br>
+        <span>More Land. More Possibilities.</span>
+      </h1>
 
-<div class="eyebrow">
-GANGA RIVERA
-</div>
+      <p>
+        Premium residential & weekend plots designed for people looking
+        for space, peaceful surroundings and convenient connectivity.
+      </p>
 
+      <div class="price">
+        <strong>Starting ₹18 Lakhs*</strong>
+        <small>₹18,000 / Sq. Yard*</small>
+      </div>
 
-<div class="loc">
-📍 Brijghat, Garhmukteshwar — NH-9 Corridor
-</div>
+      <div class="ctas">
+        <a class="btn btn-gold" href="javascript:void(0)" onclick="openLead()">
+          GET PRICE & AVAILABILITY
+        </a>
 
+        <a class="btn btn-wa"
+           href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details."
+           target="_blank">
+          WHATSAPP NOW
+        </a>
+      </div>
+    </div>
 
-<h1>
-क्यों <span>Ganga Rivera</span>
-बन रहा है लोगों की पहली पसंद?
-</h1>
-
-
-<p>
-NCR के पास, गंगा के साथ —
-प्रकृति, शांति और बेहतर future possibilities
-के बीच अपना plot देखने का अवसर।
-</p>
-
-
-<div class="actions">
-
-<button
-class="btn gold"
-onclick="openLead()">
-📋 PROJECT DETAILS
-</button>
-
-
-<a
-class="btn green"
-target="_blank"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details.">
-💬 WHATSAPP
-</a>
-
-</div>
-
-
-<div class="chips">
-
-<span class="chip">100 Gaj</span>
-
-<span class="chip">120 Gaj</span>
-
-<span class="chip">200 Gaj</span>
-
-<span class="chip">
-Residential & Weekend Plots
-</span>
-
-</div>
-
-</div>
-
-
-<!-- ORIGINAL GATE IMAGE — NO TEXT OVER IMAGE -->
-
-<div class="heroVisual">
-
-<img
-src="assets/IMG-20260914-WA0009.png"
-alt="Ganga Rivera Gate"
-onerror="this.src='assets/site1.jpg'">
-
-</div>
-
-
-</div>
-
+  </div>
 </section>
 
 
-<!-- =========================================================
-     PROJECT DETAILS TABLE
-========================================================= -->
+<!-- OVERVIEW -->
+<section class="info-section" id="overview">
+  <div class="container">
 
-<section
-class="sec blueSec"
-id="details">
+    <div class="section-head">
+      <div class="kicker">GANGA RIVERA</div>
+      <h2>Everything You Need to Know</h2>
+      <p>
+        A simple choice of plot sizes, practical amenities and a location
+        designed for residential and weekend living.
+      </p>
+    </div>
 
-<div class="wrap two">
+    <div class="info-grid">
 
+      <div class="info-card">
+        <h3>Project Highlights</h3>
 
-<div>
+        <div class="info-list">
 
-<div class="eyebrow">
-PROJECT SNAPSHOT
-</div>
+          <div class="info-row">
+            <div class="icon">📍</div>
+            <div>
+              <strong>Prime Location</strong>
+              <span>Brijghat, Garhmukteshwar – NH-9 Corridor</span>
+            </div>
+          </div>
 
+          <div class="info-row">
+            <div class="icon">📐</div>
+            <div>
+              <strong>Plot Sizes</strong>
+              <span>100, 120 & 200 Sq. Yards</span>
+            </div>
+          </div>
 
-<h2 class="title">
-Ganga Rivera —
-पूरी जानकारी एक जगह
-</h2>
+          <div class="info-row">
+            <div class="icon">🏡</div>
+            <div>
+              <strong>Property Type</strong>
+              <span>Residential & Weekend Plots</span>
+            </div>
+          </div>
 
+          <div class="info-row">
+            <div class="icon">💰</div>
+            <div>
+              <strong>Starting Price</strong>
+              <span>₹18 Lakhs* / ₹18,000 per Sq. Yard*</span>
+            </div>
+          </div>
 
-<p class="lead">
-नीचे वही मुख्य project details रखी गई हैं
-जो project information में दी गई हैं।
-</p>
+          <div class="info-row">
+            <div class="icon">🏦</div>
+            <div>
+              <strong>Loan Facility</strong>
+              <span>Up to 90%*, subject to eligibility & lender terms</span>
+            </div>
+          </div>
 
-
-<table class="infoTable">
-
-<tr>
-<th>Project</th>
-<td>Ganga Rivera</td>
-</tr>
-
-<tr>
-<th>Developer</th>
-<td>Phenix Infracon Pvt. Ltd.</td>
-</tr>
-
-<tr>
-<th>Location</th>
-<td>
-Brijghat, Garhmukteshwar — NH-9 Corridor
-</td>
-</tr>
-
-<tr>
-<th>Property Type</th>
-<td>
-Residential & Weekend Farmhouse Plots
-</td>
-</tr>
-
-<tr>
-<th>Plot Sizes</th>
-<td>
-100, 120 & 200 Sq. Yards
-</td>
-</tr>
-
-<tr>
-<th>Starting Price</th>
-<td>
-₹18 Lakhs* — from 100 Sq. Yards
-</td>
-</tr>
-
-<tr>
-<th>Loan Facility</th>
-<td>
-Up to 90%* — subject to eligibility,
-lender approval & applicable terms
-</td>
-</tr>
-
-<tr>
-<th>Contact</th>
-<td>
-78349 52729
-</td>
-</tr>
-
-</table>
-
-</div>
+        </div>
+      </div>
 
 
-<div class="sectionImg">
+      <div class="info-card">
+        <h3>Why Consider Ganga Rivera?</h3>
 
-<img
-src="assets/site1.jpg"
-alt="Actual Ganga Rivera site">
+        <div class="info-list">
 
-</div>
+          <div class="info-row">
+            <div class="icon">🌿</div>
+            <div>
+              <strong>Peaceful Surroundings</strong>
+              <span>Green and open surroundings for a relaxed lifestyle.</span>
+            </div>
+          </div>
 
+          <div class="info-row">
+            <div class="icon">🛣️</div>
+            <div>
+              <strong>Road Connectivity</strong>
+              <span>Conveniently located along the NH-9 Corridor.</span>
+            </div>
+          </div>
 
-</div>
+          <div class="info-row">
+            <div class="icon">🏘️</div>
+            <div>
+              <strong>Gated Community</strong>
+              <span>Planned surroundings with security-focused infrastructure.</span>
+            </div>
+          </div>
 
+          <div class="info-row">
+            <div class="icon">📄</div>
+            <div>
+              <strong>Documentation</strong>
+              <span>Project and property documentation available for review.</span>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <div class="icon">🚗</div>
+            <div>
+              <strong>Site Visit</strong>
+              <span>Free pick & drop site visit available.</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
-<!-- =========================================================
-     LOCATION VISUAL
-========================================================= -->
-
-<section class="sec plainSec" id="location">
-
-<div class="wrap two">
-
-
-<div class="visual">
-
-<svg
-viewBox="0 0 700 430"
-xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-
-<linearGradient
-id="sky"
-x1="0"
-y1="0"
-x2="1"
-y2="1">
-
-<stop stop-color="#1d6e9d"/>
-
-<stop
-offset="1"
-stop-color="#071522"/>
-
-</linearGradient>
-
-
-<linearGradient
-id="river"
-x1="0"
-y1="0"
-x2="1"
-y2="0">
-
-<stop
-stop-color="#43b9ee"/>
-
-<stop
-offset="1"
-stop-color="#0b6f9e"/>
-
-</linearGradient>
-
-</defs>
-
-
-<rect
-width="700"
-height="430"
-fill="url(#sky)"/>
-
-
-<circle
-cx="570"
-cy="85"
-r="42"
-fill="#ffd66f"/>
-
-
-<path
-d="M0 265 Q150 210 280 265 T560 255 T700 265 V430 H0Z"
-fill="#173e3a"/>
-
-
-<path
-d="M0 315 Q140 270 250 320 T480 315 T700 300 V430 H0Z"
-fill="url(#river)"/>
-
-
-<path
-d="M90 230 L170 175 L250 230"
-fill="none"
-stroke="#f4ba45"
-stroke-width="10"/>
-
-
-<path
-d="M115 230 V280 M225 230 V280"
-stroke="#f4ba45"
-stroke-width="10"/>
-
-
-<circle
-cx="170"
-cy="150"
-r="14"
-fill="#fff"/>
-
-
-<path
-d="M170 165 L170 190"
-stroke="#fff"
-stroke-width="6"/>
-
-
-<text
-x="35"
-y="50"
-fill="#fff"
-font-size="26"
-font-family="Arial"
-font-weight="700">
-BRIJGHAT • GARHMUKTESHWAR
-</text>
-
-
-<text
-x="35"
-y="82"
-fill="#bfe9ff"
-font-size="18"
-font-family="Arial">
-Ganga • NH-9 Corridor
-</text>
-
-</svg>
-
-</div>
-
-
-<div>
-
-<div class="eyebrow">
-LOCATION STORY
-</div>
-
-
-<h2 class="title">
-Location को map की तरह समझिए
-</h2>
-
-
-<p class="lead">
-Brijghat और Garhmukteshwar की identity Ganga,
-religious surroundings और road/rail connectivity
-से जुड़ी है। Exact site distance और route को
-site visit पर verify करें।
-</p>
-
-
-<div class="miniGrid">
-
-<div class="mini">
-
-<b>📍 Brijghat</b>
-
-<span>
-Ganga riverside location
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🛣️ NH-9 Corridor</b>
-
-<span>
-Road connectivity
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🚆 Railway</b>
-
-<span>
-Nearby railway connectivity
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🙏 Garh Ganga</b>
-
-<span>
-Religious & cultural surroundings
-</span>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<!-- PLOTS -->
+<section class="plots" id="plots">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="kicker">PLOT OPTIONS</div>
+      <h2>Choose Your Plot Size</h2>
+      <p>Simple options for different space and planning requirements.</p>
+    </div>
+
+    <div class="plot-grid">
+
+      <div class="plot">
+        <div class="plot-top">
+          <strong>100</strong>
+          <span>Sq. Yards</span>
+        </div>
+        <div class="plot-body">
+          <p>Compact plot option for residential or future planning.</p>
+          <a class="plot-btn"
+             href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20details%20for%20100%20Sq.%20Yards%20plot%20in%20Ganga%20Rivera."
+             target="_blank">
+            GET DETAILS
+          </a>
+        </div>
+      </div>
+
+
+      <div class="plot">
+        <div class="plot-top">
+          <strong>120</strong>
+          <span>Sq. Yards</span>
+        </div>
+        <div class="plot-body">
+          <p>Balanced space for residential and lifestyle requirements.</p>
+          <a class="plot-btn"
+             href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20details%20for%20120%20Sq.%20Yards%20plot%20in%20Ganga%20Rivera."
+             target="_blank">
+            GET DETAILS
+          </a>
+        </div>
+      </div>
+
+
+      <div class="plot">
+        <div class="plot-top">
+          <strong>200</strong>
+          <span>Sq. Yards</span>
+        </div>
+        <div class="plot-body">
+          <p>More space for a larger home, weekend use or future plans.</p>
+          <a class="plot-btn"
+             href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20details%20for%20200%20Sq.%20Yards%20plot%20in%20Ganga%20Rivera."
+             target="_blank">
+            GET DETAILS
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
-<!-- =========================================================
-     AMENITIES
-========================================================= -->
+<!-- AMENITIES -->
+<section class="amenities" id="amenities">
+  <div class="container">
 
-<section
-class="sec greenSec"
-id="amenities">
+    <div class="section-head">
+      <div class="kicker">PROJECT FEATURES</div>
+      <h2>Designed for Comfortable Living</h2>
+    </div>
 
-<div class="wrap">
+    <div class="amenity-grid">
 
-<div class="eyebrow">
-PROJECT AMENITIES
-</div>
+      <div class="amenity">
+        <b>🛣️ 25 & 30 Ft Roads</b>
+        <span>Planned internal road network.</span>
+      </div>
 
+      <div class="amenity">
+        <b>🔐 Gated Community</b>
+        <span>Controlled and organised project environment.</span>
+      </div>
 
-<h2 class="title">
-जो सुविधाएँ project details में दी गई हैं
-</h2>
+      <div class="amenity">
+        <b>📹 CCTV</b>
+        <span>Security-focused infrastructure.</span>
+      </div>
 
+      <div class="amenity">
+        <b>☀️ Solar Street Lights</b>
+        <span>Solar-powered street lighting.</span>
+      </div>
 
-<p class="lead">
-यह section केवल available project information
-को compact table में दिखाता है।
-</p>
+      <div class="amenity">
+        <b>⚡ Basic Infrastructure</b>
+        <span>24/7 basic infrastructure provision.</span>
+      </div>
 
+      <div class="amenity">
+        <b>🏢 Clubhouse</b>
+        <span>Community lifestyle facility.</span>
+      </div>
 
-<div class="tableWrap">
+      <div class="amenity">
+        <b>🏋️ Gymnasium</b>
+        <span>Fitness facility within the project.</span>
+      </div>
 
-<table class="infoTable">
+      <div class="amenity">
+        <b>🌳 Green Surroundings</b>
+        <span>Open and peaceful surroundings.</span>
+      </div>
 
-<tr>
-
-<th>Community</th>
-<td>Gated Community</td>
-
-<th>Security</th>
-<td>CCTV</td>
-
-</tr>
-
-
-<tr>
-
-<th>Internal Roads</th>
-<td>25 Ft & 30 Ft</td>
-
-<th>Street Lighting</th>
-<td>Solar Street Lights</td>
-
-</tr>
-
-
-<tr>
-
-<th>Infrastructure</th>
-<td>24/7 Basic Infrastructure</td>
-
-<th>Club</th>
-<td>Clubhouse</td>
-
-</tr>
-
-
-<tr>
-
-<th>Fitness</th>
-<td>Gymnasium</td>
-
-<th>Environment</th>
-<td>Green / Open Surroundings</td>
-
-</tr>
-
-</table>
-
-</div>
-
-
-<div class="cards">
-
-
-<div class="card">
-
-<div class="icon">
-🚧
-</div>
-
-<h3>
-Planned Internal Roads
-</h3>
-
-<p>
-25 ft और 30 ft internal road information.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">
-☀️
-</div>
-
-<h3>
-Solar Street Lights
-</h3>
-
-<p>
-Project amenities में solar street lighting
-का उल्लेख.
-</p>
-
-</div>
-
-
-<div class="card">
-
-<div class="icon">
-🛡️
-</div>
-
-<h3>
-Gated + CCTV
-</h3>
-
-<p>
-Gated community और CCTV information.
-</p>
-
-</div>
-
-
-</div>
-
-</div>
-
+    </div>
+  </div>
 </section>
 
 
-<!-- =========================================================
-     PLOT OPTIONS TABLE
-========================================================= -->
-
-<section
-class="sec blueSec"
-id="plots">
-
-<div class="wrap two">
-
-
-<div>
-
-<div class="eyebrow">
-PLOT OPTIONS
-</div>
-
-
-<h2 class="title">
-100, 120 और 200 Gaj —
-बस यही तीन options
-</h2>
-
-
-<p class="lead">
-Plot size के हिसाब से enquiry करें।
-Current availability और exact rate sales
-team से confirm करें।
-</p>
-
-
-<div class="tableWrap">
-
-<table class="infoTable plotTable">
-
-<tr>
-
-<th>Plot Size</th>
-
-<th>Area</th>
-
-<th>Enquiry</th>
-
-</tr>
-
-
-<tr>
-
-<td>100 Gaj</td>
-
-<td>
-900 Sq. Ft. approx.
-</td>
-
-<td>
-
-<button
-class="btn gold"
-onclick="openLead('100 Gaj')">
-
-Ask Details
-
-</button>
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>120 Gaj</td>
-
-<td>
-1080 Sq. Ft. approx.
-</td>
-
-<td>
-
-<button
-class="btn gold"
-onclick="openLead('120 Gaj')">
-
-Ask Details
-
-</button>
-
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>200 Gaj</td>
-
-<td>
-1800 Sq. Ft. approx.
-</td>
-
-<td>
-
-<button
-class="btn gold"
-onclick="openLead('200 Gaj')">
-
-Ask Details
-
-</button>
-
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
-</div>
-
-
-<div class="visual">
-
-<svg
-viewBox="0 0 700 430"
-xmlns="http://www.w3.org/2000/svg">
-
-<defs>
-
-<linearGradient
-id="p"
-x1="0"
-y1="0"
-x2="1"
-y2="1">
-
-<stop stop-color="#0f3c52"/>
-
-<stop
-offset="1"
-stop-color="#071522"/>
-
-</linearGradient>
-
-</defs>
-
-
-<rect
-width="700"
-height="430"
-fill="url(#p)"/>
-
-
-<text
-x="35"
-y="55"
-fill="#fff"
-font-size="30"
-font-family="Arial"
-font-weight="700">
-PLOT OPTIONS
-</text>
-
-
-<g
-fill="#12344a"
-stroke="#4cc4ff"
-stroke-width="3">
-
-<rect
-x="55"
-y="100"
-width="170"
-height="210"
-rx="12"/>
-
-<rect
-x="265"
-y="100"
-width="170"
-height="210"
-rx="12"/>
-
-<rect
-x="475"
-y="100"
-width="170"
-height="210"
-rx="12"/>
-
-</g>
-
-
-<g
-fill="#ffd66f"
-font-family="Arial"
-font-weight="700"
-text-anchor="middle">
-
-<text
-x="140"
-y="210"
-font-size="36">
-100
-</text>
-
-<text
-x="350"
-y="210"
-font-size="36">
-120
-</text>
-
-<text
-x="560"
-y="210"
-font-size="36">
-200
-</text>
-
-</g>
-
-
-<g
-fill="#c7d9e6"
-font-family="Arial"
-text-anchor="middle">
-
-<text
-x="140"
-y="245"
-font-size="18">
-GAJ
-</text>
-
-<text
-x="350"
-y="245"
-font-size="18">
-GAJ
-</text>
-
-<text
-x="560"
-y="245"
-font-size="18">
-GAJ
-</text>
-
-</g>
-
-
-<path
-d="M55 350 H645"
-stroke="#18c985"
-stroke-width="8"
-stroke-linecap="round"/>
-
-</svg>
-
-</div>
-
-</div>
-
+<!-- LOCATION -->
+<section class="location" id="location">
+  <div class="container">
+
+    <div class="section-head">
+      <div class="kicker">LOCATION ADVANTAGE</div>
+      <h2>Connected to Everyday Essentials</h2>
+      <p>
+        Approximate distances are indicative and may vary by route.
+      </p>
+    </div>
+
+    <div class="location-grid">
+
+      <div class="location-card">
+        <h3>Nearby Connectivity & Places</h3>
+
+        <div class="location-item">
+          <span>NH-9</span>
+          <span>~150 m*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Garh Ganga Ghat</span>
+          <span>~2.2 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Garhmuktesar Bridge Railway Station</span>
+          <span>~2.2 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Tigri Dham</span>
+          <span>~3 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Brijghat</span>
+          <span>Nearby</span>
+        </div>
+      </div>
+
+
+      <div class="location-card">
+        <h3>Education & Healthcare</h3>
+
+        <div class="location-item">
+          <span>Bhartiya Ayurvedic Medical College</span>
+          <span>~2.0 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Bharatiya Pharmacy College</span>
+          <span>~2.0 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Sanjeevani Ayurvedic Medical College</span>
+          <span>~2.2 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>IMS Group of Institutions</span>
+          <span>~2.8 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Bhartiya Hospital & Trauma Centre</span>
+          <span>~2.0 km*</span>
+        </div>
+
+        <div class="location-item">
+          <span>Shree Balaji Hospital, Brijghat</span>
+          <span>~2.6 km*</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 
-<!-- =========================================================
-     SITE VISIT
-========================================================= -->
+<!-- VIDEO -->
+<section class="video-section">
+  <div class="container">
 
-<section class="sec goldSec">
+    <div class="section-head">
+      <div class="kicker">PROJECT VIDEO</div>
+      <h2>See Ganga Rivera</h2>
+      <p>Explore the project and surrounding location through video.</p>
+    </div>
 
-<div class="wrap two">
+    <div class="video">
+      <iframe
+        src="https://www.youtube.com/embed/PioWFXV6HUw?rel=0&modestbranding=1"
+        title="Ganga Rivera Project Video"
+        allowfullscreen>
+      </iframe>
+    </div>
 
-
-<div class="sectionImg">
-
-<img
-src="assets/site2.jpg"
-alt="Ganga Rivera project site and development">
-
-</div>
-
-
-<div>
-
-<div class="eyebrow">
-SITE EXPERIENCE
-</div>
-
-
-<h2 class="title">
-Site visit पर क्या देखना है?
-</h2>
-
-
-<p class="lead">
-Website पर सिर्फ देखकर decision लेने के बजाय
-actual site पर जाकर location और available plots देखें।
-</p>
-
-
-<table class="infoTable">
-
-<tr>
-<th>1</th>
-<td>
-Project entry और exact site location देखें
-</td>
-</tr>
-
-<tr>
-<th>2</th>
-<td>
-100 / 120 / 200 Gaj में available plots पूछें
-</td>
-</tr>
-
-<tr>
-<th>3</th>
-<td>
-Road width और site development देखें
-</td>
-</tr>
-
-<tr>
-<th>4</th>
-<td>
-Documents / approvals की copies मांगकर verify करें
-</td>
-</tr>
-
-<tr>
-<th>5</th>
-<td>
-Total cost, registry और applicable charges पूछें
-</td>
-</tr>
-
-</table>
-
-
-<div class="actions">
-
-<button
-class="btn gold"
-onclick="openLead()">
-🚗 BOOK SITE VISIT
-</button>
-
-
-<a
-class="btn darkbtn"
-target="_blank"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20to%20book%20a%20Ganga%20Rivera%20site%20visit.">
-WhatsApp
-</a>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 
-<!-- =========================================================
-     FINANCE
-========================================================= -->
+<!-- GALLERY -->
+<section class="gallery" id="gallery">
+  <div class="container">
 
-<section class="sec plainSec">
+    <div class="section-head">
+      <div class="kicker">PROJECT GALLERY</div>
+      <h2>Explore the Property</h2>
+      <p>View project images and site surroundings.</p>
+    </div>
 
-<div class="wrap two">
+    <div class="gallery-grid" id="galleryGrid">
 
+      <img src="assets/site1.jpg"
+           alt="Ganga Rivera Project Site">
 
-<div>
+      <img src="assets/site2.jpg"
+           alt="Ganga Rivera Site">
 
-<div class="eyebrow">
-FINANCE
-</div>
+      <img src="assets/IMG-20260914-WA0009.png"
+           alt="Ganga Rivera Entrance">
 
+    </div>
 
-<h2 class="title">
-Loan Facility — up to 90%*
-</h2>
-
-
-<p class="lead">
-Project information के अनुसार loan facility
-up to 90% तक बताई गई है। Actual sanction applicant
-eligibility, lender approval, documentation और
-applicable terms पर निर्भर करेगा।
-</p>
-
-
-<div class="quote">
-
-*90% को guaranteed approval न समझें।
-Final loan amount और sanction संबंधित lender तय करेगा।
-
-</div>
-
-</div>
-
-
-<div class="sectionImg">
-
-<img
-src="assets/IMG-20260829-WA0012.jpg"
-alt="Project promotional information">
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 
-<!-- =========================================================
-     GANGA / NATURE CUSTOM VISUAL
-========================================================= -->
+<!-- FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
 
-<section class="sec greenSec">
+    <h2>Ready to Explore Your Plot?</h2>
 
-<div class="wrap two">
+    <p>
+      Get the latest price, available plot options and site visit details
+      directly on WhatsApp.
+    </p>
 
+    <div class="ctas">
 
-<div class="visual">
+      <a class="btn btn-gold"
+         href="javascript:void(0)"
+         onclick="openLead()">
+        GET PRICE & AVAILABILITY
+      </a>
 
-<svg
-viewBox="0 0 700 430"
-xmlns="http://www.w3.org/2000/svg">
+      <a class="btn btn-wa"
+         href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20latest%20price%20and%20available%20plots."
+         target="_blank">
+        CHAT ON WHATSAPP
+      </a>
 
-<defs>
+    </div>
 
-<linearGradient
-id="n"
-x1="0"
-y1="0"
-x2="0"
-y2="1">
-
-<stop stop-color="#123d4d"/>
-
-<stop
-offset="1"
-stop-color="#071a18"/>
-
-</linearGradient>
-
-</defs>
-
-
-<rect
-width="700"
-height="430"
-fill="url(#n)"/>
-
-
-<circle
-cx="570"
-cy="85"
-r="43"
-fill="#ffd66f"/>
-
-
-<path
-d="M0 270 L130 170 L235 260 L350 145 L480 270 L600 185 L700 265 V430 H0Z"
-fill="#174d3c"/>
-
-
-<path
-d="M0 320 Q170 260 340 320 T700 315 V430 H0Z"
-fill="#1680a2"/>
-
-
-<path
-d="M95 340 Q140 300 190 340"
-fill="none"
-stroke="#bcecff"
-stroke-width="6"/>
-
-
-<path
-d="M225 350 Q270 310 315 350"
-fill="none"
-stroke="#bcecff"
-stroke-width="6"/>
-
-
-<text
-x="35"
-y="55"
-fill="#fff"
-font-size="29"
-font-family="Arial"
-font-weight="700">
-GANGA • NATURE • BRIJGHAT
-</text>
-
-
-<text
-x="35"
-y="85"
-fill="#aee8ff"
-font-size="17"
-font-family="Arial">
-A visual illustration — not a site photograph
-</text>
-
-</svg>
-
-</div>
-
-
-<div>
-
-<div class="eyebrow">
-GANGA & SURROUNDINGS
-</div>
-
-
-<h2 class="title">
-Nature, Ganga और
-Brijghat experience
-</h2>
-
-
-<p class="lead">
-Brijghat-Garhmukteshwar region Ganga riverside
-environment और religious/cultural surroundings
-के लिए जाना जाता है।
-</p>
-
-
-<div class="miniGrid">
-
-
-<div class="mini">
-
-<b>🌊 Ganga</b>
-
-<span>
-Riverside surroundings
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🙏 Garh Ganga</b>
-
-<span>
-Religious destination
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🐬 Gangetic Dolphin</b>
-
-<span>
-Regional ecological context
-</span>
-
-</div>
-
-
-<div class="mini">
-
-<b>🌿 Open Environment</b>
-
-<span>
-Weekend-use appeal
-</span>
-
-</div>
-
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
-
-
-<!-- =========================================================
-     NEARBY TABLE
-========================================================= -->
-
-<section class="sec blueSec">
-
-<div class="wrap">
-
-<div class="eyebrow">
-NEARBY POINTS
-</div>
-
-
-<h2 class="title">
-कुछ प्रमुख nearby points
-</h2>
-
-
-<p class="lead">
-नीचे distances approximate/project information के
-अनुसार हैं; exact road distance site visit पर verify करें।
-</p>
-
-
-<div class="tableWrap">
-
-<table class="infoTable">
-
-<tr>
-
-<th>
-Point
-</th>
-
-<th>
-Approx. Distance
-</th>
-
-<th>
-Type
-</th>
-
-</tr>
-
-
-<tr>
-
-<td>
-Ganga Ghat, Brijghat
-</td>
-
-<td>
-~1.7 km
-</td>
-
-<td>
-Religious / Riverside
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Garh Ganga
-</td>
-
-<td>
-~2.1 km
-</td>
-
-<td>
-Religious / Tourism
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Garhmuktesar Bridge Railway Station
-</td>
-
-<td>
-~2.2 km
-</td>
-
-<td>
-Rail Connectivity
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Kankather Railway Station
-</td>
-
-<td>
-~4.1 km
-</td>
-
-<td>
-Rail Connectivity
-</td>
-
-</tr>
-
-
-<tr>
-
-<td>
-Tigri Ganga Ghat / Dham
-</td>
-
-<td>
-~3 km*
-</td>
-
-<td>
-Religious / Cultural
-</td>
-
-</tr>
-
-</table>
-
-</div>
-
-
-<p
-style="
-color:#7f95a8;
-font-size:10px;
-margin-top:8px;
-">
-
-*Project-provided approximate distance.
-Verify exact route distance before publishing as a precise claim.
-
-</p>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     VIDEO
-========================================================= -->
-
-<section
-class="sec plainSec"
-id="video">
-
-<div class="wrap">
-
-<div class="eyebrow">
-PROJECT VIDEO
-</div>
-
-
-<h2 class="title">
-Ganga Rivera — Video
-</h2>
-
-
-<p class="lead">
-Project video देखें और फिर site visit के लिए enquiry करें।
-</p>
-
-
-<div class="video">
-
-<iframe
-src="https://www.youtube.com/embed/PioWFXV6HUw?rel=0&modestbranding=1"
-title="Ganga Rivera Project Video"
-allow="accelerometer;autoplay;clipboard-write;encrypted-media;gyroscope;picture-in-picture;web-share"
-allowfullscreen>
-</iframe>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     GALLERY
-========================================================= -->
-
-<section
-class="sec blueSec"
-id="gallery">
-
-<div class="wrap">
-
-<div class="eyebrow">
-REAL PROJECT GALLERY
-</div>
-
-
-<h2 class="title">
-Photos & Updates
-</h2>
-
-
-<p class="lead">
-नई images को <b>assets/gallery/</b> folder में upload करो —
-gallery automatically load होगी।
-</p>
-
-
-<div
-class="gallery"
-id="galleryTrack">
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     SITE VISIT CUSTOM VISUAL
-========================================================= -->
-
-<section class="sec greenSec">
-
-<div class="wrap two">
-
-
-<div>
-
-<div class="eyebrow">
-WHY VISIT?
-</div>
-
-
-<h2 class="title">
-Online details से आगे —
-actual site देखें
-</h2>
-
-
-<p class="lead">
-Plot size, location, road, surrounding area और
-available inventory को personally देखने के बाद
-ही अपना decision लें।
-</p>
-
-
-<div class="actions">
-
-<button
-class="btn gold"
-onclick="openLead()">
-BOOK SITE VISIT
-</button>
-
-
-<a
-class="btn darkbtn"
-href="tel:+917834952729">
-📞 CALL
-</a>
-
-</div>
-
-</div>
-
-
-<div class="visual">
-
-<svg
-viewBox="0 0 700 430"
-xmlns="http://www.w3.org/2000/svg">
-
-<rect
-width="700"
-height="430"
-fill="#0b1d2b"/>
-
-
-<rect
-x="60"
-y="90"
-width="580"
-height="250"
-rx="28"
-fill="#102f43"
-stroke="#2b9ed0"
-stroke-width="3"/>
-
-
-<circle
-cx="170"
-cy="215"
-r="58"
-fill="#18c985"/>
-
-
-<path
-d="M140 215 l22 22 42-50"
-fill="none"
-stroke="#fff"
-stroke-width="12"
-stroke-linecap="round"
-stroke-linejoin="round"/>
-
-
-<text
-x="260"
-y="205"
-fill="#fff"
-font-size="31"
-font-family="Arial"
-font-weight="700">
-SITE VISIT
-</text>
-
-
-<text
-x="260"
-y="245"
-fill="#a9dfff"
-font-size="19"
-font-family="Arial">
-100 • 120 • 200 Gaj
-</text>
-
-
-<text
-x="260"
-y="280"
-fill="#ffd66f"
-font-size="16"
-font-family="Arial">
-Brijghat • Garhmukteshwar
-</text>
-
-</svg>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     FINAL CTA
-========================================================= -->
-
-<section
-class="sec cta"
-id="contact">
-
-<div class="wrap">
-
-<div class="ctaBox">
-
-<div class="eyebrow">
-MORE LAND. MORE VALUE. MORE POSSIBILITIES.
-</div>
-
-
-<h2 class="title">
-Ganga Rivera की details चाहिए?
-</h2>
-
-
-<p class="lead">
-अपना नाम, WhatsApp number और preferred plot size भेजें।
-Team से available options और site visit details पूछें।
-</p>
-
-
-<div
-class="actions"
-style="justify-content:center">
-
-<button
-class="btn gold"
-onclick="openLead()">
-📋 ENQUIRE NOW
-</button>
-
-
-<a
-class="btn green"
-target="_blank"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20want%20Ganga%20Rivera%20plot%20details.">
-
-💬 WHATSAPP
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-<!-- =========================================================
-     FAQ
-========================================================= -->
-
-<section class="sec plainSec">
-
-<div class="wrap">
-
-<div class="eyebrow">
-FAQ
-</div>
-
-
-<h2 class="title">
-Frequently Asked Questions
-</h2>
-
-
-<div class="faq">
-
-
-<details>
-
-<summary>
-Ganga Rivera कहाँ है?
-</summary>
-
-<p>
-Brijghat, Garhmukteshwar — NH-9 Corridor.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-कौन-कौन से plot size हैं?
-</summary>
-
-<p>
-100, 120 और 200 Sq. Yards.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Starting price क्या है?
-</summary>
-
-<p>
-Project information के अनुसार ₹18 Lakhs* से,
-100 Sq. Yards option से. Current rate/availability
-confirm करें.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Loan facility है?
-</summary>
-
-<p>
-Up to 90%* loan facility बताई गई है,
-subject to eligibility, lender approval and applicable terms.
-</p>
-
-</details>
-
-
-<details>
-
-<summary>
-Site visit कैसे करें?
-</summary>
-
-<p>
-Form भरें, WhatsApp करें या 78349 52729 पर call करें.
-</p>
-
-</details>
-
-
-</div>
-
-</div>
-
-</section>
-
 
 </main>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
-
+<!-- FOOTER -->
 <footer>
+  <div class="container">
 
-<div class="wrap foot">
+    <strong>GANGA RIVERA</strong><br>
+    Brijghat, Garhmukteshwar – NH-9 Corridor
 
+    <div style="margin-top:8px;">
+      Phenix Infracon Pvt. Ltd.
+    </div>
 
-<div>
+    <div class="disclaimer">
+      *Prices, availability, specifications, facilities and distances are
+      subject to change. Loan facility is subject to applicant eligibility,
+      lender approval and applicable terms. Please verify project,
+      property and documentation details before booking.
+    </div>
 
-<div class="brand">
-
-<img
-src="assets/gangalogo.jpg"
-alt="Ganga Rivera"
-onerror="this.src='assets/ganga-logo.jpg'">
-
-<span>
-
-<b>GANGA RIVERA</b>
-
-<small>
-PHENIX INFRACON PVT. LTD.
-</small>
-
-</span>
-
-</div>
-
-
-<p style="margin-top:12px">
-More Land. More Value. More Possibilities.
-</p>
-
-</div>
-
-
-<div>
-
-<h3>
-Quick Links
-</h3>
-
-<ul>
-
-<li>
-<a href="#details">
-Project Details
-</a>
-</li>
-
-<li>
-<a href="#plots">
-Plot Options
-</a>
-</li>
-
-<li>
-<a href="#location">
-Location
-</a>
-</li>
-
-<li>
-<a href="#gallery">
-Gallery
-</a>
-</li>
-
-</ul>
-
-</div>
-
-
-<div>
-
-<h3>
-Contact
-</h3>
-
-<ul>
-
-<li>
-📞
-<a href="tel:+917834952729">
-78349 52729
-</a>
-</li>
-
-<li>
-💬
-<a
-target="_blank"
-href="https://wa.me/917834952729">
-WhatsApp
-</a>
-</li>
-
-<li>
-📍 Brijghat, Garhmukteshwar
-</li>
-
-</ul>
-
-</div>
-
-
-</div>
-
-
-<div class="wrap copy">
-
-©
-<span id="yr"></span>
-Ganga Rivera |
-Phenix Infracon Pvt. Ltd. |
-Information subject to availability and applicable terms.
-
-</div>
-
+  </div>
 </footer>
 
 
-<!-- =========================================================
-     FLOATING BUTTONS
-========================================================= -->
-
+<!-- FLOATING BUTTONS -->
 <div class="float">
 
-<a
-class="call"
-href="tel:+917834952729">
-☎
-</a>
+  <a class="call"
+     href="tel:+917834952729"
+     aria-label="Call">
+    ☎
+  </a>
 
-
-<a
-class="wa"
-target="_blank"
-href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.">
-💬
-</a>
-
-</div>
-
-
-<!-- =========================================================
-     LEAD MODAL
-========================================================= -->
-
-<div
-class="modal"
-id="leadModal">
-
-<div class="box">
-
-<button
-class="close"
-onclick="closeLead()">
-×
-</button>
-
-
-<h2>
-Ganga Rivera Enquiry
-</h2>
-
-
-<p>
-Details भरें — enquiry WhatsApp पर तैयार हो जाएगी.
-</p>
-
-
-<form id="leadForm">
-
-
-<div class="field">
-
-<label>
-Name *
-</label>
-
-<input
-id="name"
-required
-placeholder="Your name">
+  <a class="whatsapp"
+     href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20details."
+     target="_blank"
+     aria-label="WhatsApp">
+    💬
+  </a>
 
 </div>
 
 
-<div class="field">
+<!-- MOBILE CTA -->
+<div class="mobile-cta">
 
-<label>
-WhatsApp Number *
-</label>
+  <a class="m-gold"
+     href="javascript:void(0)"
+     onclick="openLead()">
+    GET DETAILS
+  </a>
 
-<input
-id="phone"
-inputmode="numeric"
-maxlength="10"
-required
-placeholder="10 digit number">
-
-</div>
-
-
-<div class="field">
-
-<label>
-Preferred Plot Size *
-</label>
-
-<select
-id="size"
-required>
-
-<option value="">
-Select
-</option>
-
-<option>
-100 Gaj
-</option>
-
-<option>
-120 Gaj
-</option>
-
-<option>
-200 Gaj
-</option>
-
-</select>
+  <a class="m-wa"
+     href="https://wa.me/917834952729?text=Hi%2C%20I%20am%20interested%20in%20Ganga%20Rivera.%20Please%20share%20plot%20details."
+     target="_blank">
+    WHATSAPP
+  </a>
 
 </div>
 
 
-<div class="field">
+<!-- LEAD POPUP -->
+<div class="overlay" id="leadOverlay">
 
-<label>
-Purpose
-</label>
+  <div class="popup" style="position:relative">
 
-<select id="purpose">
+    <button class="close" onclick="closeLead()">×</button>
 
-<option>
-Self Use
-</option>
+    <div class="popup-head">
+      <h3>Get Ganga Rivera Details</h3>
+      <p>Share your requirement and get plot details on WhatsApp.</p>
+    </div>
 
-<option>
-Investment
-</option>
+    <div class="popup-body">
 
-<option>
-Weekend Home
-</option>
+      <form class="form" onsubmit="submitLead(event)">
 
-<option>
-Not Decided
-</option>
+        <input id="name"
+               type="text"
+               placeholder="Your Name"
+               required>
 
-</select>
+        <input id="phone"
+               type="tel"
+               placeholder="WhatsApp Number"
+               maxlength="10"
+               required>
 
-</div>
+        <select id="size" required>
+          <option value="">Preferred Plot Size</option>
+          <option>100 Sq. Yards</option>
+          <option>120 Sq. Yards</option>
+          <option>200 Sq. Yards</option>
+        </select>
 
+        <select id="purpose">
+          <option value="">Requirement</option>
+          <option>Self Use</option>
+          <option>Investment</option>
+          <option>Weekend Home</option>
+        </select>
 
-<div class="field">
+        <select id="visit">
+          <option value="">Site Visit</option>
+          <option>Yes, I want a Site Visit</option>
+          <option>Not Now</option>
+        </select>
 
-<label>
-Site Visit
-</label>
+        <button type="submit">
+          GET DETAILS ON WHATSAPP
+        </button>
 
-<select id="visit">
+      </form>
 
-<option>
-Not decided
-</option>
-
-<option>
-Weekday
-</option>
-
-<option>
-Weekend
-</option>
-
-</select>
-
-</div>
-
-
-<button
-class="btn green full"
-type="submit">
-
-💬 SEND ON WHATSAPP
-
-</button>
-
-
-</form>
-
-</div>
-
+    </div>
+  </div>
 </div>
 
 
 <script>
 
-/* =========================================================
-   YEAR
-========================================================= */
+/* WHATSAPP */
+const WA_NUMBER = "917834952729";
 
-document.getElementById("yr").textContent =
-new Date().getFullYear();
-
-
-/* =========================================================
-   MODAL
-========================================================= */
-
-const modal =
-document.getElementById("leadModal");
-
-
-function openLead(size=""){
-
-  modal.classList.add("on");
-
-  document.body.style.overflow="hidden";
-
-  if(size){
-
-    document.getElementById("size").value=size;
-
-  }
-
+/* POPUP */
+function openLead(){
+  document.getElementById("leadOverlay").style.display="flex";
 }
-
 
 function closeLead(){
-
-  modal.classList.remove("on");
-
-  document.body.style.overflow="";
-
+  document.getElementById("leadOverlay").style.display="none";
 }
 
-
-modal.addEventListener(
-"click",
-e=>{
-
-  if(e.target===modal){
-
-    closeLead();
-
-  }
-
+/* CLOSE WHEN CLICKING OUTSIDE */
+document.getElementById("leadOverlay").addEventListener("click",function(e){
+  if(e.target === this) closeLead();
 });
 
 
-document.addEventListener(
-"keydown",
-e=>{
-
-  if(e.key==="Escape"){
-
-    closeLead();
-
-  }
-
-});
-
-
-/* =========================================================
-   PHONE VALIDATION
-========================================================= */
-
-document
-.getElementById("phone")
-.addEventListener(
-"input",
-e=>{
-
-  e.target.value =
-  e.target.value
-  .replace(/\D/g,"")
-  .slice(0,10);
-
-});
-
-
-/* =========================================================
-   WHATSAPP FORM
-========================================================= */
-
-document
-.getElementById("leadForm")
-.addEventListener(
-"submit",
-e=>{
+/* LEAD FORM */
+function submitLead(e){
 
   e.preventDefault();
 
+  const name =
+    document.getElementById("name").value.trim();
 
   const phone =
-  document
-  .getElementById("phone")
-  .value
-  .trim();
+    document.getElementById("phone").value.trim();
+
+  const size =
+    document.getElementById("size").value;
+
+  const purpose =
+    document.getElementById("purpose").value || "Not specified";
+
+  const visit =
+    document.getElementById("visit").value || "Not specified";
 
 
-  if(!/^\d{10}$/.test(phone)){
-
-    alert(
-      "10 digit mobile number enter karein."
-    );
-
+  if(phone.length !== 10){
+    alert("Please enter a valid 10-digit WhatsApp number.");
     return;
-
   }
 
 
-  const name =
-  document
-  .getElementById("name")
-  .value
-  .trim();
-
-
-  const size =
-  document
-  .getElementById("size")
-  .value;
-
-
-  const purpose =
-  document
-  .getElementById("purpose")
-  .value;
-
-
-  const visit =
-  document
-  .getElementById("visit")
-  .value;
-
-
-  const msg =
-
+  const message =
 `Hi, I am interested in Ganga Rivera.
 
 Name: ${name}
 WhatsApp: ${phone}
-Plot Size: ${size}
-Purpose: ${purpose}
+Preferred Plot: ${size}
+Requirement: ${purpose}
 Site Visit: ${visit}
 
-Please share available plot details.`;
+Please share the latest price, availability and project details.`;
 
 
-  window.open(
-    "https://wa.me/917834952729?text="
-    +
-    encodeURIComponent(msg),
-    "_blank"
-  );
+  const url =
+    "https://wa.me/" +
+    WA_NUMBER +
+    "?text=" +
+    encodeURIComponent(message);
 
+  window.open(url,"_blank");
 
   closeLead();
-
-});
-
-
-/* =========================================================
-   AUTOMATIC GALLERY
-========================================================= */
-
-const track =
-document.getElementById("galleryTrack");
-
-
-const api =
-"https://api.github.com/repos/gangarivera/Ganga-Rivera-page/contents/assets/gallery?ref=main";
-
-
-async function loadGallery(){
-
-  try{
-
-    const r =
-    await fetch(api);
-
-
-    if(!r.ok){
-
-      throw new Error();
-
-    }
-
-
-    const files =
-    await r.json();
-
-
-    const imgs =
-    files.filter(
-      x =>
-      x.type==="file"
-      &&
-      /\.(jpg|jpeg|png|webp|gif|avif)$/i
-      .test(x.name)
-    );
-
-
-    if(!imgs.length){
-
-      track.innerHTML =
-
-      '<div style="padding:35px;color:#8da0b2;font-size:12px">Gallery images upload होते ही यहाँ दिखाई देंगी.</div>';
-
-      return;
-
-    }
-
-
-    imgs.forEach(
-    x=>{
-
-      const d =
-      document.createElement("div");
-
-      d.className="gItem";
-
-
-      const i =
-      document.createElement("img");
-
-      i.src =
-      x.download_url;
-
-      i.alt =
-      "Ganga Rivera project image";
-
-
-      d.appendChild(i);
-
-
-      d.onclick =
-      () => {
-
-        window.open(
-          x.download_url,
-          "_blank"
-        );
-
-      };
-
-
-      track.appendChild(d);
-
-    });
-
-
-  }
-
-  catch(e){
-
-    track.innerHTML =
-
-    '<div style="padding:35px;color:#8da0b2;font-size:12px">Gallery load होने में समस्या है. assets/gallery/ में images check करें.</div>';
-
-  }
-
 }
 
 
-loadGallery();
+/* AUTOMATIC POPUP AFTER 8 SECONDS */
+let popupShown = false;
 
+setTimeout(function(){
 
-/* =========================================================
-   GALLERY AUTO SCROLL
-========================================================= */
-
-setInterval(
-()=>{
-
-  if(
-    track.scrollWidth >
-    track.clientWidth
-  ){
-
-    track.scrollLeft += 272;
-
-
-    if(
-      track.scrollLeft +
-      track.clientWidth >=
-      track.scrollWidth - 5
-    ){
-
-      track.scrollLeft=0;
-
-    }
-
+  if(!popupShown){
+    openLead();
+    popupShown = true;
   }
 
-},
-3600
-);
+},8000);
+
+
+/* EXIT INTENT – DESKTOP ONLY */
+document.addEventListener("mouseout",function(e){
+
+  if(
+    window.innerWidth > 900 &&
+    e.clientY <= 5 &&
+    !popupShown
+  ){
+    openLead();
+    popupShown = true;
+  }
+
+});
 
 </script>
 
