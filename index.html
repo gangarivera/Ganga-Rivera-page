@@ -855,6 +855,57 @@ footer ul{
     padding-bottom:85px;
   }
 }
+/* ===== SIMPLE IMAGE ANIMATION - ADDED ===== */
+
+.hero-image,
+.location-image,
+.content-image,
+.gallery-item{
+  animation: imageFloat 4s ease-in-out infinite;
+  transition: transform .5s ease, box-shadow .5s ease;
+}
+
+.hero-image:hover,
+.location-image:hover,
+.content-image:hover,
+.gallery-item:hover{
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 25px 55px rgba(0,0,0,.22);
+}
+
+@keyframes imageFloat{
+  0%,100%{
+    transform:translateY(0);
+  }
+  50%{
+    transform:translateY(-6px);
+  }
+}
+
+.hero-image img,
+.location-image img,
+.content-image img,
+.gallery-item img{
+  transition:transform .7s ease;
+}
+
+.hero-image:hover img,
+.location-image:hover img,
+.content-image:hover img,
+.gallery-item:hover img{
+  transform:scale(1.05);
+}
+
+/* Mobile par animation halka rakho */
+@media(max-width:560px){
+  .hero-image,
+  .location-image,
+  .content-image,
+  .gallery-item{
+    animation-duration:5s;
+  }
+}
+  
 </style>
 </head>
 
