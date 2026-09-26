@@ -1179,6 +1179,401 @@ p,
     transform:scale(1.05);
   }
 }  
+/* =========================================================
+   PROFESSIONAL ANIMATION PACK
+   ========================================================= */
+
+/* Smooth animation base */
+.btn,
+.navlinks a,
+.logo,
+.amenity,
+.panel,
+.near-card,
+.location-point,
+.gallery-item,
+.hero-image,
+.location-image,
+.content-image,
+.kicker,
+.hero h1 span,
+.price-row strong,
+.price-row span {
+  will-change: transform, opacity, filter, color, box-shadow;
+}
+
+
+/* ================= BUTTON ANIMATION ================= */
+
+.btn {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    background-color .45s ease,
+    color .45s ease;
+  animation: professionalButton 3.8s ease-in-out infinite;
+}
+
+.btn:hover {
+  transform: translateY(-4px) scale(1.04);
+  box-shadow:
+    0 12px 30px rgba(245,196,81,.35),
+    0 0 18px rgba(245,196,81,.25);
+}
+
+.btn:active {
+  transform: scale(.97);
+}
+
+
+/* Moving light across button */
+.btn::after {
+  content:"";
+  position:absolute;
+  top:0;
+  left:-120%;
+  width:55%;
+  height:100%;
+  background:linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.45),
+    transparent
+  );
+  transform:skewX(-20deg);
+  animation: buttonShine 4.5s ease-in-out infinite;
+}
+
+@keyframes professionalButton {
+  0%,100% {
+    transform:translateY(0) scale(1);
+    box-shadow:0 7px 20px rgba(0,0,0,.12);
+  }
+
+  50% {
+    transform:translateY(-3px) scale(1.025);
+    box-shadow:
+      0 14px 32px rgba(245,196,81,.25),
+      0 0 20px rgba(245,196,81,.15);
+  }
+}
+
+@keyframes buttonShine {
+  0% {
+    left:-120%;
+  }
+
+  25% {
+    left:130%;
+  }
+
+  100% {
+    left:130%;
+  }
+}
+
+
+/* ================= IMAGE ANIMATION ================= */
+
+.hero-image img,
+.location-image img,
+.content-image img,
+.gallery-item img {
+  transform:scale(1);
+  animation: professionalImageZoom 8s ease-in-out infinite;
+}
+
+@keyframes professionalImageZoom {
+
+  0% {
+    transform:scale(1);
+    filter:brightness(1);
+  }
+
+  50% {
+    transform:scale(1.085);
+    filter:brightness(1.08) saturate(1.12);
+  }
+
+  100% {
+    transform:scale(1);
+    filter:brightness(1);
+  }
+
+}
+
+
+/* Image container */
+.hero-image,
+.location-image,
+.content-image {
+  position:relative;
+}
+
+.hero-image::after,
+.location-image::after,
+.content-image::after {
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background:linear-gradient(
+    120deg,
+    transparent 20%,
+    rgba(255,255,255,.12) 50%,
+    transparent 80%
+  );
+  transform:translateX(-120%);
+  animation:imageLight 7s ease-in-out infinite;
+}
+
+@keyframes imageLight {
+
+  0%,35% {
+    transform:translateX(-120%);
+  }
+
+  65%,100% {
+    transform:translateX(120%);
+  }
+
+}
+
+
+/* ================= HEADING ANIMATION ================= */
+
+.hero h1 span {
+  display:inline-block;
+  animation:
+    titleGlow 4.5s ease-in-out infinite,
+    titleFloat 5s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+
+  0%,100% {
+    color:#f5c451;
+    text-shadow:0 0 0 rgba(245,196,81,0);
+  }
+
+  50% {
+    color:#ffe28a;
+    text-shadow:
+      0 0 12px rgba(245,196,81,.45),
+      0 0 28px rgba(245,196,81,.20);
+  }
+
+}
+
+@keyframes titleFloat {
+
+  0%,100% {
+    transform:translateY(0);
+  }
+
+  50% {
+    transform:translateY(-5px);
+  }
+
+}
+
+
+/* ================= KICKER / IMPORTANT TEXT ================= */
+
+.kicker {
+  animation:kickerColor 4s ease-in-out infinite;
+}
+
+@keyframes kickerColor {
+
+  0%,100% {
+    color:#9a7000;
+    letter-spacing:1.4px;
+  }
+
+  50% {
+    color:#d79d00;
+    letter-spacing:2px;
+  }
+
+}
+
+
+/* ================= PRICE HIGHLIGHT ================= */
+
+.price-row strong {
+  animation:pricePulse 4s ease-in-out infinite;
+}
+
+.price-row span {
+  animation:priceColor 4s ease-in-out infinite;
+}
+
+@keyframes pricePulse {
+
+  0%,100% {
+    transform:scale(1);
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+  }
+
+  50% {
+    transform:scale(1.045);
+    box-shadow:
+      0 10px 25px rgba(245,196,81,.25),
+      0 0 15px rgba(245,196,81,.12);
+  }
+
+}
+
+@keyframes priceColor {
+
+  0%,100% {
+    background:#143d35;
+    color:#ffd66b;
+  }
+
+  50% {
+    background:#1d5849;
+    color:#ffe79a;
+  }
+
+}
+
+
+/* ================= CARDS ================= */
+
+.amenity,
+.panel,
+.near-card,
+.location-point {
+  transition:
+    transform .6s ease,
+    box-shadow .6s ease,
+    border-color .6s ease;
+}
+
+.amenity:hover,
+.near-card:hover {
+  transform:translateY(-8px) scale(1.025);
+  box-shadow:
+    0 18px 40px rgba(0,0,0,.13),
+    0 0 18px rgba(245,196,81,.10);
+}
+
+.panel:hover {
+  transform:translateY(-5px);
+  box-shadow:0 20px 45px rgba(0,0,0,.16);
+}
+
+.location-point:hover {
+  transform:translateX(7px) scale(1.015);
+  box-shadow:
+    0 10px 28px rgba(0,0,0,.15);
+}
+
+
+/* ================= LINKS ================= */
+
+.navlinks a {
+  position:relative;
+  transition:
+    color .45s ease,
+    transform .45s ease;
+}
+
+.navlinks a::after {
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-7px;
+  width:0;
+  height:2px;
+  background:var(--gold);
+  box-shadow:0 0 8px rgba(245,196,81,.6);
+  transition:width .5s ease;
+}
+
+.navlinks a:hover {
+  color:#ffe08a;
+  transform:translateY(-2px);
+}
+
+.navlinks a:hover::after {
+  width:100%;
+}
+
+
+/* ================= SCROLL REVEAL ================= */
+
+.pg-reveal {
+  opacity:0;
+  transform:translateY(45px) scale(.97);
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(.22,.61,.36,1);
+}
+
+.pg-reveal.pg-visible {
+  opacity:1;
+  transform:translateY(0) scale(1);
+}
+
+
+/* Different direction animations */
+
+.pg-left {
+  opacity:0;
+  transform:translateX(-55px);
+  transition:
+    opacity 1.1s ease,
+    transform 1.1s cubic-bezier(.22,.61,.36,1);
+}
+
+.pg-right {
+  opacity:0;
+  transform:translateX(55px);
+  transition:
+    opacity 1.1s ease,
+    transform 1.1s cubic-bezier(.22,.61,.36,1);
+}
+
+.pg-left.pg-visible,
+.pg-right.pg-visible {
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:900px){
+
+  .btn {
+    animation-duration:4.5s;
+  }
+
+  .hero-image img,
+  .location-image img,
+  .content-image img {
+    animation-duration:9s;
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  *,
+  *::before,
+  *::after {
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    transition-duration:.01ms !important;
+    scroll-behavior:auto !important;
+  }
+
+}
   
 </style>
 </head>
@@ -2723,6 +3118,98 @@ document.addEventListener("DOMContentLoaded", function(){
 
 });
 </script>
-  
+  <script>
+/* =========================================================
+   PROFESSIONAL SCROLL ANIMATION
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* Main sections */
+  const sections = document.querySelectorAll(
+    "section"
+  );
+
+  sections.forEach(function(section){
+    section.classList.add("pg-reveal");
+  });
+
+
+  /* Cards */
+  const cards = document.querySelectorAll(
+    ".amenity, .near-card, .location-point, .panel"
+  );
+
+  cards.forEach(function(card){
+    card.classList.add("pg-reveal");
+  });
+
+
+  /* Hero content */
+  const heroContent = document.querySelector(".hero-grid > div:first-child");
+
+  if(heroContent){
+    heroContent.classList.add("pg-left");
+  }
+
+
+  /* Hero image */
+  const heroImage = document.querySelector(".hero-grid > div:last-child");
+
+  if(heroImage){
+    heroImage.classList.add("pg-right");
+  }
+
+
+  /* Scroll observer */
+  const observer = new IntersectionObserver(
+    function(entries){
+
+      entries.forEach(function(entry){
+
+        if(entry.isIntersecting){
+
+          entry.target.classList.add("pg-visible");
+
+        }
+
+      });
+
+    },
+    {
+      threshold:0.15
+    }
+  );
+
+
+  document
+    .querySelectorAll(
+      ".pg-reveal, .pg-left, .pg-right"
+    )
+    .forEach(function(element){
+
+      observer.observe(element);
+
+    });
+
+
+  /* Stagger cards */
+  document
+    .querySelectorAll(".amenity-grid, .nearby-grid")
+    .forEach(function(grid){
+
+      const items = grid.children;
+
+      Array.from(items).forEach(function(item,index){
+
+        item.style.transitionDelay =
+          (index * 0.12) + "s";
+
+      });
+
+    });
+
+});
+</script>
 </body>
 </html>
