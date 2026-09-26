@@ -905,6 +905,280 @@ footer ul{
     animation-duration:5s;
   }
 }
+/* =====================================================
+   GANGA RIVERA - VISIBLE PROFESSIONAL ANIMATIONS
+   ===================================================== */
+
+/* IMAGE ANIMATION */
+.hero-image,
+.location-image,
+.content-image,
+.gallery-item,
+.amenity,
+.near-card{
+  overflow:hidden;
+  transition:
+    transform 1s cubic-bezier(.22,1,.36,1),
+    box-shadow 1s ease,
+    filter 1s ease;
+}
+
+.hero-image img,
+.location-image img,
+.content-image img,
+.gallery-item img{
+  transition:
+    transform 1.4s cubic-bezier(.22,1,.36,1),
+    filter 1.2s ease;
+}
+
+/* IMAGE HOVER */
+.hero-image:hover,
+.location-image:hover,
+.content-image:hover,
+.gallery-item:hover{
+  transform:scale(1.035) translateY(-8px);
+  box-shadow:0 30px 65px rgba(245,196,81,.30);
+  filter:brightness(1.08);
+}
+
+.hero-image:hover img,
+.location-image:hover img,
+.content-image:hover img,
+.gallery-item:hover img{
+  transform:scale(1.13);
+  filter:saturate(1.35) brightness(1.08);
+}
+
+
+/* MAIN HEADINGS */
+h1,
+h2,
+h3{
+  transition:
+    color 1s ease,
+    transform 1s ease,
+    text-shadow 1s ease;
+}
+
+h1:hover,
+h2:hover,
+h3:hover{
+  color:#f5c451;
+  transform:translateY(-4px);
+  text-shadow:0 5px 25px rgba(245,196,81,.35);
+}
+
+
+/* MAIN TEXT */
+p,
+.sub,
+.info-row,
+.location-point,
+.amenity,
+.near-card{
+  transition:
+    transform .9s ease,
+    color .9s ease,
+    background-color .9s ease,
+    box-shadow .9s ease;
+}
+
+
+/* CARDS */
+.amenity:hover,
+.near-card:hover,
+.panel:hover{
+  transform:translateY(-9px) scale(1.025);
+  box-shadow:0 22px 50px rgba(0,0,0,.18);
+}
+
+
+/* LINKS */
+.navlinks a{
+  position:relative;
+  transition:
+    color .7s ease,
+    transform .7s ease,
+    text-shadow .7s ease;
+}
+
+.navlinks a:hover{
+  color:#f5c451;
+  transform:translateY(-3px) scale(1.08);
+  text-shadow:0 0 15px rgba(245,196,81,.7);
+}
+
+.navlinks a::after{
+  content:"";
+  position:absolute;
+  left:0;
+  bottom:-8px;
+  width:0;
+  height:2px;
+  background:#f5c451;
+  transition:width .7s ease;
+}
+
+.navlinks a:hover::after{
+  width:100%;
+}
+
+
+/* BUTTONS */
+.btn{
+  transition:
+    transform .8s cubic-bezier(.22,1,.36,1),
+    box-shadow .8s ease,
+    filter .8s ease;
+}
+
+.btn:hover{
+  transform:translateY(-5px) scale(1.06);
+  box-shadow:
+    0 12px 30px rgba(245,196,81,.35);
+  filter:brightness(1.12);
+}
+
+.btn-gold:hover{
+  box-shadow:
+    0 0 20px rgba(245,196,81,.55),
+    0 15px 35px rgba(245,196,81,.30);
+}
+
+.btn-green:hover{
+  box-shadow:
+    0 0 20px rgba(23,207,136,.55),
+    0 15px 35px rgba(23,207,136,.25);
+}
+
+
+/* PRICE */
+.price-row strong,
+.price-row span{
+  transition:
+    transform .8s ease,
+    background-color .8s ease,
+    color .8s ease,
+    box-shadow .8s ease;
+}
+
+.price-row strong:hover,
+.price-row span:hover{
+  transform:scale(1.08) translateY(-4px);
+  box-shadow:0 12px 30px rgba(245,196,81,.30);
+}
+
+
+/* PLOT TABLE */
+.plot-table tr{
+  transition:
+    transform .7s ease,
+    background-color .7s ease;
+}
+
+.plot-table tbody tr:hover{
+  transform:scale(1.015);
+  background:#fff8e8;
+}
+
+
+/* LOCATION POINTS */
+.location-point:hover{
+  transform:translateX(8px) scale(1.025);
+  background:#fff8e8;
+  box-shadow:0 12px 30px rgba(245,196,81,.22);
+}
+
+
+/* FLOATING IMAGE ANIMATION */
+@keyframes imageFloatStrong{
+  0%,100%{
+    transform:translateY(0) scale(1);
+    filter:saturate(1) brightness(1);
+  }
+
+  50%{
+    transform:translateY(-10px) scale(1.025);
+    filter:saturate(1.15) brightness(1.05);
+  }
+}
+
+.hero-image{
+  animation:imageFloatStrong 5s ease-in-out infinite;
+}
+
+
+/* GOLD SHINE ON IMPORTANT ELEMENTS */
+.kicker{
+  animation:kickerGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes kickerGlow{
+  0%,100%{
+    color:#9a7000;
+    text-shadow:none;
+  }
+
+  50%{
+    color:#f5c451;
+    text-shadow:0 0 14px rgba(245,196,81,.55);
+  }
+}
+
+
+/* SCROLL REVEAL */
+.animate-on-scroll{
+  opacity:0;
+  transform:translateY(55px) scale(.96);
+  transition:
+    opacity 1.1s ease,
+    transform 1.2s cubic-bezier(.22,1,.36,1),
+    filter 1s ease;
+  filter:blur(4px);
+}
+
+.animate-on-scroll.show{
+  opacity:1;
+  transform:translateY(0) scale(1);
+  filter:blur(0);
+}
+
+
+/* IMPORTANT TEXT */
+.animate-text{
+  opacity:0;
+  transform:translateX(-45px);
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s cubic-bezier(.22,1,.36,1),
+    color 1s ease;
+}
+
+.animate-text.show{
+  opacity:1;
+  transform:translateX(0);
+}
+
+
+/* MOBILE */
+@media(max-width:900px){
+
+  .hero-image{
+    animation:imageFloatStrong 5.5s ease-in-out infinite;
+  }
+
+  .btn:active{
+    transform:scale(1.08);
+  }
+
+  .hero-image:active,
+  .location-image:active,
+  .content-image:active,
+  .gallery-item:active{
+    transform:scale(1.05);
+  }
+}  
   
 </style>
 </head>
@@ -2319,6 +2593,136 @@ setInterval(function(){
 },3500);
 
 </script>
+<script>
+/* =====================================================
+   GANGA RIVERA - SCROLL ANIMATION ENGINE
+   ===================================================== */
 
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* Elements that should animate */
+  const elements = document.querySelectorAll(
+    "section h1, section h2, section h3, " +
+    "section p, .kicker, .amenity, .near-card, " +
+    ".panel, .location-point, .content-image, " +
+    ".location-image, .gallery-item, .hero-image, " +
+    ".price-row, .actions"
+  );
+
+  elements.forEach(function(el){
+    el.classList.add("animate-on-scroll");
+  });
+
+
+  /* Special animation for important headings/text */
+  const textElements = document.querySelectorAll(
+    ".hero h1, .hero p, " +
+    "#details h2, #plots h2, #amenities h2, " +
+    "#location h2, #nearby h2"
+  );
+
+  textElements.forEach(function(el){
+    el.classList.remove("animate-on-scroll");
+    el.classList.add("animate-text");
+  });
+
+
+  /* Scroll observer */
+  const observer = new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add("show");
+
+      }else{
+
+        /* Remove this if you want animation only once */
+        entry.target.classList.remove("show");
+
+      }
+
+    });
+
+  },{
+    threshold:0.15
+  });
+
+
+  document
+    .querySelectorAll(".animate-on-scroll, .animate-text")
+    .forEach(function(el){
+      observer.observe(el);
+    });
+
+});
+</script>
+<script>
+/* =====================================================
+   GANGA RIVERA - SCROLL ANIMATION ENGINE
+   ===================================================== */
+
+document.addEventListener("DOMContentLoaded", function(){
+
+  /* Elements that should animate */
+  const elements = document.querySelectorAll(
+    "section h1, section h2, section h3, " +
+    "section p, .kicker, .amenity, .near-card, " +
+    ".panel, .location-point, .content-image, " +
+    ".location-image, .gallery-item, .hero-image, " +
+    ".price-row, .actions"
+  );
+
+  elements.forEach(function(el){
+    el.classList.add("animate-on-scroll");
+  });
+
+
+  /* Special animation for important headings/text */
+  const textElements = document.querySelectorAll(
+    ".hero h1, .hero p, " +
+    "#details h2, #plots h2, #amenities h2, " +
+    "#location h2, #nearby h2"
+  );
+
+  textElements.forEach(function(el){
+    el.classList.remove("animate-on-scroll");
+    el.classList.add("animate-text");
+  });
+
+
+  /* Scroll observer */
+  const observer = new IntersectionObserver(function(entries){
+
+    entries.forEach(function(entry){
+
+      if(entry.isIntersecting){
+
+        entry.target.classList.add("show");
+
+      }else{
+
+        /* Remove this if you want animation only once */
+        entry.target.classList.remove("show");
+
+      }
+
+    });
+
+  },{
+    threshold:0.15
+  });
+
+
+  document
+    .querySelectorAll(".animate-on-scroll, .animate-text")
+    .forEach(function(el){
+      observer.observe(el);
+    });
+
+});
+</script>
+  
 </body>
 </html>
